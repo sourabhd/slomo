@@ -14,7 +14,7 @@ include_directories(${OpenCV_INCLUDE_DIRS} )
 #target_link_libraries( DisplayImage ${OpenCV_LIBS} )
 #target_link_libraries( fback ${OpenCV_LIBS} )
 
-set(SloMo_SOURCES src/main.cpp src/SloMo.cpp)
+set(SloMo_SOURCES src/main.cpp src/SloMo.cpp src/delaunay2.cpp)
 
 add_executable(slomo ${SloMo_SOURCES})
 target_link_libraries(slomo ${OpenCV_LIBS} )
