@@ -183,26 +183,28 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
 //              cerr << InvAff << endl << flush;
 //              cerr << pLoc << endl << flush;
 //              cerr << endl << endl << flush;
-                wmap.at<Point2f>(i, j) = \
+                wmap.at<Point2f>(i,j) = \
                     Point2f(float(pLoc.at<double>(0, 0)), float(pLoc.at<double>(1, 0)));
                 pts.push_back(pt);
             }
         }
     }
 
-    remap(prevFrame, warpFrame, wmap, wempty, CV_INTER_LINEAR);
+    remap(prevFrame.t(), warpFrame, wmap.t(), wempty, CV_INTER_LINEAR);
 
 }
 
 void SloMo::dumpVideoProp(VideoCapture &cap)
 {
+    int ex = static_cast<int>(cap.get(CAP_PROP_FOURCC));
+    char EXT[] = {ex & 0XFF , (ex & 0XFF00) >> 8,(ex & 0XFF0000) >> 16,(ex & 0XFF000000) >> 24, 0};
     cout << "CV_CAP_PROP_POS_MSEC      : " << setw(25) << cap.get(CV_CAP_PROP_POS_MSEC     )  << "  : Current position of the video file in milliseconds or video capture timestamp."   << endl;
     cout << "CV_CAP_PROP_POS_FRAMES    : " << setw(25) << cap.get(CV_CAP_PROP_POS_FRAMES   )  << "  : 0-based index of the frame to be decoded/captured next."                          << endl;
     cout << "CV_CAP_PROP_POS_AVI_RATIO : " << setw(25) << cap.get(CV_CAP_PROP_POS_AVI_RATIO)  << "  : Relative position of the video file: 0 - start of the film, 1 - end of the film." << endl;
     cout << "CV_CAP_PROP_FRAME_WIDTH   : " << setw(25) << cap.get(CV_CAP_PROP_FRAME_WIDTH  )  << "  : Width of the frames in the video stream."                                         << endl;
     cout << "CV_CAP_PROP_FRAME_HEIGHT  : " << setw(25) << cap.get(CV_CAP_PROP_FRAME_HEIGHT )  << "  : Height of the frames in the video stream."                                        << endl;
     cout << "CV_CAP_PROP_FPS           : " << setw(25) << cap.get(CV_CAP_PROP_FPS          )  << "  : Frame rate."                                                                      << endl;
-    cout << "CV_CAP_PROP_FOURCC        : " << setw(25) << cap.get(CV_CAP_PROP_FOURCC       )  << "  : 4-character code of codec."                                                       << endl;
+    cout << "CV_CAP_PROP_FOURCC        : " << setw(25) << EXT                                 << "  : 4-character code of codec."                                                       << endl;
     cout << "CV_CAP_PROP_FRAME_COUNT   : " << setw(25) << cap.get(CV_CAP_PROP_FRAME_COUNT  )  << "  : Number of frames in the video file."                                              << endl;
     cout << "CV_CAP_PROP_FORMAT        : " << setw(25) << cap.get(CV_CAP_PROP_FORMAT       )  << "  : Format of the Mat objects returned by retrieve() ."                               << endl;
     cout << "CV_CAP_PROP_MODE          : " << setw(25) << cap.get(CV_CAP_PROP_MODE         )  << "  : Backend-specific value indicating the current capture mode."                      << endl;
@@ -212,16 +214,6 @@ void SloMo::dumpVideoProp(VideoCapture &cap)
 
 void SloMo::slowdown(string const& inFilename, string const outFilename) {
 
-#if 0
-    vector<Point2f> tri;
-    tri.push_back(Point2f(0,0));
-    tri.push_back(Point2f(1,0));
-    tri.push_back(Point2f(0.5, 0.5*sqrt(3)));
-    Point2f pt(0.5,0.5);
-    cout << pointPolygonTest(tri, pt, false) << endl;
-
-    return;
-#endif
 
     unordered_map<Point2i, int, std::Point2iHash> pointToTri;
 
@@ -233,11 +225,23 @@ void SloMo::slowdown(string const& inFilename, string const outFilename) {
     VideoCapture cap(inFilename);
 
     if (!cap.isOpened()) {
-        cerr << "Could not open " << inFilename << endl << flush;
+        cerr << "Could not open input file " << inFilename << endl << flush;
         return;
     }
 
     dumpVideoProp(cap);
+
+    //VideoWriter::fourcc('X', '2', '6', '4'),
+    VideoWriter vw(outFilename,
+                   static_cast<int>(cap.get(CV_CAP_PROP_FOURCC)),
+                   cap.get(CV_CAP_PROP_FPS),
+                   Size(cap.get(CV_CAP_PROP_FRAME_WIDTH), cap.get(CV_CAP_PROP_FRAME_HEIGHT))
+    );
+
+    if (!vw.isOpened()) {
+        cerr << "Could not open output file " << outFilename << endl << flush;
+        return;
+    }
 
     Mat flow, cflow, frame, prevframe, prevframeN, wframe, wframeN;
     UMat gray, prevgray, uflow;
@@ -275,7 +279,11 @@ void SloMo::slowdown(string const& inFilename, string const outFilename) {
             // Do the warping
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
             inverseWarp(flow,tri, prevframeN, wframeN, pointToTri);
-            wframe.convertTo(wframe, frame.type(), 255.0, 0);
+            wframeN.convertTo(wframe, frame.type(), 255.0, 0);
+            cerr << frame.cols << " " << flow.rows << endl;
+            cerr << flow.cols << " " << flow.rows << endl;
+            cerr << wframe.cols << " " << wframe.rows << endl;
+            vw.write(wframe.t());
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
             // imshow("flow", cflow);
@@ -290,10 +298,26 @@ void SloMo::slowdown(string const& inFilename, string const outFilename) {
         std::swap(prevgray, gray);
         std::swap(prevframe,frame);
         inNumFrames++;
+        outNumFrames++;
         TIME_END(3, "Frame")
     }
 
-    cout << "Input Video : number of frames : " << inNumFrames << endl;
-    cout << "Output Video: number of frames : " << outNumFrames << endl;
+    cap.release();
+    vw.release();
+
+    cout << "Input Video : number of frames : " << inNumFrames << endl << flush;
+    cout << "Output Video: number of frames : " << outNumFrames << endl << flush;
+
+    cout << "Output video stats: " << endl << flush;
+
+    VideoCapture cap2(outFilename);
+
+    if (!cap2.isOpened()) {
+        cerr << "Could not open output file " << outFilename << endl << flush;
+        return;
+    }
+
+    dumpVideoProp(cap2);
+    cap2.release();
 
 }
