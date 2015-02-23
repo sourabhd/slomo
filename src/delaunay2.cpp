@@ -101,24 +101,46 @@ static void paint_voronoi( Mat& img, Subdiv2D& subdiv )
 
 //int main( int, char** )
 int delaunay(const vector<Point2f> &pts, const int rows, const int cols,
-             vector<vector<Point2f> > &facets, vector<Point2f> &centers)
+             vector<vector<Point2f> > &tri)
 {
     //help();
 
     cerr << "size: " << rows << " " << cols << endl;
     Scalar active_facet_color(0, 0, 255), delaunay_color(255,255,255);
-    Rect rect(0, 0, cols, rows);
+    Rect rect(0, 0, rows, cols);
 
     Subdiv2D subdiv(rect);
 
-    for( int i = 0; i < int(pts.size()); i++ )
-    {
+    for( int i = 0; i < int(pts.size()); i++ ) {
         subdiv.insert(pts[i]);
     }
 
-    subdiv.getVoronoiFacetList(vector<int>(), facets, centers);
+    vector<Vec6f> triangleList;
+    subdiv.getTriangleList(triangleList);
 
-#if 1
+    for( size_t i = 0; i < triangleList.size(); i++ ) {
+        vector<Point2f> pt(3);
+        Vec6f t = triangleList[i];
+        pt[0] = Point2f(t[0], t[1]);
+        pt[1] = Point2f(t[2], t[3]);
+        pt[2] = Point2f(t[4], t[5]);
+        if ( \
+            (pt[0].x >= 0 && pt[0].x < rows) && \
+            (pt[1].x >= 0 && pt[1].x < rows) && \
+            (pt[2].x >= 0 && pt[2].x < rows) && \
+            (pt[0].y >= 0 && pt[0].y < cols) && \
+            (pt[1].y >= 0 && pt[1].y < cols) && \
+            (pt[2].y >= 0 && pt[2].y < cols)
+                ) {
+            // Ensure only valid values are returned
+            // Opencv triangulation returns invalid values at borders
+
+            tri.push_back(pt);
+        }
+    }
+
+
+#if 0
 
     Mat img(rect.size(), CV_8UC3);
 

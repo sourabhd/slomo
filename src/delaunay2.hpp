@@ -11,6 +11,6 @@ using cv::Point2f;
 using std::vector;
 
 int delaunay(const vector<Point2f> &pts, const int rows, const int cols,
-             vector<vector<Point2f> > &facets, vector<Point2f> &centers);
+             vector<vector<Point2f> > &tri);
 
 #endif

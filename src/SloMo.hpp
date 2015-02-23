@@ -8,6 +8,7 @@
 using std::string;
 using std::vector;
 using cv::Point2f;
+using cv::Mat;
 
 namespace slomo
 {
@@ -17,7 +18,9 @@ namespace slomo
     public:
         void slowdown(const string &inFilename, const string outFilename);
         void triangulate(const int rows, const int cols, const int blockSize,
-                         vector<vector<Point2f> > &facets, vector<Point2f> &centers);
+                         vector<vector<Point2f> > &tri);
+        Mat inverseAffine(vector<Point2f> &src, vector<Point2f> &dst);
+        void inverseWarp(const Mat &flow, vector<vector<Point2f> > &tri);
     };
 }
 
