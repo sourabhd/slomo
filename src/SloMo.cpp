@@ -220,7 +220,6 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
     unordered_map<Point2i, int, std::Point2iHash> pointToTri;
 
     int inNumFrames = 0, outNumFrames = 0;
-    const int blockSize = 64;
     bool firstFrame = true, firstFrame2 = true;
     vector<vector<Point2f> > tri;
 
@@ -248,6 +247,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
     Mat flow, cflow, frame, prevframe, prevframeN, wframe, wframeN;
     UMat gray, prevgray, uflow;
     namedWindow("flow", 1);
+
+    const float incrAlpha = float(1) / float(factor);
 
     for(;;) {
 
@@ -284,10 +285,21 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
             inverseWarp(flow,tri, prevframeN, wframeN, pointToTri);
             wframeN.convertTo(wframe, frame.type(), 255.0, 0);
+
+            // Cross Dissolve from prev to warped
+
+            for (float alpha = incrAlpha ; alpha < 1.0f ; alpha += incrAlpha) {
+                Mat iframeN = alpha * wframeN + (1-alpha) * prevframeN;
+                Mat iframe;
+                iframeN.convertTo(iframe, frame.type(), 255.0, 0);
+                vw.write(iframe);
+            }
+
             cerr << frame.cols << " " << flow.rows << endl;
             cerr << flow.cols << " " << flow.rows << endl;
             cerr << wframe.cols << " " << wframe.rows << endl;
             vw.write(wframe);
+
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
             // imshow("flow", cflow);
