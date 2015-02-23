@@ -20,7 +20,8 @@ namespace slomo
         void triangulate(const int rows, const int cols, const int blockSize,
                          vector<vector<Point2f> > &tri);
         Mat inverseAffine(vector<Point2f> &src, vector<Point2f> &dst);
-        void inverseWarp(const Mat &flow, vector<vector<Point2f> > &tri);
+        void inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
+                         const Mat &prevFrame, Mat &warpFrame);
     };
 }
 

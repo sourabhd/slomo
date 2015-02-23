@@ -6,6 +6,8 @@
 #include <algorithm>
 #include <cmath>
 #include <cassert>
+#include <opencv2/imgproc/types_c.h>
+#include <opencv2/highgui/highgui_c.h>
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/videoio/videoio.hpp"
@@ -73,7 +75,7 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
 //        }
 //    }
 
-    cerr << "triangulate: " << rows << " " << cols << endl;
+    // cerr << "triangulate: " << rows << " " << cols << endl;
     delaunay(pts, rows, cols, tri);
 }
 
@@ -89,18 +91,22 @@ Mat SloMo::inverseAffine(vector<Point2f> &src, vector<Point2f> &dst)
     return Ainv;
 }
 
-void SloMo::inverseWarp(const Mat &flow, vector<vector<Point2f> > &tri)
+void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
+        const Mat &prevFrame, Mat &warpFrame)
 {
     const int M = int(flow.rows);
     const int N = int(flow.cols);
     const int T = int(tri.size());
-    cerr << M << " " << N << " " << T << endl << flush;
+    // cerr << M << " " << N << " " << T << endl << flush;
 
+    Mat wmap, wempty;
+    wmap = Mat::zeros(prevFrame.size(), CV_32FC2);
 
     for (int t = 0 ; t < T ; t++) { // for each triangle
-        cerr << t << " ... " << endl<< flush;
-        //if (t < M+2) continue;
-        cerr << tri[t] << endl << flush;
+
+        // cerr << t << " ... " << endl<< flush;
+        // cerr << tri[t] << endl << flush;
+
         // Find inverse mapping
         vector<Point2f> srcA, dstA;
         srcA.clear(); dstA.clear();
@@ -130,27 +136,48 @@ void SloMo::inverseWarp(const Mat &flow, vector<vector<Point2f> > &tri)
             }
         }
 
-        cerr << minX << " " << maxX << " " << minY << " " << maxY << endl;
+        // cerr << minX << " " << maxX << " " << minY << " " << maxY << endl;
 
-# if 0
-
+        // vector<float> prevLocX, prevLocY;
+        vector<Point2i> pts;
+        pts.clear();
         // Inverse map each point in the bounding box if it lies within triangle t
         for (int i = int(minX) ; i <= maxX ; i++) {
             for (int j = int(minY) ; j <= maxY ; j++) {
-                Point2f pt(i,j);
+                Point2i pt(i,j);
                 if (pointPolygonTest(tri[t], pt, false) != -1) {
-                    Mat P = Mat::ones(3, 1, CV_64FC1);
-                    P.at<double>(0,0) = pt.x;
-                    P.at<double>(0,1) = pt.y;
-                    P.at<double>(0,2) = 1.0;
-                    Mat prevLoc = InvAff * P;
-                    cout << prevLoc << endl << flush;
+                    Mat P = Mat::ones(3,1, CV_64F);
+                    P.at<double>(0,0) = double(pt.x);
+                    P.at<double>(1,0) = double(pt.y);
+                    P.at<double>(2,0) = 1.0;
+                    Mat pLoc = InvAff * P;
+//                    cerr << pt.x << " " << pt.y << endl;
+//                    cerr << InvAff << endl << flush;
+//                    cerr << pLoc << endl << flush;
+//                    cerr << endl << endl << flush;
+                    wmap.at<Point2f>(i, j) = \
+                    Point2f(float(pLoc.at<double>(0,0)), float(pLoc.at<double>(1,0)));
+                    pts.push_back(pt);
                 };
             }
         }
-#endif
 
+
+        // int numPts = pts.size();
+        // Mat wval;
+        // cerr << prevFrame << endl << flush;
+//        remap(prevFrame,wval,prevLocX,prevLocY,CV_INTER_LINEAR);
+        // cerr << wval << endl << flush;
+
+
+//        for (int l = 0 ; l < numPts ; l++) {
+//            warpFrame.at<Point3f>(pts[l].x, pts[l].y) = wval.at<Point3f>(l);
+//            cerr << "Point " << pts[l] << " set to " << wval.at<Point3f>(l) << endl;
+//        }
     }
+
+    remap(prevFrame, warpFrame, wmap, wempty, CV_INTER_LINEAR);
+
 }
 
 void SloMo::slowdown(string const& inFilename, string const outFilename)
@@ -168,7 +195,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename)
 #endif
 
     int inNumFrames = 0, outNumFrames = 0;
-    const int blockSize = 16;
+    const int blockSize = 64;
     bool firstFrame = true, firstFrame2 = true;
     vector<vector<Point2f> > tri;
 
@@ -176,7 +203,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename)
 
     if( !cap.isOpened() )
         return;
-    Mat flow, cflow, frame;
+    Mat flow, cflow, frame, prevframe, prevframeN, wframe, wframeN;
     UMat gray, prevgray, uflow;
     namedWindow("flow", 1);
 
@@ -189,35 +216,36 @@ void SloMo::slowdown(string const& inFilename, string const outFilename)
         cout << "Frame # " << inNumFrames << endl << flush;
         cvtColor(frame, gray, COLOR_BGR2GRAY);
 
+        wframeN = Mat::zeros(frame.rows, frame.cols, CV_32FC3);
+
         if (firstFrame) {
 
             triangulate(frame.rows, frame.cols, blockSize, tri);
             firstFrame = false;
         }
 
-//        for (int kk = 0 ; kk < 10 ; kk++) {
-//            //cerr << facets[kk] << endl;
-//            cerr << centers[kk] << endl;
-//        }
-//        return;
 
         if (!prevgray.empty()) {
             calcOpticalFlowFarneback(prevgray, gray, uflow, 0.5, 3, 15, 3, 5, 1.2, 0);
             cvtColor(prevgray, cflow, COLOR_GRAY2BGR);
             uflow.copyTo(flow);
-            //if(firstFrame2) {
-             //   firstFrame2 = false;
-            //} else {
-            inverseWarp(flow,tri);
-            //}
-            drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
-            imshow("flow", cflow);
+
+            // Do the warping
+            prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
+            inverseWarp(flow,tri, prevframeN, wframeN);
+
+            //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
+            // imshow("flow", cflow);
+
+            imshow("flow", wframeN);
+            cvWaitKey(0);
         }
 
         //if (waitKey(30) >= 0)
         //    break;
 
         std::swap(prevgray, gray);
+        std::swap(prevframe,frame);
         inNumFrames++;
     }
 
