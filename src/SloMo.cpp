@@ -141,6 +141,7 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
     const int T = int(tri.size());
     // cerr << M << " " << N << " " << T << endl << flush;
 
+    Mat warpFrameT;
     vector<Mat> invAffTrans;
 
     for (int t = 0 ; t < T ; t++) {
@@ -190,8 +191,9 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
         }
     }
 
-    remap(prevFrame.t(), warpFrame, wmap.t(), wempty, CV_INTER_LINEAR);
+    remap(prevFrame.t(), warpFrameT, wmap.t(), wempty, CV_INTER_LINEAR);
 
+    warpFrame = warpFrameT.t();
 }
 
 void SloMo::dumpVideoProp(VideoCapture &cap)
@@ -268,6 +270,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename) {
             triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri);
             firstFrame = false;
             TIME_END(2, "Traiangulation")
+
+            vw.write(frame);
         }
 
 
@@ -283,7 +287,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename) {
             cerr << frame.cols << " " << flow.rows << endl;
             cerr << flow.cols << " " << flow.rows << endl;
             cerr << wframe.cols << " " << wframe.rows << endl;
-            vw.write(wframe.t());
+            vw.write(wframe);
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
             // imshow("flow", cflow);
