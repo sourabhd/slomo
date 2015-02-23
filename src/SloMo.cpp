@@ -6,12 +6,14 @@
 #include <algorithm>
 #include <cmath>
 #include <cassert>
+#include <ctime>
 #include <opencv2/imgproc/types_c.h>
 #include <opencv2/highgui/highgui_c.h>
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/videoio/videoio.hpp"
 #include "opencv2/highgui/highgui.hpp"
+#include "common.hpp"
 
 using namespace std;
 using namespace slomo;
@@ -220,8 +222,12 @@ void SloMo::slowdown(string const& inFilename, string const outFilename)
 
         if (firstFrame) {
 
+            // Triangulate
+
+            TIME_START(2)
             triangulate(frame.rows, frame.cols, blockSize, tri);
             firstFrame = false;
+            TIME_END(2, "Traiangulation")
         }
 
 

@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <string>
 #include <exception>
+#include <ctime>
 #include "common.hpp"
 #include "SloMo.hpp"
 
@@ -17,6 +18,10 @@ int main(int argc, char *argv[])
 {
     try {
 
+        TIME_START(1)
+        //clock_t clock1_start = clock();
+        //time_t time1_start = time(NULL);
+
         if (argc != 3) {
             usageMsg();
             return 1;
@@ -27,6 +32,8 @@ int main(int argc, char *argv[])
 
         SloMo sm;
         sm.slowdown(inVideoFilename, outVideoFilename);
+
+        TIME_END(1, "SloMo")
 
     } catch (exception &e) {
         cerr << e.what() << endl;
