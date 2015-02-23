@@ -13,6 +13,7 @@ using cv::Point2f;
 using cv::Point2i;
 using cv::Mat;
 using std::unordered_map;
+using cv::VideoCapture;
 
 namespace std {
 
@@ -48,6 +49,7 @@ namespace slomo
         void inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
                          const Mat &prevFrame, Mat &warpFrame,
                          unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
+        void dumpVideoProp(VideoCapture &cap);
     };
 }
 

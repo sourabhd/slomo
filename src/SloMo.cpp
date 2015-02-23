@@ -8,6 +8,7 @@
 #include <cassert>
 #include <ctime>
 #include <unordered_map>
+#include <iomanip>
 #include <opencv2/imgproc/types_c.h>
 #include <opencv2/highgui/highgui_c.h>
 #include "opencv2/video/tracking.hpp"
@@ -193,8 +194,23 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
 
 }
 
-void SloMo::slowdown(string const& inFilename, string const outFilename)
+void SloMo::dumpVideoProp(VideoCapture &cap)
 {
+    cout << "CV_CAP_PROP_POS_MSEC      : " << setw(25) << cap.get(CV_CAP_PROP_POS_MSEC     )  << "  : Current position of the video file in milliseconds or video capture timestamp."   << endl;
+    cout << "CV_CAP_PROP_POS_FRAMES    : " << setw(25) << cap.get(CV_CAP_PROP_POS_FRAMES   )  << "  : 0-based index of the frame to be decoded/captured next."                          << endl;
+    cout << "CV_CAP_PROP_POS_AVI_RATIO : " << setw(25) << cap.get(CV_CAP_PROP_POS_AVI_RATIO)  << "  : Relative position of the video file: 0 - start of the film, 1 - end of the film." << endl;
+    cout << "CV_CAP_PROP_FRAME_WIDTH   : " << setw(25) << cap.get(CV_CAP_PROP_FRAME_WIDTH  )  << "  : Width of the frames in the video stream."                                         << endl;
+    cout << "CV_CAP_PROP_FRAME_HEIGHT  : " << setw(25) << cap.get(CV_CAP_PROP_FRAME_HEIGHT )  << "  : Height of the frames in the video stream."                                        << endl;
+    cout << "CV_CAP_PROP_FPS           : " << setw(25) << cap.get(CV_CAP_PROP_FPS          )  << "  : Frame rate."                                                                      << endl;
+    cout << "CV_CAP_PROP_FOURCC        : " << setw(25) << cap.get(CV_CAP_PROP_FOURCC       )  << "  : 4-character code of codec."                                                       << endl;
+    cout << "CV_CAP_PROP_FRAME_COUNT   : " << setw(25) << cap.get(CV_CAP_PROP_FRAME_COUNT  )  << "  : Number of frames in the video file."                                              << endl;
+    cout << "CV_CAP_PROP_FORMAT        : " << setw(25) << cap.get(CV_CAP_PROP_FORMAT       )  << "  : Format of the Mat objects returned by retrieve() ."                               << endl;
+    cout << "CV_CAP_PROP_MODE          : " << setw(25) << cap.get(CV_CAP_PROP_MODE         )  << "  : Backend-specific value indicating the current capture mode."                      << endl;
+    cout << "CV_CAP_PROP_CONVERT_RGB   : " << setw(25) << cap.get(CV_CAP_PROP_CONVERT_RGB  )  << "  : Boolean flags indicating whether images should be converted to RGB."              << endl;
+    cout << flush;
+}
+
+void SloMo::slowdown(string const& inFilename, string const outFilename) {
 
 #if 0
     vector<Point2f> tri;
@@ -216,8 +232,13 @@ void SloMo::slowdown(string const& inFilename, string const outFilename)
 
     VideoCapture cap(inFilename);
 
-    if( !cap.isOpened() )
+    if (!cap.isOpened()) {
+        cerr << "Could not open " << inFilename << endl << flush;
         return;
+    }
+
+    dumpVideoProp(cap);
+
     Mat flow, cflow, frame, prevframe, prevframeN, wframe, wframeN;
     UMat gray, prevgray, uflow;
     namedWindow("flow", 1);
@@ -254,12 +275,13 @@ void SloMo::slowdown(string const& inFilename, string const outFilename)
             // Do the warping
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
             inverseWarp(flow,tri, prevframeN, wframeN, pointToTri);
+            wframe.convertTo(wframe, frame.type(), 255.0, 0);
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
             // imshow("flow", cflow);
 
-            imshow("flow", wframeN.t());
-            cvWaitKey(0);
+            //imshow("flow", wframeN.t());
+            //cvWaitKey(0);
         }
 
         //if (waitKey(30) >= 0)
