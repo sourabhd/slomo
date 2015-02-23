@@ -214,7 +214,7 @@ void SloMo::dumpVideoProp(VideoCapture &cap)
     cout << flush;
 }
 
-void SloMo::slowdown(string const& inFilename, string const outFilename) {
+void SloMo::slowdown(string const& inFilename, string const outFilename, const int factor) {
 
 
     unordered_map<Point2i, int, std::Point2iHash> pointToTri;
