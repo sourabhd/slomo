@@ -6,6 +6,7 @@
 #include <cstring>
 #include "common.hpp"
 #include "SloMo.hpp"
+#include "synthetic.hpp"
 
 using namespace std;
 using namespace slomo;
@@ -19,6 +20,10 @@ int main(int argc, char *argv[])
 {
     try {
 
+        // createSynVideo("test.avi");
+        // return 0;
+
+            
         TIME_START(1)
         //clock_t clock1_start = clock();
         //time_t time1_start = time(NULL);
