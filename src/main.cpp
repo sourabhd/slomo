@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
         // createSynVideo("test.avi");
         // return 0;
 
-            
+
         TIME_START(1)
         //clock_t clock1_start = clock();
         //time_t time1_start = time(NULL);

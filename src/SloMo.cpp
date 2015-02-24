@@ -48,6 +48,8 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
 {
     vector<Point2f> pts;
 
+    // Points on an uniform grid
+
     for (int x = 0 ; x < rows ; x += blockSize) {
         Point2f pt(x, 0);
         pts.push_back(pt);
@@ -81,6 +83,9 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
 //    }
 
     // cerr << "triangulate: " << rows << " " << cols << endl;
+
+    
+
     delaunay(pts, rows, cols, tri);
 
     const int M = int(rows);
@@ -217,11 +222,12 @@ void SloMo::dumpVideoProp(VideoCapture &cap)
 void SloMo::slowdown(string const& inFilename, string const outFilename, const int factor) {
 
 
-    unordered_map<Point2i, int, std::Point2iHash> pointToTri;
+
 
     int inNumFrames = 0, outNumFrames = 0;
     bool firstFrame = true, firstFrame2 = true;
-    vector<vector<Point2f> > tri;
+    // vector<vector<Point2f> > tri;
+    // unordered_map<Point2i, int, std::Point2iHash> pointToTri;
 
     VideoCapture cap(inFilename);
 
@@ -265,15 +271,18 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         frame.convertTo(frameN, CV_32FC3, 1.0/255.0, 0);
         wframeN = Mat::zeros(frame.rows, frame.cols, CV_32FC3);
 
-        if (firstFrame) {
+        // if (firstFrame) {
 
             // Triangulate
 
             TIME_START(2)
+            vector<vector<Point2f> > tri;
+            unordered_map<Point2i, int, std::Point2iHash> pointToTri;
             triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri);
             firstFrame = false;
             TIME_END(2, "Traiangulation")
 
+        if (firstFrame) {
             vw.write(frame);
         }
 
