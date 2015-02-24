@@ -44,7 +44,7 @@ static void drawOptFlowMap(const Mat& flow, Mat& cflowmap,
 
 void SloMo::triangulate(const int rows, const int cols, const int blockSize,
                         vector<vector<Point2f> > &tri,
-                        unordered_map<Point2i, int, std::Point2iHash > &pointToTri,
+                        /* unordered_map<Point2i, int,  std::Point2iHash > &pointToTri, */
                         Mat &edges, const vector<Point2f> &corners)
 {
     vector<Point2f> pts;
@@ -110,41 +110,45 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
 
     delaunay(pts, rows, cols, tri);
 
-    const int M = int(rows);
-    const int N = int(cols);
-    const int T = tri.size();
-    for (int t = 0 ; t < T ; t++) { // for each triangle
+#if 0
+//    const int M = int(rows);
+//    const int N = int(cols);
+//    const int T = tri.size();
+//    for (int t = 0 ; t < T ; t++) { // for each triangle
+//
+//        // cerr << t << " ... " << endl<< flush;
+//        // cerr << tri[t] << endl << flush;
+//
+//        // find the bounding box
+//        float minX = M, minY = N, maxX = 0, maxY = 0;
+//        for (int k = 0 ; k < int(tri[t].size()) ; k++) {
+//            if (tri[t][k].x < minX) {
+//                minX = tri[t][k].x;
+//            }
+//            if (tri[t][k].x > maxX) {
+//                maxX = tri[t][k].x;
+//            }
+//            if (tri[t][k].y < minY) {
+//                minY = tri[t][k].y;
+//            }
+//            if (tri[t][k].y > maxY) {
+//                maxY = tri[t][k].y;
+//            }
+//        }
+//
+//        // hash map pointToTri returns the triangle index given point (i,j)
+//        for (int i = int(minX) ; i <= maxX ; i++) {
+//            for (int j = int(minY); j <= maxY; j++) {
+//                Point2i pt(i,j);
+//                if (pointPolygonTest(tri[t], pt, false) != -1) {
+//                    pointToTri[pt] = t;
+//                }
+//            }
+//        }
+//    }
+//
+#endif
 
-        // cerr << t << " ... " << endl<< flush;
-        // cerr << tri[t] << endl << flush;
-
-        // find the bounding box
-        float minX = M, minY = N, maxX = 0, maxY = 0;
-        for (int k = 0 ; k < int(tri[t].size()) ; k++) {
-            if (tri[t][k].x < minX) {
-                minX = tri[t][k].x;
-            }
-            if (tri[t][k].x > maxX) {
-                maxX = tri[t][k].x;
-            }
-            if (tri[t][k].y < minY) {
-                minY = tri[t][k].y;
-            }
-            if (tri[t][k].y > maxY) {
-                maxY = tri[t][k].y;
-            }
-        }
-
-        // hash map pointToTri returns the triangle index given point (i,j)
-        for (int i = int(minX) ; i <= maxX ; i++) {
-            for (int j = int(minY); j <= maxY; j++) {
-                Point2i pt(i,j);
-                if (pointPolygonTest(tri[t], pt, false) != -1) {
-                    pointToTri[pt] = t;
-                }
-            }
-        }
-    }
 }
 
 /**
@@ -423,8 +427,10 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         Mat edges;
         vector<Point2f> corners;
         Scalar meanVal = mean(gray);
-        double cannyThreshold1 = 0.33 * meanVal.val[0];
-        double cannyThreshold2 = 1.33 * meanVal.val[0];
+        double minVal, maxVal;
+        minMaxLoc(gray, &minVal, &maxVal);
+        double cannyThreshold1 = std::max(0.33 * meanVal.val[0], 0.25 * maxVal);
+        double cannyThreshold2 = std::min(1.33 * meanVal.val[0], 0.75 * maxVal);
         Canny(gray, edges, cannyThreshold1, cannyThreshold2, 3, true);
         goodFeaturesToTrack(gray, corners, maxCorners, qualityLevel, minDistance);
 
@@ -458,8 +464,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
         TIME_START(2)
         vector<vector<Point2f> > tri;
-        unordered_map<Point2i, int, std::Point2iHash> pointToTri;
-        triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri,edges,corners);
+        // unordered_map<Point2i, int, std::Point2iHash> pointToTri;
+        triangulate(frame.rows, frame.cols, blockSize, tri, /* pointToTri, */edges,corners);
         firstFrame = false;
         TIME_END(2, "Triangulation")
 
@@ -477,9 +483,23 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
             inverseWarpAll(rows, cols, flow, factor, tri, prevframeN, wframeN);
 
-            for (int i = 0 ; i < factor ; i++) {
-                wframeN[i].convertTo(wframe[i], frame.type(), 255.0, 0);
-                vw.write(wframe[i]);
+            //for (int i = 0 ; i < factor ; i++) {
+                //wframeN[i].convertTo(wframe[i], frame.type(), 255.0, 0);
+
+                //for (int j = 0 ; j < int(corners.size()) ; j++) {
+                //    circle(wframe[i], corners[j], 2, Scalar(0, 255, 0), -1);
+                //}
+                //vw.write(wframe[i]);
+            //}
+
+            const float alphaIncr = 1.0f / float(factor);
+            for (int i = 1 ; i <= factor ; i++) {
+                float alpha = i * alphaIncr;
+                Mat iframeN = (1 - alpha) * wframeN[i-1] + alpha * frameN;
+                Mat iframe;
+                iframeN.convertTo(iframe, frame.type(), 255.0, 0);
+                vw.write(iframe);
+
             }
 
 

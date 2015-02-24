@@ -36,10 +36,10 @@ namespace std {
 namespace slomo
 {
 
-    const int blockSize = 16;
-    const int maxCorners = 500;
+    const int blockSize = 5;
+    const int maxCorners = 1000;
     const double qualityLevel = 0.01;
-    const double minDistance = 5;
+    const double minDistance = 1;
 
     class SloMo
     {
@@ -48,7 +48,7 @@ namespace slomo
         void slowdown(const string &inFilename, const string outFilename, const int factor);
         void triangulate(const int rows, const int cols, const int blockSize,
                          vector<vector<Point2f> > &tri,
-                         unordered_map<Point2i, int, std::Point2iHash > &pointToTri,
+                         /* unordered_map<Point2i, int, std::Point2iHash > &pointToTri, */
                          Mat &edges, const vector<Point2f> &corners);
         Mat inverseAffine(vector<Point2f> &src, vector<Point2f> &dst);
         void inverseWarpSingle(const int rows, const int cols,
