@@ -45,7 +45,7 @@ static void drawOptFlowMap(const Mat& flow, Mat& cflowmap,
 void SloMo::triangulate(const int rows, const int cols, const int blockSize,
                         vector<vector<Point2f> > &tri,
                         unordered_map<Point2i, int, std::Point2iHash > &pointToTri,
-                        Mat &edges)
+                        Mat &edges, const vector<Point2f> &corners)
 {
     vector<Point2f> pts;
 
@@ -95,6 +95,16 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
             }
         }
     }
+
+    // Add corners
+# if 1
+    int numCorners = corners.size();
+    for (int i = 0 ; i < numCorners ; i++) {
+        //cerr << corners[i] << endl << flush;
+        //cerr << "----------------------------------------" << endl<< flush;
+        pts.push_back(Point2f(corners[i].y,corners[i].x));
+    }
+#endif
 
     cerr << pts.size() << " points" << endl << flush;
 
@@ -243,6 +253,7 @@ void SloMo::inverseWarpSingle(const int rows,
 
     for (int t = 0 ; t < T ; t++) {
 
+        //cerr << "t = " << t << endl << flush;
         // Find inverse mapping
         vector<Point2f> srcA, dstA;
         srcA.clear();
@@ -381,7 +392,6 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
     const int rows = cap.get(CV_CAP_PROP_FRAME_HEIGHT);
     const int cols = cap.get(CV_CAP_PROP_FRAME_WIDTH);
 
-    //VideoWriter::fourcc('X', '2', '6', '4'),
     VideoWriter vw(outFilename,
                    static_cast<int>(cap.get(CV_CAP_PROP_FOURCC)),
                    cap.get(CV_CAP_PROP_FPS),
@@ -411,14 +421,30 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         cvtColor(frame, gray, COLOR_BGR2GRAY);
 
         Mat edges;
+        vector<Point2f> corners;
         Scalar meanVal = mean(gray);
         double cannyThreshold1 = 0.33 * meanVal.val[0];
         double cannyThreshold2 = 1.33 * meanVal.val[0];
         Canny(gray, edges, cannyThreshold1, cannyThreshold2, 3, true);
+        goodFeaturesToTrack(gray, corners, maxCorners, qualityLevel, minDistance);
+
+
+        // Display edges
         // Mat edgesD;
         // edges.convertTo(edgesD, CV_8UC1, 255, 0);
         // imshow("flow", edgesD);
         // cvWaitKey(0);
+
+
+        // Display corners
+
+//        Mat ccorner;
+//        cvtColor(gray, ccorner, COLOR_GRAY2BGR);
+//        for (int i = 0 ; i < corners.size() ; i++) {
+//            circle(ccorner, corners[i], 2, Scalar(0,255,0), -1);
+//        }
+//        imshow("flow", ccorner);
+//        cvWaitKey(0);
 
         Mat frameN;
         frame.convertTo(frameN, CV_32FC3, 1.0/255.0, 0);
@@ -433,7 +459,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         TIME_START(2)
         vector<vector<Point2f> > tri;
         unordered_map<Point2i, int, std::Point2iHash> pointToTri;
-        triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri,edges);
+        triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri,edges,corners);
         firstFrame = false;
         TIME_END(2, "Triangulation")
 
