@@ -216,9 +216,10 @@ Mat SloMo::inverseAffine(vector<Point2f> &src, vector<Point2f> &dst)
 
 
 
-void SloMo::inverseWarpSingle(const Mat &flow, const vector<vector<Point2f> > &tri,
-        const Mat &prevFrame, Mat &warpFrame,
-        unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+void SloMo::inverseWarpSingle(const Mat &flow, const double alpha,
+                              const vector<vector<Point2f> > &tri,
+                              const Mat &prevFrame, Mat &warpFrame,
+                              unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
 {
     const int M = int(flow.rows);
     const int N = int(flow.cols);
@@ -237,7 +238,7 @@ void SloMo::inverseWarpSingle(const Mat &flow, const vector<vector<Point2f> > &t
         for (int k = 0; k < int(tri[t].size()); k++) {
             dstA.push_back(tri[t][k]);
             Point2f fxy = flow.at<Point2f>(cvRound(tri[t][k].x), cvRound(tri[t][k].y));
-            Point2f src = Point2f(cvRound(tri[t][k].x + fxy.x), cvRound(tri[t][k].y + fxy.y));
+            Point2f src = Point2f(cvRound(tri[t][k].x + alpha*fxy.x), cvRound(tri[t][k].y + alpha*fxy.y));
             srcA.push_back(src);
         }
         Mat invAff = inverseAffine(srcA, dstA);
@@ -280,13 +281,18 @@ void SloMo::inverseWarpSingle(const Mat &flow, const vector<vector<Point2f> > &t
 }
 
 
-void SloMo::inverseWarpAll(const Mat &flow, const vector<vector<Point2f> > &tri,
-        const Mat &prevFrame, Mat &warpFrame,
-        unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+void SloMo::inverseWarpAll(const Mat &flow, const int factor,
+                           const vector<vector<Point2f> > &tri,
+                           const Mat &prevFrame, Mat &warpFrame,
+                           unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
 {
-    inverseWarpSingle(flow, tri, prevFrame, warpFrame, pointToTri);
-}
+    const float alphaIncr = 1.0 / float(factor);
 
+    for (int i = 1 ; i <= factor ; i++) {
+        float alpha = i * alphaIncr;
+        inverseWarpSingle(flow, alpha, tri, prevFrame, warpFrame, pointToTri);
+    }
+}
 
 
 void SloMo::dumpVideoProp(VideoCapture &cap)
@@ -392,7 +398,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
             // Do the warping
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
-            inverseWarpAll(flow,tri, prevframeN, wframeN, pointToTri);
+            inverseWarpAll(flow, factor, tri, prevframeN, wframeN, pointToTri);
             wframeN.convertTo(wframe, frame.type(), 255.0, 0);
 
 

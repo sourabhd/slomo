@@ -47,12 +47,14 @@ namespace slomo
                          vector<vector<Point2f> > &tri,
                          unordered_map<Point2i, int, std::Point2iHash > &pointToTri,Mat &edges);
         Mat inverseAffine(vector<Point2f> &src, vector<Point2f> &dst);
-        void inverseWarpSingle(const Mat &flow, const vector<vector<Point2f> > &tri,
-                         const Mat &prevFrame, Mat &warpFrame,
-                         unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
-        void inverseWarpAll(const Mat &flow, const vector<vector<Point2f> > &tri,
-                const Mat &prevFrame, Mat &warpFrame,
-                unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
+        void inverseWarpSingle(const Mat &flow, const double alpha,
+                               const vector<vector<Point2f> > &tri,
+                               const Mat &prevFrame, Mat &warpFrame,
+                               unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
+        void inverseWarpAll(const Mat &flow, const int factor,
+                            const vector<vector<Point2f> > &tri,
+                            const Mat &prevFrame, Mat &warpFrame,
+                            unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
         void dumpVideoProp(VideoCapture &cap);
     };
 }
