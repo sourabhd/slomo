@@ -216,7 +216,9 @@ Mat SloMo::inverseAffine(vector<Point2f> &src, vector<Point2f> &dst)
 
 
 
-void SloMo::inverseWarpSingle(const Mat &flow, const double alpha,
+void SloMo::inverseWarpSingle(const int rows,
+                              const int cols,
+                              const Mat &flow, const double alpha,
                               const vector<vector<Point2f> > &tri,
                               const Mat &prevFrame, Mat &warpFrame,
                               unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
@@ -226,6 +228,7 @@ void SloMo::inverseWarpSingle(const Mat &flow, const double alpha,
     const int T = int(tri.size());
     // cerr << M << " " << N << " " << T << endl << flush;
 
+    Mat wframeN = Mat::zeros(M, N, CV_32FC3);
     Mat warpFrameT;
     vector<Mat> invAffTrans;
 
@@ -281,16 +284,23 @@ void SloMo::inverseWarpSingle(const Mat &flow, const double alpha,
 }
 
 
-void SloMo::inverseWarpAll(const Mat &flow, const int factor,
+void SloMo::inverseWarpAll(const int rows,
+                           const int cols,
+                           const Mat &flow,
+                           const int factor,
                            const vector<vector<Point2f> > &tri,
-                           const Mat &prevFrame, Mat &warpFrame,
-                           unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+                           const Mat &prevFrame,
+                           vector<Mat> &warpFrameVector,
+                           unordered_map<Point2i, int, std::Point2iHash > &pointToTri
+                           )
 {
     const float alphaIncr = 1.0 / float(factor);
-
     for (int i = 1 ; i <= factor ; i++) {
         float alpha = i * alphaIncr;
-        inverseWarpSingle(flow, alpha, tri, prevFrame, warpFrame, pointToTri);
+        Mat warpFrame;
+        inverseWarpSingle(rows, cols, flow, alpha, tri, prevFrame,
+                          warpFrame, pointToTri);
+        warpFrameVector.push_back(warpFrame);
     }
 }
 
@@ -313,11 +323,8 @@ void SloMo::dumpVideoProp(VideoCapture &cap)
     cout << flush;
 }
 
-void SloMo::slowdown(string const& inFilename, string const outFilename, const int factor) {
-
-
-
-
+void SloMo::slowdown(string const& inFilename, string const outFilename, const int factor)
+{
     int inNumFrames = 0, outNumFrames = 0;
     bool firstFrame = true, firstFrame2 = true;
     // vector<vector<Point2f> > tri;
@@ -332,6 +339,9 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
     dumpVideoProp(cap);
 
+    const int rows = cap.get(CV_CAP_PROP_FRAME_HEIGHT);
+    const int cols = cap.get(CV_CAP_PROP_FRAME_WIDTH);
+
     //VideoWriter::fourcc('X', '2', '6', '4'),
     VideoWriter vw(outFilename,
                    static_cast<int>(cap.get(CV_CAP_PROP_FOURCC)),
@@ -344,7 +354,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         return;
     }
 
-    Mat flow, cflow, frame, prevframe, prevframeN, wframe, wframeN;
+    Mat flow, cflow, frame, prevframe, prevframeN;
     UMat gray, prevgray, uflow;
     namedWindow("flow", 1);
 
@@ -373,18 +383,20 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
         Mat frameN;
         frame.convertTo(frameN, CV_32FC3, 1.0/255.0, 0);
-        wframeN = Mat::zeros(frame.rows, frame.cols, CV_32FC3);
+
+        vector<Mat> wframe = vector<Mat>(factor, Mat::zeros(rows,cols,frame.type()));
+        vector<Mat> wframeN;
 
         // if (firstFrame) {
 
             // Triangulate
 
-            TIME_START(2)
-            vector<vector<Point2f> > tri;
-            unordered_map<Point2i, int, std::Point2iHash> pointToTri;
-            triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri,edges);
-            firstFrame = false;
-            TIME_END(2, "Traiangulation")
+        TIME_START(2)
+        vector<vector<Point2f> > tri;
+        unordered_map<Point2i, int, std::Point2iHash> pointToTri;
+        triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri,edges);
+        firstFrame = false;
+        TIME_END(2, "Triangulation")
 
         if (firstFrame) {
             vw.write(frame);
@@ -398,9 +410,12 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
             // Do the warping
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
-            inverseWarpAll(flow, factor, tri, prevframeN, wframeN, pointToTri);
-            wframeN.convertTo(wframe, frame.type(), 255.0, 0);
+            inverseWarpAll(rows, cols, flow, factor, tri, prevframeN, wframeN, pointToTri);
 
+            for (int i = 0 ; i < factor ; i++) {
+                wframeN[i].convertTo(wframe[i], frame.type(), 255.0, 0);
+                vw.write(wframe[i]);
+            }
 
 
 //            // Cross Dissolve from prev to warped
@@ -419,9 +434,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             // cerr << flow.cols << " " << flow.rows << endl;
             // cerr << wframe.cols << " " << wframe.rows << endl;
             // vw.write(frame);
-            //vw.write(prevframe);
-
-            vw.write(wframe);
+            // vw.write(prevframe);
+            // vw.write(wframe);
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
             // imshow("flow", cflow);
