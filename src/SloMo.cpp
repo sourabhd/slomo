@@ -149,7 +149,74 @@ Mat SloMo::inverseAffine(vector<Point2f> &src, vector<Point2f> &dst)
     return Ainv;
 }
 
-void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
+
+//void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
+//        const Mat &prevFrame, Mat &warpFrame,
+//        unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+//{
+//    const int M = int(flow.rows);
+//    const int N = int(flow.cols);
+//    const int T = int(tri.size());
+//    // cerr << M << " " << N << " " << T << endl << flush;
+//
+//    Mat warpFrameT;
+//    vector<Mat> invAffTrans;
+//
+//    for (int t = 0 ; t < T ; t++) {
+//
+//        // Find inverse mapping
+//        vector<Point2f> srcA, dstA;
+//        srcA.clear();
+//        dstA.clear();
+//        for (int k = 0; k < int(tri[t].size()); k++) {
+//            dstA.push_back(tri[t][k]);
+//            Point2f fxy = flow.at<Point2f>(cvRound(tri[t][k].x), cvRound(tri[t][k].y));
+//            Point2f src = Point2f(cvRound(tri[t][k].x + fxy.x), cvRound(tri[t][k].y + fxy.y));
+//            srcA.push_back(src);
+//        }
+//        Mat invAff = inverseAffine(srcA, dstA);
+//        invAffTrans.push_back(invAff);
+//    }
+//
+//    Mat wmap, wempty;
+//    wmap = Mat::zeros(prevFrame.size(), CV_32FC2);
+//
+//    // cerr << minX << " " << maxX << " " << minY << " " << maxY << endl;
+//
+//    // vector<float> prevLocX, prevLocY;
+//    vector<Point2i> pts;
+//    pts.clear();
+//    // Inverse map each point in the bounding box if it lies within triangle t
+//    for (int i = 0 ; i < M ; i++) {
+//        for (int j = 0 ; j < N ; j++) {
+//            const Point2i &pt = Point2i(i,j);
+//            if (pointToTri.find(pt) != pointToTri.end()) {
+//                int tnum = pointToTri[pt];
+//            //if (pointPolygonTest(tri[t], pt, false) != -1) {
+//                Mat P = Mat::ones(3, 1, CV_64F);
+//                P.at<double>(0, 0) = double(pt.x);
+//                P.at<double>(1, 0) = double(pt.y);
+//                P.at<double>(2, 0) = 1.0;
+//                Mat pLoc = invAffTrans[tnum] * P;
+////              cerr << pt.x << " " << pt.y << endl;
+////              cerr << InvAff << endl << flush;
+////              cerr << pLoc << endl << flush;
+////              cerr << endl << endl << flush;
+//                wmap.at<Point2f>(i,j) = \
+//                    Point2f(float(pLoc.at<double>(0, 0)), float(pLoc.at<double>(1, 0)));
+//                pts.push_back(pt);
+//            }
+//        }
+//    }
+//
+//    remap(prevFrame.t(), warpFrameT, wmap.t(), wempty, CV_INTER_LINEAR);
+//
+//    warpFrame = warpFrameT.t();
+//}
+
+
+
+void SloMo::inverseWarpSingle(const Mat &flow, const vector<vector<Point2f> > &tri,
         const Mat &prevFrame, Mat &warpFrame,
         unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
 {
@@ -182,7 +249,6 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
 
     // cerr << minX << " " << maxX << " " << minY << " " << maxY << endl;
 
-    // vector<float> prevLocX, prevLocY;
     vector<Point2i> pts;
     pts.clear();
     // Inverse map each point in the bounding box if it lies within triangle t
@@ -191,7 +257,7 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
             const Point2i &pt = Point2i(i,j);
             if (pointToTri.find(pt) != pointToTri.end()) {
                 int tnum = pointToTri[pt];
-            //if (pointPolygonTest(tri[t], pt, false) != -1) {
+                //if (pointPolygonTest(tri[t], pt, false) != -1) {
                 Mat P = Mat::ones(3, 1, CV_64F);
                 P.at<double>(0, 0) = double(pt.x);
                 P.at<double>(1, 0) = double(pt.y);
@@ -209,9 +275,19 @@ void SloMo::inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
     }
 
     remap(prevFrame.t(), warpFrameT, wmap.t(), wempty, CV_INTER_LINEAR);
-
     warpFrame = warpFrameT.t();
+
 }
+
+
+void SloMo::inverseWarpAll(const Mat &flow, const vector<vector<Point2f> > &tri,
+        const Mat &prevFrame, Mat &warpFrame,
+        unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+{
+    inverseWarpSingle(flow, tri, prevFrame, warpFrame, pointToTri);
+}
+
+
 
 void SloMo::dumpVideoProp(VideoCapture &cap)
 {
@@ -316,7 +392,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
             // Do the warping
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
-            inverseWarp(flow,tri, prevframeN, wframeN, pointToTri);
+            inverseWarpAll(flow,tri, prevframeN, wframeN, pointToTri);
             wframeN.convertTo(wframe, frame.type(), 255.0, 0);
 
             // Cross Dissolve from prev to warped
