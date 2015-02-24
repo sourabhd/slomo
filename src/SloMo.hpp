@@ -36,7 +36,7 @@ namespace std {
 namespace slomo
 {
 
-    const int blockSize = 16;
+    const int blockSize = 5;
 
     class SloMo
     {

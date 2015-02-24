@@ -261,6 +261,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         cout << "Frame # " << inNumFrames << endl << flush;
         cvtColor(frame, gray, COLOR_BGR2GRAY);
 
+        Mat frameN;
+        frame.convertTo(frameN, CV_32FC3, 1.0/255.0, 0);
         wframeN = Mat::zeros(frame.rows, frame.cols, CV_32FC3);
 
         if (firstFrame) {
@@ -289,16 +291,16 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             // Cross Dissolve from prev to warped
 
             for (float alpha = incrAlpha ; alpha < 1.0f ; alpha += incrAlpha) {
-                Mat iframeN = alpha * wframeN + (1-alpha) * prevframeN;
+                Mat iframeN = alpha * frameN + (1-alpha) * wframeN;
                 Mat iframe;
                 iframeN.convertTo(iframe, frame.type(), 255.0, 0);
                 vw.write(iframe);
             }
 
-            cerr << frame.cols << " " << flow.rows << endl;
-            cerr << flow.cols << " " << flow.rows << endl;
-            cerr << wframe.cols << " " << wframe.rows << endl;
-            vw.write(wframe);
+            // cerr << frame.cols << " " << flow.rows << endl;
+            // cerr << flow.cols << " " << flow.rows << endl;
+            // cerr << wframe.cols << " " << wframe.rows << endl;
+            vw.write(frame);
 
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
@@ -316,6 +318,10 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         inNumFrames++;
         outNumFrames++;
         TIME_END(3, "Frame")
+    }
+
+    for (int i = 0 ; i < factor-1 ; i++) {
+        vw.write(prevframe);
     }
 
     cap.release();
