@@ -219,14 +219,23 @@ Mat SloMo::inverseAffine(vector<Point2f> &src, vector<Point2f> &dst)
 void SloMo::inverseWarpSingle(const int rows,
                               const int cols,
                               const Mat &flow, const double alpha,
-                              const vector<vector<Point2f> > &tri,
-                              const Mat &prevFrame, Mat &warpFrame,
-                              unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+                              const vector<vector<Point2f> > &inTri,
+                              const Mat &prevFrame, Mat &warpFrame
+                              )
 {
-    const int M = int(flow.rows);
-    const int N = int(flow.cols);
-    const int T = int(tri.size());
+
+    const int M = rows;
+    const int N = cols;
+    const int T = int(inTri.size());
+    vector<vector<Point2f> > tri;
+    unordered_map<Point2i, int, std::Point2iHash > pointToTri;
+
     // cerr << M << " " << N << " " << T << endl << flush;
+
+    // Interpolate triangulated points (geometry)
+    // Inverse mappings
+
+
 
     Mat wframeN = Mat::zeros(M, N, CV_32FC3);
     Mat warpFrameT;
@@ -238,14 +247,44 @@ void SloMo::inverseWarpSingle(const int rows,
         vector<Point2f> srcA, dstA;
         srcA.clear();
         dstA.clear();
-        for (int k = 0; k < int(tri[t].size()); k++) {
-            dstA.push_back(tri[t][k]);
-            Point2f fxy = flow.at<Point2f>(cvRound(tri[t][k].x), cvRound(tri[t][k].y));
-            Point2f src = Point2f(cvRound(tri[t][k].x + alpha*fxy.x), cvRound(tri[t][k].y + alpha*fxy.y));
+        for (int k = 0; k < int(inTri[t].size()); k++) {
+            dstA.push_back(inTri[t][k]);
+            Point2f fxy = flow.at<Point2f>(cvRound(inTri[t][k].x), cvRound(inTri[t][k].y));
+            Point2f src = Point2f(cvRound(inTri[t][k].x + alpha*fxy.x), cvRound(inTri[t][k].y + alpha*fxy.y));
             srcA.push_back(src);
         }
+        tri.push_back(srcA);   // Source triangulation
         Mat invAff = inverseAffine(srcA, dstA);
         invAffTrans.push_back(invAff);
+
+
+        //  Find bounding box of each triangle
+        float minX = M, minY = N, maxX = 0, maxY = 0;
+        for (int k = 0 ; k < int(tri[t].size()) ; k++) {
+            if (tri[t][k].x < minX) {
+                minX = tri[t][k].x;
+            }
+            if (tri[t][k].x > maxX) {
+                maxX = tri[t][k].x;
+            }
+            if (tri[t][k].y < minY) {
+                minY = tri[t][k].y;
+            }
+            if (tri[t][k].y > maxY) {
+                maxY = tri[t][k].y;
+            }
+        }
+
+        // hash map pointToTri returns the triangle index given point (i,j)
+        for (int i = int(minX) ; i <= maxX ; i++) {
+            for (int j = int(minY); j <= maxY; j++) {
+                Point2i pt(i,j);
+                if (pointPolygonTest(tri[t], pt, false) != -1) {
+                    pointToTri[pt] = t;
+                }
+            }
+        }
+
     }
 
     Mat wmap, wempty;
@@ -278,6 +317,7 @@ void SloMo::inverseWarpSingle(const int rows,
         }
     }
 
+    // remap is equivalent of Matlab interp2
     remap(prevFrame.t(), warpFrameT, wmap.t(), wempty, CV_INTER_LINEAR);
     warpFrame = warpFrameT.t();
 
@@ -290,8 +330,7 @@ void SloMo::inverseWarpAll(const int rows,
                            const int factor,
                            const vector<vector<Point2f> > &tri,
                            const Mat &prevFrame,
-                           vector<Mat> &warpFrameVector,
-                           unordered_map<Point2i, int, std::Point2iHash > &pointToTri
+                           vector<Mat> &warpFrameVector
                            )
 {
     const float alphaIncr = 1.0 / float(factor);
@@ -299,7 +338,7 @@ void SloMo::inverseWarpAll(const int rows,
         float alpha = i * alphaIncr;
         Mat warpFrame;
         inverseWarpSingle(rows, cols, flow, alpha, tri, prevFrame,
-                          warpFrame, pointToTri);
+                          warpFrame);
         warpFrameVector.push_back(warpFrame);
     }
 }
@@ -410,7 +449,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
             // Do the warping
             prevframe.convertTo(prevframeN, CV_32FC3, 1.0/225.0, 0);
-            inverseWarpAll(rows, cols, flow, factor, tri, prevframeN, wframeN, pointToTri);
+            inverseWarpAll(rows, cols, flow, factor, tri, prevframeN, wframeN);
 
             for (int i = 0 ; i < factor ; i++) {
                 wframeN[i].convertTo(wframe[i], frame.type(), 255.0, 0);

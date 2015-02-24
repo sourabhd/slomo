@@ -50,14 +50,14 @@ namespace slomo
         void inverseWarpSingle(const int rows, const int cols,
                                const Mat &flow, const double alpha,
                                const vector<vector<Point2f> > &tri,
-                               const Mat &prevFrame, Mat &warpFrame,
-                               unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
+                               const Mat &prevFrame, Mat &warpFrame
+                               );
         void inverseWarpAll(const int rows, const int cols,
                             const Mat &flow, const int factor,
                             const vector<vector<Point2f> > &tri,
                             const Mat &prevFrame,
-                            vector<Mat> &warpFrame,
-                            unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
+                            vector<Mat> &warpFrame
+                           );
         void dumpVideoProp(VideoCapture &cap);
     };
 }
