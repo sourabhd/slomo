@@ -395,22 +395,27 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             inverseWarpAll(flow,tri, prevframeN, wframeN, pointToTri);
             wframeN.convertTo(wframe, frame.type(), 255.0, 0);
 
-            // Cross Dissolve from prev to warped
 
-            for (float alpha = incrAlpha ; alpha < 1.0f ; alpha += incrAlpha) {
-                //Mat iframeN = alpha * frameN + (1-alpha) * wframeN;
-                Mat iframeN = alpha * wframeN + (1-alpha) * prevframeN;
-                Mat iframe;
-                iframeN.convertTo(iframe, frame.type(), 255.0, 0);
-                vw.write(iframe);
-            }
+
+//            // Cross Dissolve from prev to warped
+//
+//            for (float alpha = incrAlpha ; alpha < 1.0f ; alpha += incrAlpha) {
+//                //Mat iframeN = alpha * frameN + (1-alpha) * wframeN;
+//                Mat iframeN = alpha * wframeN + (1-alpha) * prevframeN;
+//                Mat iframe;
+//                iframeN.convertTo(iframe, frame.type(), 255.0, 0);
+//                vw.write(iframe);
+//            }
+//
+
 
             // cerr << frame.cols << " " << flow.rows << endl;
             // cerr << flow.cols << " " << flow.rows << endl;
             // cerr << wframe.cols << " " << wframe.rows << endl;
-            //vw.write(frame);
-            vw.write(prevframe);
+            // vw.write(frame);
+            //vw.write(prevframe);
 
+            vw.write(wframe);
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));
             // imshow("flow", cflow);
@@ -429,9 +434,11 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         TIME_END(3, "Frame")
     }
 
-    for (int i = 0 ; i < factor-1 ; i++) {
-        vw.write(prevframe);
-    }
+
+//    for (int i = 0 ; i < factor-1 ; i++) {
+//        vw.write(prevframe);
+//    }
+
 
     cap.release();
     vw.release();
