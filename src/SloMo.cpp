@@ -44,7 +44,8 @@ static void drawOptFlowMap(const Mat& flow, Mat& cflowmap,
 
 void SloMo::triangulate(const int rows, const int cols, const int blockSize,
                         vector<vector<Point2f> > &tri,
-                        unordered_map<Point2i, int, std::Point2iHash > &pointToTri)
+                        unordered_map<Point2i, int, std::Point2iHash > &pointToTri,
+                        Mat &edges)
 {
     vector<Point2f> pts;
 
@@ -84,7 +85,18 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
 
     // cerr << "triangulate: " << rows << " " << cols << endl;
 
-    
+
+    // Add points along edges
+    for (int i = 0 ; i < edges.rows ; i++) {
+        for (int j = 0 ; j < edges.cols ; j++) {
+            int v = static_cast<int>(edges.at<unsigned char>(i,j));
+            if (v != 0) {
+                pts.push_back(Point2f(i,j));
+            }
+        }
+    }
+
+    cerr << pts.size() << " points" << endl << flush;
 
     delaunay(pts, rows, cols, tri);
 
@@ -267,6 +279,16 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         cout << "Frame # " << inNumFrames << endl << flush;
         cvtColor(frame, gray, COLOR_BGR2GRAY);
 
+        Mat edges;
+        Scalar meanVal = mean(gray);
+        double cannyThreshold1 = 0.33 * meanVal.val[0];
+        double cannyThreshold2 = 1.33 * meanVal.val[0];
+        Canny(gray, edges, cannyThreshold1, cannyThreshold2, 3, true);
+        // Mat edgesD;
+        // edges.convertTo(edgesD, CV_8UC1, 255, 0);
+        // imshow("flow", edgesD);
+        // cvWaitKey(0);
+
         Mat frameN;
         frame.convertTo(frameN, CV_32FC3, 1.0/255.0, 0);
         wframeN = Mat::zeros(frame.rows, frame.cols, CV_32FC3);
@@ -278,7 +300,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             TIME_START(2)
             vector<vector<Point2f> > tri;
             unordered_map<Point2i, int, std::Point2iHash> pointToTri;
-            triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri);
+            triangulate(frame.rows, frame.cols, blockSize, tri, pointToTri,edges);
             firstFrame = false;
             TIME_END(2, "Traiangulation")
 
@@ -300,7 +322,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             // Cross Dissolve from prev to warped
 
             for (float alpha = incrAlpha ; alpha < 1.0f ; alpha += incrAlpha) {
-                Mat iframeN = alpha * frameN + (1-alpha) * wframeN;
+                //Mat iframeN = alpha * frameN + (1-alpha) * wframeN;
+                Mat iframeN = alpha * wframeN + (1-alpha) * prevframeN;
                 Mat iframe;
                 iframeN.convertTo(iframe, frame.type(), 255.0, 0);
                 vw.write(iframe);
@@ -309,7 +332,8 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             // cerr << frame.cols << " " << flow.rows << endl;
             // cerr << flow.cols << " " << flow.rows << endl;
             // cerr << wframe.cols << " " << wframe.rows << endl;
-            vw.write(frame);
+            //vw.write(frame);
+            vw.write(prevframe);
 
 
             //drawOptFlowMap(flow, cflow, 16, 1.5, Scalar(0, 255, 0));

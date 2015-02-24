@@ -36,7 +36,7 @@ namespace std {
 namespace slomo
 {
 
-    const int blockSize = 5;
+    const int blockSize = 16;
 
     class SloMo
     {
@@ -45,7 +45,7 @@ namespace slomo
         void slowdown(const string &inFilename, const string outFilename, const int factor);
         void triangulate(const int rows, const int cols, const int blockSize,
                          vector<vector<Point2f> > &tri,
-                         unordered_map<Point2i, int, std::Point2iHash > &pointToTri);
+                         unordered_map<Point2i, int, std::Point2iHash > &pointToTri,Mat &edges);
         Mat inverseAffine(vector<Point2f> &src, vector<Point2f> &dst);
         void inverseWarp(const Mat &flow, const vector<vector<Point2f> > &tri,
                          const Mat &prevFrame, Mat &warpFrame,
