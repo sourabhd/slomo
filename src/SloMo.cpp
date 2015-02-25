@@ -475,7 +475,16 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
 
         if (!prevgray.empty()) {
+            
+
+#if 0
             calcOpticalFlowFarneback(prevgray, gray, uflow, 0.5, 3, 15, 3, 5, 1.2, 0);
+#else
+            Ptr<DenseOpticalFlow> tvl1 = createOptFlow_DualTVL1();
+            tvl1->calc(prevgray, gray, uflow);
+#endif
+
+
             cvtColor(prevgray, cflow, COLOR_GRAY2BGR);
             uflow.copyTo(flow);
 

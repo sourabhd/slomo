@@ -8,11 +8,12 @@ set(OpenCV_DIR /home/sourabhd/projects/slomo/thirdparty/opencv/build)
 find_package(OpenCV REQUIRED )
 include_directories(${OpenCV_INCLUDE_DIRS} )
 
-# Test image and video IO
-#add_executable( DisplayImage src/DisplayImage.cpp )
+
 #add_executable( fback src/fback.cpp )
+add_executable(tvl1 src/tvl1_optical_flow.cpp)
 #target_link_libraries( DisplayImage ${OpenCV_LIBS} )
 #target_link_libraries( fback ${OpenCV_LIBS} )
+target_link_libraries(tvl1 ${OpenCV_LIBS})
 
 set(SloMo_SOURCES src/main.cpp src/SloMo.cpp src/delaunay2.cpp src/synthetic.cpp)
 
