@@ -1,4 +1,4 @@
-SLOMO: View videos in slow motion
+SloMo: View videos in slow motion
 =================================
 
 Author: Sourabh Daptardar <saurabh.daptardar@gmail.com>
