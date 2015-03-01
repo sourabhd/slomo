@@ -1,3 +1,7 @@
+/**
+* @author: Sourabh Daptardar <saurabh.daptardar@gmail.com>
+*/
+
 #ifndef SLOMO_SLOMO_HPP
 #define SLOMO_SLOMO_HPP
 
@@ -33,6 +37,7 @@ namespace std {
     };
 }
 
+
 namespace slomo
 {
 
@@ -48,7 +53,6 @@ namespace slomo
         void slowdown(const string &inFilename, const string outFilename, const int factor);
         void triangulate(const int rows, const int cols, const int blockSize,
                          vector<vector<Point2f> > &tri,
-                         /* unordered_map<Point2i, int, std::Point2iHash > &pointToTri, */
                          Mat &edges, const vector<Point2f> &corners);
         Mat inverseAffine(vector<Point2f> &src, vector<Point2f> &dst);
         void inverseWarpSingle(const int rows, const int cols,

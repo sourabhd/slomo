@@ -159,7 +159,7 @@ int delaunay(const vector<Point2f> &pts, const int rows, const int cols,
     imshow( win, img );
 
     waitKey(0);
-    #endif
+#endif
 
     return 0;
 }

@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
         string outVideoFilename(argv[2]);
         const int factor = atoi(argv[3]);
 
-        if (outVideoFilename.find(".avi") != outVideoFilename.length()-4) {
-            cerr << "This program can generate only AVI output files" << endl;
+        if ((outVideoFilename.find(".avi") != outVideoFilename.length()-4)) {
+            cerr << "This program can generate only .avi output files" << endl;
             cerr << "Use a program like ffmpeg to convert from AVI to required format" << endl;
             return 1;
         }
