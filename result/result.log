@@ -1,0 +1,1226 @@
+CV_CAP_PROP_POS_MSEC      :                         0  : Current position of the video file in milliseconds or video capture timestamp.
+CV_CAP_PROP_POS_FRAMES    :                         0  : 0-based index of the frame to be decoded/captured next.
+CV_CAP_PROP_POS_AVI_RATIO :               4.16667e-05  : Relative position of the video file: 0 - start of the film, 1 - end of the film.
+CV_CAP_PROP_FRAME_WIDTH   :                      1280  : Width of the frames in the video stream.
+CV_CAP_PROP_FRAME_HEIGHT  :                       720  : Height of the frames in the video stream.
+CV_CAP_PROP_FPS           :                    23.976  : Frame rate.
+CV_CAP_PROP_FOURCC        :                      avc1  : 4-character code of codec.
+CV_CAP_PROP_FRAME_COUNT   :                       240  : Number of frames in the video file.
+CV_CAP_PROP_FORMAT        :                         0  : Format of the Mat objects returned by retrieve() .
+CV_CAP_PROP_MODE          :                         0  : Backend-specific value indicating the current capture mode.
+CV_CAP_PROP_CONVERT_RGB   :                         0  : Boolean flags indicating whether images should be converted to RGB.
+Frame # 0
+37263 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.17972 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 0.28102 (processor) 0 (walltime)
+Frame # 1
+37263 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.176281 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 14.0518 (processor) 12 (walltime)
+Frame # 2
+62948 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.263183 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 26.6818 (processor) 17 (walltime)
+Frame # 3
+56657 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.248419 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 74.4541 (processor) 28 (walltime)
+Frame # 4
+60652 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.257845 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 157.885 (processor) 50 (walltime)
+Frame # 5
+57907 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.250009 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 184.677 (processor) 57 (walltime)
+Frame # 6
+61782 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.261437 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 251.068 (processor) 76 (walltime)
+Frame # 7
+61451 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.260661 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 293.235 (processor) 91 (walltime)
+Frame # 8
+62324 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.260336 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 325.78 (processor) 96 (walltime)
+Frame # 9
+62584 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.262754 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 362.531 (processor) 111 (walltime)
+Frame # 10
+63285 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.262606 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 375.978 (processor) 120 (walltime)
+Frame # 11
+61597 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.256181 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 432.406 (processor) 130 (walltime)
+Frame # 12
+61074 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.343961 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 353.349 (processor) 111 (walltime)
+Frame # 13
+61061 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.260451 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 354.78 (processor) 113 (walltime)
+Frame # 14
+61536 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.251687 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.4932 (processor) 24 (walltime)
+Frame # 15
+60669 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.273458 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2139 (processor) 22 (walltime)
+Frame # 16
+61108 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.277975 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.7993 (processor) 23 (walltime)
+Frame # 17
+61542 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.280432 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.2889 (processor) 24 (walltime)
+Frame # 18
+62666 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.312651 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.1753 (processor) 24 (walltime)
+Frame # 19
+61858 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.291574 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.5125 (processor) 23 (walltime)
+Frame # 20
+63772 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.29633 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.92 (processor) 24 (walltime)
+Frame # 21
+65403 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.305583 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.4246 (processor) 24 (walltime)
+Frame # 22
+65807 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.303816 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.951 (processor) 23 (walltime)
+Frame # 23
+65647 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.335263 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.216 (processor) 22 (walltime)
+Frame # 24
+66791 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.37174 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9762 (processor) 22 (walltime)
+Frame # 25
+67803 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.403696 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.7314 (processor) 25 (walltime)
+Frame # 26
+68245 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.383541 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.3535 (processor) 24 (walltime)
+Frame # 27
+68309 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.370743 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.2627 (processor) 23 (walltime)
+Frame # 28
+68568 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.408212 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.6489 (processor) 22 (walltime)
+Frame # 29
+68943 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.428322 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.5859 (processor) 21 (walltime)
+Frame # 30
+69725 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.38776 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2069 (processor) 21 (walltime)
+Frame # 31
+69159 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.421478 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.7026 (processor) 21 (walltime)
+Frame # 32
+69016 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390939 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.4592 (processor) 21 (walltime)
+Frame # 33
+69783 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.414904 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.4038 (processor) 22 (walltime)
+Frame # 34
+69635 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.395913 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6814 (processor) 22 (walltime)
+Frame # 35
+71094 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396495 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3924 (processor) 22 (walltime)
+Frame # 36
+71526 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396948 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1711 (processor) 22 (walltime)
+Frame # 37
+72383 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.432336 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.582 (processor) 23 (walltime)
+Frame # 38
+71685 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405351 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.4094 (processor) 22 (walltime)
+Frame # 39
+71359 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.366964 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.3614 (processor) 22 (walltime)
+Frame # 40
+71380 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390695 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.603 (processor) 22 (walltime)
+Frame # 41
+71888 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.368368 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.688 (processor) 22 (walltime)
+Frame # 42
+71582 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.335382 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7323 (processor) 22 (walltime)
+Frame # 43
+71749 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.353116 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4644 (processor) 22 (walltime)
+Frame # 44
+72369 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.343144 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.2268 (processor) 22 (walltime)
+Frame # 45
+70226 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.344259 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4313 (processor) 22 (walltime)
+Frame # 46
+69976 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.329635 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2442 (processor) 23 (walltime)
+Frame # 47
+69715 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.371255 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.5826 (processor) 22 (walltime)
+Frame # 48
+69358 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363328 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2574 (processor) 21 (walltime)
+Frame # 49
+70510 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.313655 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8221 (processor) 22 (walltime)
+Frame # 50
+70296 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.374017 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.0779 (processor) 22 (walltime)
+Frame # 51
+70156 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.368491 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2108 (processor) 22 (walltime)
+Frame # 52
+70501 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.310646 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.7774 (processor) 21 (walltime)
+Frame # 53
+70539 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.370264 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.9838 (processor) 22 (walltime)
+Frame # 54
+70773 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.350503 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.7065 (processor) 21 (walltime)
+Frame # 55
+70491 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.331431 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.154 (processor) 22 (walltime)
+Frame # 56
+69981 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.313632 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.5337 (processor) 21 (walltime)
+Frame # 57
+70920 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.312398 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.3065 (processor) 21 (walltime)
+Frame # 58
+69864 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.331528 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2666 (processor) 21 (walltime)
+Frame # 59
+70200 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.36053 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.0742 (processor) 21 (walltime)
+Frame # 60
+70301 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.349122 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.0038 (processor) 21 (walltime)
+Frame # 61
+70978 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.36197 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.1403 (processor) 24 (walltime)
+Frame # 62
+70885 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363879 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.3685 (processor) 21 (walltime)
+Frame # 63
+70773 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.356432 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.0609 (processor) 21 (walltime)
+Frame # 64
+69879 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.362556 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.0699 (processor) 22 (walltime)
+Frame # 65
+69903 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.332762 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.6348 (processor) 21 (walltime)
+Frame # 66
+70115 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.366132 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.6232 (processor) 22 (walltime)
+Frame # 67
+69739 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390066 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7742 (processor) 22 (walltime)
+Frame # 68
+70994 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.372485 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.116 (processor) 22 (walltime)
+Frame # 69
+70632 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.34413 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.817 (processor) 21 (walltime)
+Frame # 70
+70165 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.369105 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1849 (processor) 22 (walltime)
+Frame # 71
+69980 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.347965 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4702 (processor) 22 (walltime)
+Frame # 72
+70175 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.332291 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.41 (processor) 22 (walltime)
+Frame # 73
+71041 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.375734 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5 (processor) 23 (walltime)
+Frame # 74
+70632 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.367465 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.738 (processor) 23 (walltime)
+Frame # 75
+70712 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.288023 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.3401 (processor) 21 (walltime)
+Frame # 76
+71076 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.309677 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.7054 (processor) 22 (walltime)
+Frame # 77
+70659 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.354877 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8153 (processor) 22 (walltime)
+Frame # 78
+70593 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.337401 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.4296 (processor) 22 (walltime)
+Frame # 79
+70534 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.370373 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3133 (processor) 22 (walltime)
+Frame # 80
+70365 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.352735 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.3958 (processor) 22 (walltime)
+Frame # 81
+70809 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.339346 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4599 (processor) 22 (walltime)
+Frame # 82
+70045 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.369928 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0617 (processor) 23 (walltime)
+Frame # 83
+70440 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.358771 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.2709 (processor) 22 (walltime)
+Frame # 84
+68935 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363459 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5866 (processor) 23 (walltime)
+Frame # 85
+68395 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.431194 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.3278 (processor) 23 (walltime)
+Frame # 86
+69318 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.375734 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.454 (processor) 23 (walltime)
+Frame # 87
+68512 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363478 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.5458 (processor) 23 (walltime)
+Frame # 88
+68810 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.35889 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.0588 (processor) 23 (walltime)
+Frame # 89
+68153 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.374712 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.4562 (processor) 23 (walltime)
+Frame # 90
+68121 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.344029 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.752 (processor) 23 (walltime)
+Frame # 91
+69019 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420507 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.394 (processor) 23 (walltime)
+Frame # 92
+68023 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.387174 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.7799 (processor) 22 (walltime)
+Frame # 93
+67129 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.355067 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1437 (processor) 22 (walltime)
+Frame # 94
+66713 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.376911 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.558 (processor) 21 (walltime)
+Frame # 95
+65962 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.433531 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.2273 (processor) 21 (walltime)
+Frame # 96
+65669 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.358039 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.7424 (processor) 20 (walltime)
+Frame # 97
+65248 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.453285 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.0711 (processor) 21 (walltime)
+Frame # 98
+65746 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.4321 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.2367 (processor) 21 (walltime)
+Frame # 99
+65097 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.379397 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.9823 (processor) 20 (walltime)
+Frame # 100
+65349 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.406425 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.502 (processor) 21 (walltime)
+Frame # 101
+65678 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405749 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.0559 (processor) 20 (walltime)
+Frame # 102
+65626 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426396 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.8404 (processor) 21 (walltime)
+Frame # 103
+65423 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.419282 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.189 (processor) 21 (walltime)
+Frame # 104
+64935 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.415053 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.8946 (processor) 20 (walltime)
+Frame # 105
+65326 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405702 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.2058 (processor) 21 (walltime)
+Frame # 106
+65257 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420919 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.2188 (processor) 21 (walltime)
+Frame # 107
+65226 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.398166 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.0895 (processor) 20 (walltime)
+Frame # 108
+64808 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.402135 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.9663 (processor) 20 (walltime)
+Frame # 109
+65267 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.407213 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.3859 (processor) 21 (walltime)
+Frame # 110
+65466 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.422672 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.4063 (processor) 21 (walltime)
+Frame # 111
+65222 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.456282 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.9113 (processor) 21 (walltime)
+Frame # 112
+65380 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.456161 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.6964 (processor) 21 (walltime)
+Frame # 113
+65552 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.432293 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.5909 (processor) 21 (walltime)
+Frame # 114
+65133 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.417801 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.9639 (processor) 21 (walltime)
+Frame # 115
+66045 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.425025 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.5203 (processor) 21 (walltime)
+Frame # 116
+66293 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.404869 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.5807 (processor) 22 (walltime)
+Frame # 117
+65732 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.471849 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1226 (processor) 21 (walltime)
+Frame # 118
+65915 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.444064 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.8312 (processor) 23 (walltime)
+Frame # 119
+65857 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.428338 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7454 (processor) 21 (walltime)
+Frame # 120
+65328 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.424485 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.846 (processor) 22 (walltime)
+Frame # 121
+66524 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.414842 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.7332 (processor) 24 (walltime)
+Frame # 122
+66020 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.446828 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4364 (processor) 23 (walltime)
+Frame # 123
+65869 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.437209 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6968 (processor) 21 (walltime)
+Frame # 124
+65369 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426562 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.0164 (processor) 23 (walltime)
+Frame # 125
+65744 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.415358 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.0339 (processor) 22 (walltime)
+Frame # 126
+66014 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.525157 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.4104 (processor) 21 (walltime)
+Frame # 127
+65181 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.401658 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0106 (processor) 23 (walltime)
+Frame # 128
+65110 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.32691 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.4101 (processor) 21 (walltime)
+Frame # 129
+65370 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.433975 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.8834 (processor) 22 (walltime)
+Frame # 130
+65389 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.403072 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0168 (processor) 22 (walltime)
+Frame # 131
+65688 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.399937 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.3905 (processor) 22 (walltime)
+Frame # 132
+65566 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.43285 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9479 (processor) 22 (walltime)
+Frame # 133
+64964 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.377578 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.8465 (processor) 22 (walltime)
+Frame # 134
+65328 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.470321 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.3728 (processor) 21 (walltime)
+Frame # 135
+64669 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.463777 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3934 (processor) 22 (walltime)
+Frame # 136
+64872 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.429661 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9197 (processor) 22 (walltime)
+Frame # 137
+64622 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.376325 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8133 (processor) 22 (walltime)
+Frame # 138
+64683 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.342897 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.9021 (processor) 22 (walltime)
+Frame # 139
+63948 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.42649 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.1754 (processor) 21 (walltime)
+Frame # 140
+64456 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.406452 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.1477 (processor) 21 (walltime)
+Frame # 141
+63926 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.378793 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.0478 (processor) 21 (walltime)
+Frame # 142
+63720 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.37149 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.489 (processor) 23 (walltime)
+Frame # 143
+64668 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.40063 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.041 (processor) 21 (walltime)
+Frame # 144
+64398 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.39914 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8579 (processor) 21 (walltime)
+Frame # 145
+64619 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.393961 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.0342 (processor) 21 (walltime)
+Frame # 146
+64369 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.397643 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5238 (processor) 22 (walltime)
+Frame # 147
+64905 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.401791 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.1447 (processor) 21 (walltime)
+Frame # 148
+64432 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426543 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1063 (processor) 22 (walltime)
+Frame # 149
+64359 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.402969 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.7064 (processor) 21 (walltime)
+Frame # 150
+64394 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.401428 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.469 (processor) 21 (walltime)
+Frame # 151
+64504 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396982 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.0284 (processor) 22 (walltime)
+Frame # 152
+64764 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.379469 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.773 (processor) 21 (walltime)
+Frame # 153
+64577 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.436986 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6436 (processor) 22 (walltime)
+Frame # 154
+64547 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390081 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.1249 (processor) 22 (walltime)
+Frame # 155
+64308 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.407128 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.6151 (processor) 21 (walltime)
+Frame # 156
+64493 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.419626 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.409 (processor) 22 (walltime)
+Frame # 157
+64611 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.391861 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4494 (processor) 22 (walltime)
+Frame # 158
+64960 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.394475 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5791 (processor) 23 (walltime)
+Frame # 159
+64599 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.499566 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0405 (processor) 22 (walltime)
+Frame # 160
+64723 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.348737 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.5239 (processor) 23 (walltime)
+Frame # 161
+64984 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.419317 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4628 (processor) 22 (walltime)
+Frame # 162
+64743 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.386816 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2125 (processor) 23 (walltime)
+Frame # 163
+63131 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.361178 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.6445 (processor) 24 (walltime)
+Frame # 164
+64203 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.448015 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.8571 (processor) 23 (walltime)
+Frame # 165
+64165 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.438144 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.3551 (processor) 22 (walltime)
+Frame # 166
+64492 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405432 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.929 (processor) 24 (walltime)
+Frame # 167
+64960 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420289 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.3854 (processor) 22 (walltime)
+Frame # 168
+64556 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.400269 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.328 (processor) 23 (walltime)
+Frame # 169
+64195 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.460197 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.3842 (processor) 23 (walltime)
+Frame # 170
+64589 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.466328 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.1108 (processor) 23 (walltime)
+Frame # 171
+63429 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.44721 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6317 (processor) 22 (walltime)
+Frame # 172
+63702 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.497234 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.5943 (processor) 22 (walltime)
+Frame # 173
+63881 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.450762 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.15 (processor) 22 (walltime)
+Frame # 174
+62906 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.433142 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.5617 (processor) 21 (walltime)
+Frame # 175
+62807 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.439656 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4526 (processor) 22 (walltime)
+Frame # 176
+61642 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.447754 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2458 (processor) 21 (walltime)
+Frame # 177
+62115 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.394264 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.738 (processor) 22 (walltime)
+Frame # 178
+63329 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.389572 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8004 (processor) 21 (walltime)
+Frame # 179
+63066 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.417623 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.9045 (processor) 21 (walltime)
+Frame # 180
+62685 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.417641 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.6582 (processor) 22 (walltime)
+Frame # 181
+63025 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.43716 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.0328 (processor) 23 (walltime)
+Frame # 182
+61923 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.412979 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8565 (processor) 21 (walltime)
+Frame # 183
+61649 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.4868 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.545 (processor) 21 (walltime)
+Frame # 184
+62086 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.397526 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.729 (processor) 22 (walltime)
+Frame # 185
+61875 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.400107 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.3673 (processor) 21 (walltime)
+Frame # 186
+62141 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.411255 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8654 (processor) 22 (walltime)
+Frame # 187
+62352 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.431979 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5856 (processor) 22 (walltime)
+Frame # 188
+62208 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.384168 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7736 (processor) 22 (walltime)
+Frame # 189
+62254 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.410874 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.4397 (processor) 21 (walltime)
+Frame # 190
+61485 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.398714 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.9169 (processor) 22 (walltime)
+Frame # 191
+61935 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420294 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.5114 (processor) 22 (walltime)
+Frame # 192
+61705 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.416565 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5675 (processor) 22 (walltime)
+Frame # 193
+61710 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.414058 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0695 (processor) 22 (walltime)
+Frame # 194
+61165 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426714 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.3335 (processor) 23 (walltime)
+Frame # 195
+61007 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396616 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.2629 (processor) 21 (walltime)
+Frame # 196
+61455 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.409986 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.0016 (processor) 23 (walltime)
+Frame # 197
+61549 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.395092 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.4356 (processor) 21 (walltime)
+Frame # 198
+60910 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396932 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8682 (processor) 22 (walltime)
+Frame # 199
+60590 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.378494 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.9666 (processor) 22 (walltime)
+Frame # 200
+60615 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.278024 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8593 (processor) 21 (walltime)
+Frame # 201
+60304 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.386481 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0775 (processor) 22 (walltime)
+Frame # 202
+59967 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.36924 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.974 (processor) 23 (walltime)
+Frame # 203
+60692 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.403088 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4889 (processor) 22 (walltime)
+Frame # 204
+60058 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.384796 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.8139 (processor) 23 (walltime)
+Frame # 205
+59667 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.404165 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.967 (processor) 22 (walltime)
+Frame # 206
+59757 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420265 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.586 (processor) 23 (walltime)
+Frame # 207
+59679 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.45329 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.425 (processor) 22 (walltime)
+Frame # 208
+59710 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.382125 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4174 (processor) 23 (walltime)
+Frame # 209
+59727 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420262 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4965 (processor) 22 (walltime)
+Frame # 210
+59802 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.515654 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.9587 (processor) 23 (walltime)
+Frame # 211
+59711 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.39539 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.4892 (processor) 23 (walltime)
+Frame # 212
+59633 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.410518 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5682 (processor) 22 (walltime)
+Frame # 213
+59082 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.441009 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4531 (processor) 22 (walltime)
+Frame # 214
+58625 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.451761 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.3085 (processor) 23 (walltime)
+Frame # 215
+58776 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.440466 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.529 (processor) 22 (walltime)
+Frame # 216
+58479 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.468614 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5739 (processor) 22 (walltime)
+Frame # 217
+58012 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.432884 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.1259 (processor) 22 (walltime)
+Frame # 218
+58317 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.424953 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.6808 (processor) 23 (walltime)
+Frame # 219
+57993 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.428552 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9146 (processor) 22 (walltime)
+Frame # 220
+58484 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.475856 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2753 (processor) 22 (walltime)
+Frame # 221
+58446 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462236 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3163 (processor) 22 (walltime)
+Frame # 222
+57947 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.436403 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.169 (processor) 23 (walltime)
+Frame # 223
+58346 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.468065 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.37 (processor) 23 (walltime)
+Frame # 224
+58115 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.470406 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0088 (processor) 22 (walltime)
+Frame # 225
+57981 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462889 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.9257 (processor) 22 (walltime)
+Frame # 226
+58345 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462858 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.1315 (processor) 23 (walltime)
+Frame # 227
+59136 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.460068 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.1418 (processor) 23 (walltime)
+Frame # 228
+58653 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.450178 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.5971 (processor) 23 (walltime)
+Frame # 229
+58732 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.443442 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.7363 (processor) 23 (walltime)
+Frame # 230
+58740 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.464508 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.3941 (processor) 23 (walltime)
+Frame # 231
+58583 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462678 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.3808 (processor) 23 (walltime)
+Frame # 232
+58628 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.455986 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.9486 (processor) 24 (walltime)
+Frame # 233
+59248 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.463067 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.1845 (processor) 23 (walltime)
+Frame # 234
+59195 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.450779 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.4907 (processor) 24 (walltime)
+Frame # 235
+59026 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.441256 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.4609 (processor) 24 (walltime)
+Frame # 236
+59644 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.456413 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.108 (processor) 24 (walltime)
+Frame # 237
+58936 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.452008 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 54.2809 (processor) 24 (walltime)
+Frame # 238
+58599 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.439614 (processor) 0 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 55.948 (processor) 25 (walltime)
+Frame # 239
+58354 points
+size: 720 1280
+SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.459645 (processor) 1 (walltime)
+SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 54.773 (processor) 25 (walltime)
+Input Video : number of frames : 240
+Output Video: number of frames : 240
+Output video stats: 
+CV_CAP_PROP_POS_MSEC      :                         0  : Current position of the video file in milliseconds or video capture timestamp.
+CV_CAP_PROP_POS_FRAMES    :                         0  : 0-based index of the frame to be decoded/captured next.
+CV_CAP_PROP_POS_AVI_RATIO :                 0.0417084  : Relative position of the video file: 0 - start of the film, 1 - end of the film.
+CV_CAP_PROP_FRAME_WIDTH   :                      1280  : Width of the frames in the video stream.
+CV_CAP_PROP_FRAME_HEIGHT  :                       720  : Height of the frames in the video stream.
+CV_CAP_PROP_FPS           :                    23.976  : Frame rate.
+CV_CAP_PROP_FOURCC        :                      avc1  : 4-character code of codec.
+CV_CAP_PROP_FRAME_COUNT   :                       960  : Number of frames in the video file.
+CV_CAP_PROP_FORMAT        :                         0  : Format of the Mat objects returned by retrieve() .
+CV_CAP_PROP_MODE          :                         0  : Backend-specific value indicating the current capture mode.
+CV_CAP_PROP_CONVERT_RGB   :                         0  : Boolean flags indicating whether images should be converted to RGB.
+main.cpp:49:main:: Time taken for SloMo in seconds : 13518.8 (processor) 6010 (walltime)
