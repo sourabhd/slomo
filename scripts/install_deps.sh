@@ -104,6 +104,7 @@ cd "${LIBAV_SRC_DIR}"
 ./configure --prefix=${LIBAV_INSTALL_PREFIX} --enable-static --disable-shared \
  --enable-libx264 \
  --enable-libxvid \
+ --enable-gpl \
  --disable-network
 make
 make install
