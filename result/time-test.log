@@ -1,0 +1,6 @@
+sourabhd@sourabhd-desktop:~/projects/slomo$ time bin/slomo data/test.avi result/test-slomo.avi 5 > result/test.log 2>&1
+
+real	26m49.550s
+user	30m9.129s
+sys	0m4.318s
+
