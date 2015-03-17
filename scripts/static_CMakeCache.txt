@@ -71,14 +71,35 @@ BUILD_WITH_DEBUG_INFO:BOOL=ON
 //Build zlib from source
 BUILD_ZLIB:BOOL=ON
 
+//Include opencv_adas module into the OpenCV build
+BUILD_opencv_adas:BOOL=ON
+
 //Build utility applications (used for example to train classifiers)
 BUILD_opencv_apps:BOOL=OFF
+
+//Include opencv_bgsegm module into the OpenCV build
+BUILD_opencv_bgsegm:BOOL=ON
+
+//Include opencv_bioinspired module into the OpenCV build
+BUILD_opencv_bioinspired:BOOL=ON
 
 //Include opencv_calib3d module into the OpenCV build
 BUILD_opencv_calib3d:BOOL=ON
 
+//Include opencv_ccalib module into the OpenCV build
+BUILD_opencv_ccalib:BOOL=ON
+
+//Include opencv_contrib_world module into the OpenCV build
+BUILD_opencv_contrib_world:BOOL=OFF
+
 //Include opencv_core module into the OpenCV build
 BUILD_opencv_core:BOOL=ON
+
+//Include opencv_datasets module into the OpenCV build
+BUILD_opencv_datasets:BOOL=ON
+
+//Include opencv_face module into the OpenCV build
+BUILD_opencv_face:BOOL=ON
 
 //Include opencv_features2d module into the OpenCV build
 BUILD_opencv_features2d:BOOL=ON
@@ -95,11 +116,20 @@ BUILD_opencv_imgcodecs:BOOL=ON
 //Include opencv_imgproc module into the OpenCV build
 BUILD_opencv_imgproc:BOOL=ON
 
+//Include opencv_latentsvm module into the OpenCV build
+BUILD_opencv_latentsvm:BOOL=ON
+
+//Include opencv_line_descriptor module into the OpenCV build
+BUILD_opencv_line_descriptor:BOOL=ON
+
 //Include opencv_ml module into the OpenCV build
 BUILD_opencv_ml:BOOL=ON
 
 //Include opencv_objdetect module into the OpenCV build
 BUILD_opencv_objdetect:BOOL=ON
+
+//Include opencv_optflow module into the OpenCV build
+BUILD_opencv_optflow:BOOL=ON
 
 //Include opencv_photo module into the OpenCV build
 BUILD_opencv_photo:BOOL=ON
@@ -110,6 +140,15 @@ BUILD_opencv_python2:BOOL=OFF
 //Include opencv_python3 module into the OpenCV build
 BUILD_opencv_python3:BOOL=OFF
 
+//Include opencv_reg module into the OpenCV build
+BUILD_opencv_reg:BOOL=ON
+
+//Include opencv_rgbd module into the OpenCV build
+BUILD_opencv_rgbd:BOOL=ON
+
+//Include opencv_saliency module into the OpenCV build
+BUILD_opencv_saliency:BOOL=ON
+
 //Include opencv_shape module into the OpenCV build
 BUILD_opencv_shape:BOOL=ON
 
@@ -118,6 +157,15 @@ BUILD_opencv_stitching:BOOL=ON
 
 //Include opencv_superres module into the OpenCV build
 BUILD_opencv_superres:BOOL=ON
+
+//Include opencv_surface_matching module into the OpenCV build
+BUILD_opencv_surface_matching:BOOL=ON
+
+//Include opencv_text module into the OpenCV build
+BUILD_opencv_text:BOOL=ON
+
+//Include opencv_tracking module into the OpenCV build
+BUILD_opencv_tracking:BOOL=ON
 
 //Include opencv_ts module into the OpenCV build
 BUILD_opencv_ts:BOOL=ON
@@ -133,6 +181,18 @@ BUILD_opencv_videostab:BOOL=OFF
 
 //Include opencv_world module into the OpenCV build
 BUILD_opencv_world:BOOL=OFF
+
+//Include opencv_xfeatures2d module into the OpenCV build
+BUILD_opencv_xfeatures2d:BOOL=ON
+
+//Include opencv_ximgproc module into the OpenCV build
+BUILD_opencv_ximgproc:BOOL=ON
+
+//Include opencv_xobjdetect module into the OpenCV build
+BUILD_opencv_xobjdetect:BOOL=ON
+
+//Include opencv_xphoto module into the OpenCV build
+BUILD_opencv_xphoto:BOOL=ON
 
 //Path to a library.
 BZIP2_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libbz2.so
@@ -203,7 +263,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Flags used by the linker.
-CMAKE_EXE_LINKER_FLAGS:STRING=-static -L /home/sourabhd/projects/slomo/thirdparty/gstreamer-0.10.36_install/lib -L /home/sourabhd/projects/slomo/thirdparty/gst-plugins-base-0.10.36_install/lib
+CMAKE_EXE_LINKER_FLAGS:STRING=-static -L /home/sourabhd/projects/slomo/thirdparty/gstreamer-0.10.36_install/lib -L /home/sourabhd/projects/slomo/thirdparty/gst-plugins-base-0.10.36_install/lib -L /usr/lib/x86_64-linux-gnu
 
 //Flags used by the linker during debug builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -543,6 +603,9 @@ LATEX2HTML_CONVERTER:FILEPATH=LATEX2HTML_CONVERTER-NOTFOUND
 //Path to a program.
 LATEX_COMPILER:FILEPATH=LATEX_COMPILER-NOTFOUND
 
+//Path to a library.
+Lept_LIBRARY:FILEPATH=Lept_LIBRARY-NOTFOUND
+
 //Path to a program.
 MAKEINDEX_COMPILER:FILEPATH=MAKEINDEX_COMPILER-NOTFOUND
 
@@ -550,7 +613,7 @@ MAKEINDEX_COMPILER:FILEPATH=MAKEINDEX_COMPILER-NOTFOUND
 OPENCV_CONFIG_FILE_INCLUDE_DIR:PATH=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static
 
 //Where to look for additional OpenCV modules
-OPENCV_EXTRA_MODULES_PATH:PATH=
+OPENCV_EXTRA_MODULES_PATH:PATH=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules
 
 //Treat warnings as errors
 OPENCV_WARNINGS_ARE_ERRORS:BOOL=OFF
@@ -613,7 +676,7 @@ PYTHON2_INCLUDE_DIR:PATH=/usr/include/python2.7
 PYTHON2_INCLUDE_DIR2:PATH=/usr/include/x86_64-linux-gnu/python2.7
 
 //Path to Python library
-PYTHON2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython2.7.so
+PYTHON2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython2.7.a
 
 //Path to Python debug
 PYTHON2_LIBRARY_DEBUG:FILEPATH=
@@ -634,7 +697,7 @@ PYTHON3_INCLUDE_DIR:PATH=/usr/include/python3.4m
 PYTHON3_INCLUDE_DIR2:PATH=/usr/include/x86_64-linux-gnu/python3.4m
 
 //Path to Python library
-PYTHON3_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.4m.so
+PYTHON3_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.4m.a
 
 //Path to Python debug
 PYTHON3_LIBRARY_DEBUG:FILEPATH=
@@ -653,6 +716,12 @@ PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a program.
 SPHINX_BUILD:FILEPATH=SPHINX_BUILD-NOTFOUND
+
+//Path to a file.
+Tesseract_INCLUDE_DIR:PATH=Tesseract_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+Tesseract_LIBRARY:FILEPATH=Tesseract_LIBRARY-NOTFOUND
 
 //The directory containing a CMake configuration file for VTK.
 VTK_DIR:PATH=VTK_DIR-NOTFOUND
@@ -824,6 +893,33 @@ libwebp_LIB_DEPENDS:STATIC=
 libwebp_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/3rdparty/libwebp
 
 //Value Computed by CMake
+opencv_adas_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/adas
+
+//Dependencies for the target
+opencv_adas_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_xobjdetect;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_adas_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/adas
+
+//Value Computed by CMake
+opencv_bgsegm_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/bgsegm
+
+//Dependencies for the target
+opencv_bgsegm_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_video;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_bgsegm_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bgsegm
+
+//Value Computed by CMake
+opencv_bioinspired_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/bioinspired
+
+//Dependencies for the target
+opencv_bioinspired_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_bioinspired_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired
+
+//Value Computed by CMake
 opencv_calib3d_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/calib3d
 
 //Dependencies for the target
@@ -834,6 +930,15 @@ opencv_calib3d_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv
 
 //Dependencies for target
 opencv_calib3d_pch_dephelp_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+opencv_ccalib_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ccalib
+
+//Dependencies for the target
+opencv_ccalib_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_ccalib_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ccalib
 
 //Value Computed by CMake
 opencv_core_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/core
@@ -848,10 +953,40 @@ opencv_core_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/mo
 opencv_core_pch_dephelp_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
+opencv_datasets_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/datasets
+
+//Dependencies for the target
+opencv_datasets_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_face;general;opencv_flann;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_text;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_datasets_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets
+
+//Value Computed by CMake
 opencv_docs_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/doc
 
 //Value Computed by CMake
 opencv_docs_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/doc
+
+//Value Computed by CMake
+opencv_face_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/face
+
+//Dependencies for the target
+opencv_face_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_face_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/face
+
+//Value Computed by CMake
+opencv_fcw_detect_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/adas/tools/fcw_detect
+
+//Value Computed by CMake
+opencv_fcw_detect_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/adas/tools/fcw_detect
+
+//Value Computed by CMake
+opencv_fcw_train_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/adas/tools/fcw_train
+
+//Value Computed by CMake
+opencv_fcw_train_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/adas/tools/fcw_train
 
 //Value Computed by CMake
 opencv_features2d_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/features2d
@@ -914,6 +1049,24 @@ opencv_imgproc_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv
 opencv_imgproc_pch_dephelp_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
+opencv_latentsvm_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/latentsvm
+
+//Dependencies for the target
+opencv_latentsvm_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_objdetect;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_latentsvm_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm
+
+//Value Computed by CMake
+opencv_line_descriptor_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/line_descriptor
+
+//Dependencies for the target
+opencv_line_descriptor_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_line_descriptor_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor
+
+//Value Computed by CMake
 opencv_ml_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ml
 
 //Dependencies for the target
@@ -936,6 +1089,15 @@ opencv_objdetect_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/open
 
 //Dependencies for target
 opencv_objdetect_pch_dephelp_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+opencv_optflow_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/optflow
+
+//Dependencies for the target
+opencv_optflow_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_video;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_optflow_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow
 
 //Dependencies for target
 opencv_perf_calib3d_pch_dephelp_LIB_DEPENDS:STATIC=
@@ -986,7 +1148,7 @@ opencv_photo_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_python2_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/python2
 
 //Dependencies for the target
-opencv_python2_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_objdetect;general;opencv_photo;general;opencv_video;general;opencv_shape;general;opencv_stitching;general;opencv_superres;
+opencv_python2_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython2.7.a;general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_video;general;opencv_bgsegm;general;opencv_flann;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_ccalib;general;opencv_face;general;opencv_text;general;opencv_datasets;general;opencv_line_descriptor;general;opencv_objdetect;general;opencv_optflow;general;opencv_photo;general;opencv_reg;general;opencv_rgbd;general;opencv_saliency;general;opencv_shape;general;opencv_xfeatures2d;general;opencv_stitching;general;opencv_superres;general;opencv_surface_matching;general;opencv_ximgproc;general;opencv_xobjdetect;general;opencv_xphoto;
 
 //Value Computed by CMake
 opencv_python2_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/python/python2
@@ -999,6 +1161,33 @@ opencv_python3_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython3.4
 
 //Value Computed by CMake
 opencv_python3_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/python/python3
+
+//Value Computed by CMake
+opencv_reg_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/reg
+
+//Dependencies for the target
+opencv_reg_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_reg_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg
+
+//Value Computed by CMake
+opencv_rgbd_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/rgbd
+
+//Dependencies for the target
+opencv_rgbd_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_rgbd_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd
+
+//Value Computed by CMake
+opencv_saliency_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/saliency
+
+//Dependencies for the target
+opencv_saliency_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_saliency_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency
 
 //Value Computed by CMake
 opencv_shape_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/shape
@@ -1016,7 +1205,7 @@ opencv_shape_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_stitching_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/stitching
 
 //Dependencies for the target
-opencv_stitching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_objdetect;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+opencv_stitching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_objdetect;general;opencv_video;general;opencv_shape;general;opencv_xfeatures2d;general;stdc++;general;dl;general;m;general;pthread;general;rt;
 
 //Value Computed by CMake
 opencv_stitching_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/stitching
@@ -1035,6 +1224,15 @@ opencv_superres_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/openc
 
 //Dependencies for target
 opencv_superres_pch_dephelp_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+opencv_surface_matching_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/surface_matching
+
+//Dependencies for the target
+opencv_surface_matching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_surface_matching_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching
 
 //Dependencies for target
 opencv_test_calib3d_pch_dephelp_LIB_DEPENDS:STATIC=
@@ -1080,6 +1278,24 @@ opencv_test_video_pch_dephelp_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 opencv_test_videoio_pch_dephelp_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+opencv_text_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/text
+
+//Dependencies for the target
+opencv_text_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_text_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text
+
+//Value Computed by CMake
+opencv_tracking_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/tracking
+
+//Dependencies for the target
+opencv_tracking_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_video;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_tracking_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking
 
 //Value Computed by CMake
 opencv_ts_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ts
@@ -1128,6 +1344,42 @@ opencv_videostab_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/open
 
 //Dependencies for target
 opencv_videostab_pch_dephelp_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+opencv_xfeatures2d_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xfeatures2d
+
+//Dependencies for the target
+opencv_xfeatures2d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_video;general;opencv_shape;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_xfeatures2d_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d
+
+//Value Computed by CMake
+opencv_ximgproc_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ximgproc
+
+//Dependencies for the target
+opencv_ximgproc_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_ximgproc_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc
+
+//Value Computed by CMake
+opencv_xobjdetect_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xobjdetect
+
+//Dependencies for the target
+opencv_xobjdetect_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_xobjdetect_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect
+
+//Value Computed by CMake
+opencv_xphoto_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xphoto
+
+//Dependencies for the target
+opencv_xphoto_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_photo;general;stdc++;general;dl;general;m;general;pthread;general;rt;
+
+//Value Computed by CMake
+opencv_xphoto_SOURCE_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto
 
 //Value Computed by CMake
 openexr_BINARY_DIR:STATIC=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/3rdparty/openexr
@@ -1937,7 +2189,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=60
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=101
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2074,7 +2326,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpng.so][
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3.4][v3.4(3.4)]
 //Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython2.7.so][/usr/include/python2.7;/usr/include/x86_64-linux-gnu/python3.4m][v2.7.6(2.7.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython2.7.a][/usr/include/python2.7;/usr/include/x86_64-linux-gnu/python3.4m][v2.7.6(2.7.6)]
 //Details about finding TIFF
 FIND_PACKAGE_MESSAGE_DETAILS_TIFF:INTERNAL=[/usr/lib/x86_64-linux-gnu/libtiff.so][/usr/include/x86_64-linux-gnu][v4.0.3()]
 //Details about finding ZLIB
@@ -2303,10 +2555,20 @@ HAVE_SYS_TYPES_H:INTERNAL=1
 HAVE_UNISTD_H:INTERNAL=
 //Result of TRY_COMPILE
 HAVE_WORDS_BIGENDIAN:INTERNAL=TRUE
+//Module opencv_adas will be built in current configuration
+HAVE_opencv_adas:INTERNAL=ON
 //Module opencv_androidcamera can not be built in current configuration
 HAVE_opencv_androidcamera:INTERNAL=OFF
+//Module opencv_bgsegm will be built in current configuration
+HAVE_opencv_bgsegm:INTERNAL=ON
+//Module opencv_bioinspired will be built in current configuration
+HAVE_opencv_bioinspired:INTERNAL=ON
 //Module opencv_calib3d will be built in current configuration
 HAVE_opencv_calib3d:INTERNAL=ON
+//Module opencv_ccalib will be built in current configuration
+HAVE_opencv_ccalib:INTERNAL=ON
+//Module opencv_contrib_world will not be built in current configuration
+HAVE_opencv_contrib_world:INTERNAL=OFF
 //Module opencv_core will be built in current configuration
 HAVE_opencv_core:INTERNAL=ON
 //Module opencv_cuda can not be built in current configuration
@@ -2333,6 +2595,12 @@ HAVE_opencv_cudastereo:INTERNAL=OFF
 HAVE_opencv_cudawarping:INTERNAL=OFF
 //Module opencv_cudev can not be built in current configuration
 HAVE_opencv_cudev:INTERNAL=OFF
+//Module opencv_cvv can not be built in current configuration
+HAVE_opencv_cvv:INTERNAL=OFF
+//Module opencv_datasets will be built in current configuration
+HAVE_opencv_datasets:INTERNAL=ON
+//Module opencv_face will be built in current configuration
+HAVE_opencv_face:INTERNAL=ON
 //Module opencv_features2d will be built in current configuration
 HAVE_opencv_features2d:INTERNAL=ON
 //Module opencv_flann will be built in current configuration
@@ -2345,22 +2613,40 @@ HAVE_opencv_imgcodecs:INTERNAL=ON
 HAVE_opencv_imgproc:INTERNAL=ON
 //Module opencv_java can not be built in current configuration
 HAVE_opencv_java:INTERNAL=OFF
+//Module opencv_line_descriptor will be built in current configuration
+HAVE_opencv_line_descriptor:INTERNAL=ON
+//Module opencv_matlab can not be built in current configuration
+HAVE_opencv_matlab:INTERNAL=OFF
 //Module opencv_ml will be built in current configuration
 HAVE_opencv_ml:INTERNAL=ON
 //Module opencv_objdetect will be built in current configuration
 HAVE_opencv_objdetect:INTERNAL=ON
+//Module opencv_optflow will be built in current configuration
+HAVE_opencv_optflow:INTERNAL=ON
 //Module opencv_photo will be built in current configuration
 HAVE_opencv_photo:INTERNAL=ON
 //Module opencv_python2 will not be built in current configuration
 HAVE_opencv_python2:INTERNAL=OFF
 //Module opencv_python3 can not be built in current configuration
 HAVE_opencv_python3:INTERNAL=OFF
+//Module opencv_reg will be built in current configuration
+HAVE_opencv_reg:INTERNAL=ON
+//Module opencv_rgbd will be built in current configuration
+HAVE_opencv_rgbd:INTERNAL=ON
+//Module opencv_saliency will be built in current configuration
+HAVE_opencv_saliency:INTERNAL=ON
 //Module opencv_shape will be built in current configuration
 HAVE_opencv_shape:INTERNAL=ON
 //Module opencv_stitching will be built in current configuration
 HAVE_opencv_stitching:INTERNAL=ON
 //Module opencv_superres will be built in current configuration
 HAVE_opencv_superres:INTERNAL=ON
+//Module opencv_surface_matching will be built in current configuration
+HAVE_opencv_surface_matching:INTERNAL=ON
+//Module opencv_text will be built in current configuration
+HAVE_opencv_text:INTERNAL=ON
+//Module opencv_tracking will be built in current configuration
+HAVE_opencv_tracking:INTERNAL=ON
 //Module opencv_ts will be built in current configuration
 HAVE_opencv_ts:INTERNAL=ON
 //Module opencv_video will be built in current configuration
@@ -2373,6 +2659,14 @@ HAVE_opencv_videostab:INTERNAL=OFF
 HAVE_opencv_viz:INTERNAL=OFF
 //Module opencv_world will not be built in current configuration
 HAVE_opencv_world:INTERNAL=OFF
+//Module opencv_xfeatures2d will be built in current configuration
+HAVE_opencv_xfeatures2d:INTERNAL=ON
+//Module opencv_ximgproc will be built in current configuration
+HAVE_opencv_ximgproc:INTERNAL=ON
+//Module opencv_xobjdetect will be built in current configuration
+HAVE_opencv_xobjdetect:INTERNAL=ON
+//Module opencv_xphoto will be built in current configuration
+HAVE_opencv_xphoto:INTERNAL=ON
 //MODIFIED property for variable: INSTALL_CREATE_DISTRIB
 INSTALL_CREATE_DISTRIB-MODIFIED:INTERNAL=ON
 //MODIFIED property for variable: INSTALL_C_EXAMPLES
@@ -2421,21 +2715,107 @@ OPENCV_EXTRA_FLAGS:INTERNAL='-fPIC '
 OPENCV_EXTRA_FLAGS_DEBUG:INTERNAL= -O0 -DDEBUG -D_DEBUG
 //Extra compiler options for Release build
 OPENCV_EXTRA_FLAGS_RELEASE:INTERNAL= -DNDEBUG
+//MODIFIED property for variable: OPENCV_EXTRA_MODULES_PATH
+OPENCV_EXTRA_MODULES_PATH-MODIFIED:INTERNAL=ON
 //ICV package hash
 OPENCV_ICV_PACKAGE_DOWNLOADED:INTERNAL=8b449a536a2157bcad08a2b9f266828b
 //List of OpenCV modules included into the build
-OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video;opencv_shape;opencv_stitching;opencv_superres;opencv_ts
-OPENCV_MODULES_BUILD_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio
+OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_xobjdetect;opencv_adas;opencv_video;opencv_bgsegm;opencv_bioinspired;opencv_flann;opencv_ml;opencv_features2d;opencv_calib3d;opencv_ccalib;opencv_face;opencv_text;opencv_datasets;opencv_line_descriptor;opencv_objdetect;opencv_optflow;opencv_photo;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_xfeatures2d;opencv_stitching;opencv_superres;opencv_surface_matching;opencv_tracking;opencv_ts;opencv_ximgproc;opencv_xphoto
+OPENCV_MODULES_BUILD_ORDERED:INTERNAL=opencv_adas;opencv_bgsegm;opencv_bioinspired;opencv_calib3d;opencv_ccalib;opencv_core;opencv_datasets;opencv_face;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_line_descriptor;opencv_ml;opencv_objdetect;opencv_optflow;opencv_photo;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stitching;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_ts;opencv_video;opencv_videoio;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //List of OpenCV modules implicitly disabled due to dependencies
 OPENCV_MODULES_DISABLED_AUTO:INTERNAL=
 //List of OpenCV modules which can not be build in current configuration
-OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_androidcamera;opencv_cuda;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_java;opencv_python3;opencv_viz
+OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_androidcamera;opencv_cuda;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_java;opencv_python3;opencv_viz;opencv_cvv;opencv_matlab
 //List of OpenCV modules explicitly disabled by user
 OPENCV_MODULES_DISABLED_USER:INTERNAL=opencv_python2;opencv_videostab;opencv_world
 //List of OpenCV modules marked for export
-OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio
+OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio;opencv_adas;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_datasets;opencv_face;opencv_line_descriptor;opencv_optflow;opencv_reg;opencv_rgbd;opencv_saliency;opencv_surface_matching;opencv_text;opencv_tracking;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+OPENCV_MODULE_opencv_adas_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/adas
+//The category of the module
+OPENCV_MODULE_opencv_adas_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_adas module
+OPENCV_MODULE_opencv_adas_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_xobjdetect
+//Extra dependencies of opencv_adas module
+OPENCV_MODULE_opencv_adas_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_adas_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio;opencv_xobjdetect
+//Flattened dependencies of opencv_adas module (for linker)
+OPENCV_MODULE_opencv_adas_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_xobjdetect
+//Brief description of opencv_adas module
+OPENCV_MODULE_opencv_adas_DESCRIPTION:INTERNAL=Automatic driver assistance algorithms
+//List of header files for opencv_adas
+OPENCV_MODULE_opencv_adas_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/adas/include/opencv2/adas.hpp
+OPENCV_MODULE_opencv_adas_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_adas_LINK_DEPS:INTERNAL=;
+//Location of opencv_adas module sources
+OPENCV_MODULE_opencv_adas_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/adas
+//Optional dependencies of opencv_adas module
+OPENCV_MODULE_opencv_adas_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_adas module
+OPENCV_MODULE_opencv_adas_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_adas module
+OPENCV_MODULE_opencv_adas_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_adas module
+OPENCV_MODULE_opencv_adas_REQ_DEPS:INTERNAL=opencv_xobjdetect
+//List of source files for opencv_adas
+OPENCV_MODULE_opencv_adas_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/adas/src/adas.cpp
 //Location of opencv_androidcamera module sources
 OPENCV_MODULE_opencv_androidcamera_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/androidcamera
+OPENCV_MODULE_opencv_bgsegm_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/bgsegm
+//The category of the module
+OPENCV_MODULE_opencv_bgsegm_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video
+//Extra dependencies of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_bgsegm_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_bgsegm module (for linker)
+OPENCV_MODULE_opencv_bgsegm_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video
+//Brief description of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_DESCRIPTION:INTERNAL=Background Segmentation Algorithms
+//List of header files for opencv_bgsegm
+OPENCV_MODULE_opencv_bgsegm_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bgsegm/include/opencv2/bgsegm.hpp
+OPENCV_MODULE_opencv_bgsegm_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_bgsegm_LINK_DEPS:INTERNAL=;
+//Location of opencv_bgsegm module sources
+OPENCV_MODULE_opencv_bgsegm_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bgsegm
+//Optional dependencies of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_bgsegm module
+OPENCV_MODULE_opencv_bgsegm_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_video;opencv_highgui
+//List of source files for opencv_bgsegm
+OPENCV_MODULE_opencv_bgsegm_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bgsegm/src/bgfg_gaussmix.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bgsegm/src/bgfg_gmg.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bgsegm/src/precomp.hpp
+OPENCV_MODULE_opencv_bioinspired_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/bioinspired
+//The category of the module
+OPENCV_MODULE_opencv_bioinspired_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+//Extra dependencies of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_bioinspired_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+//Flattened dependencies of opencv_bioinspired module (for linker)
+OPENCV_MODULE_opencv_bioinspired_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+//Brief description of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_DESCRIPTION:INTERNAL=Biologically inspired algorithms
+//List of header files for opencv_bioinspired
+OPENCV_MODULE_opencv_bioinspired_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/bioinspired.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/transientareassegmentationmodule.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/retinafasttonemapping.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/retina.hpp
+OPENCV_MODULE_opencv_bioinspired_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_bioinspired_LINK_DEPS:INTERNAL=;
+//Location of opencv_bioinspired module sources
+OPENCV_MODULE_opencv_bioinspired_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired
+//Optional dependencies of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_OPT_DEPS:INTERNAL=opencv_highgui;opencv_ocl
+//Optional private dependencies of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_bioinspired module
+OPENCV_MODULE_opencv_bioinspired_REQ_DEPS:INTERNAL=opencv_core
+//List of source files for opencv_bioinspired
+OPENCV_MODULE_opencv_bioinspired_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/magnoretinafilter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/parvoretinafilter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retinafilter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/imagelogpolprojection.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retina_ocl.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retinafasttonemapping.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retinacolor.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/transientareassegmentationmodule.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retina.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/basicretinafilter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/opencl/retina_kernel.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/bioinspired/opencl_kernels_bioinspired.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/bioinspired/opencl_kernels_bioinspired.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/parvoretinafilter.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retinafilter.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retinacolor.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/templatebuffer.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/magnoretinafilter.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/basicretinafilter.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/retina_ocl.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/bioinspired/src/imagelogpolprojection.hpp
 OPENCV_MODULE_opencv_calib3d_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/calib3d
 //The category of the module
 OPENCV_MODULE_opencv_calib3d_CLASS:INTERNAL=PUBLIC
@@ -2464,6 +2844,41 @@ OPENCV_MODULE_opencv_calib3d_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_calib3d_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_features2d
 //List of source files for opencv_calib3d
 OPENCV_MODULE_opencv_calib3d_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/posit.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/levmarq.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/quadsubpix.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/solvepnp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/epnp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/compat_stereo.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/dls.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/calibinit.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/upnp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/triangulate.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/polynom_solver.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/homography_decomp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/stereobm.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/fisheye.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/circlesgrid.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/five-point.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/ptsetreg.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/p3p.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/stereosgbm.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/compat_ptsetreg.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/calibration.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/fundam.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/checkchessboard.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/opencl/stereobm.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/calib3d/opencl_kernels_calib3d.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/calib3d/opencl_kernels_calib3d.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/fisheye.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/circlesgrid.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/upnp.h;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/dls.h;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/polynom_solver.h;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/p3p.h;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/calib3d/src/epnp.h
+OPENCV_MODULE_opencv_ccalib_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ccalib
+//The category of the module
+OPENCV_MODULE_opencv_ccalib_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d
+//Extra dependencies of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_ccalib_DEPS_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_ccalib module (for linker)
+OPENCV_MODULE_opencv_ccalib_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d
+//Brief description of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_DESCRIPTION:INTERNAL=Custom Calibration Pattern
+//List of header files for opencv_ccalib
+OPENCV_MODULE_opencv_ccalib_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ccalib/include/opencv2/ccalib.hpp
+OPENCV_MODULE_opencv_ccalib_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_ccalib_LINK_DEPS:INTERNAL=;
+//Location of opencv_ccalib module sources
+OPENCV_MODULE_opencv_ccalib_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ccalib
+//Optional dependencies of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_ccalib module
+OPENCV_MODULE_opencv_ccalib_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_calib3d;opencv_features2d
+//List of source files for opencv_ccalib
+OPENCV_MODULE_opencv_ccalib_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ccalib/src/ccalib.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ccalib/src/precomp.hpp
+//The category of the module
+OPENCV_MODULE_opencv_contrib_world_CLASS:INTERNAL=PUBLIC
+//Brief description of opencv_contrib_world module
+OPENCV_MODULE_opencv_contrib_world_DESCRIPTION:INTERNAL=Separate world module containing all contrib modules
+OPENCV_MODULE_opencv_contrib_world_IS_PART_OF_WORLD:INTERNAL=OFF
+//Location of opencv_contrib_world module sources
+OPENCV_MODULE_opencv_contrib_world_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/contrib_world
 OPENCV_MODULE_opencv_core_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/core
 //The category of the module
 OPENCV_MODULE_opencv_core_CLASS:INTERNAL=PUBLIC
@@ -2516,6 +2931,64 @@ OPENCV_MODULE_opencv_cudastereo_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/
 OPENCV_MODULE_opencv_cudawarping_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/cudawarping
 //Location of opencv_cudev module sources
 OPENCV_MODULE_opencv_cudev_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/cudev
+//Location of opencv_cvv module sources
+OPENCV_MODULE_opencv_cvv_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/cvv
+OPENCV_MODULE_opencv_datasets_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/datasets
+//The category of the module
+OPENCV_MODULE_opencv_datasets_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_face;opencv_flann;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_text
+//Extra dependencies of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_datasets_DEPS_ORDERED:INTERNAL=opencv_core;opencv_face;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_text;opencv_videoio
+//Flattened dependencies of opencv_datasets module (for linker)
+OPENCV_MODULE_opencv_datasets_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_face;opencv_flann;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_text
+//Brief description of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_DESCRIPTION:INTERNAL=datasets framework
+//List of header files for opencv_datasets
+OPENCV_MODULE_opencv_datasets_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/is_bsds.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/msm_middlebury.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/slam_tumindoor.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/tr_chars.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/ir_robot.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/hpe_parse.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/is_weizmann.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/ar_sports.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/ar_hmdb.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/gr_chalearn.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/msm_epfl.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/gr_skig.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/or_mnist.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/hpe_humaneva.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/dataset.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/tr_svt.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/fr_adience.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/or_sun.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/fr_lfw.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/util.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/pd_caltech.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/ir_affine.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/slam_kitti.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/include/opencv2/datasets/or_imagenet.hpp
+OPENCV_MODULE_opencv_datasets_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_datasets_LINK_DEPS:INTERNAL=;
+//Location of opencv_datasets module sources
+OPENCV_MODULE_opencv_datasets_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets
+//Optional dependencies of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_datasets module
+OPENCV_MODULE_opencv_datasets_REQ_DEPS:INTERNAL=opencv_core;opencv_face;opencv_ml;opencv_flann;opencv_text
+//List of source files for opencv_datasets
+OPENCV_MODULE_opencv_datasets_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/fr_lfw.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/is_weizmann.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/ir_robot.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/slam_kitti.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/or_sun.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/tr_chars.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/pd_caltech.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/slam_tumindoor.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/msm_middlebury.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/hpe_humaneva.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/ir_affine.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/is_bsds.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/or_mnist.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/tinyxml2/tinyxml2.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/tr_svt.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/msm_epfl.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/gr_chalearn.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/gr_skig.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/ar_sports.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/hpe_parse.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/util.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/ar_hmdb.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/fr_adience.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/dataset.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/datasets/src/or_imagenet.cpp
+OPENCV_MODULE_opencv_face_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/face
+//The category of the module
+OPENCV_MODULE_opencv_face_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_face module
+OPENCV_MODULE_opencv_face_DEPS:INTERNAL=opencv_core;opencv_imgproc
+//Extra dependencies of opencv_face module
+OPENCV_MODULE_opencv_face_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_face_DEPS_ORDERED:INTERNAL=opencv_core;opencv_imgproc
+//Flattened dependencies of opencv_face module (for linker)
+OPENCV_MODULE_opencv_face_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
+//Brief description of opencv_face module
+OPENCV_MODULE_opencv_face_DESCRIPTION:INTERNAL=Face recognition etc
+//List of header files for opencv_face
+OPENCV_MODULE_opencv_face_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/face/include/opencv2/face.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/face/include/opencv2/face/facerec.hpp
+OPENCV_MODULE_opencv_face_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_face_LINK_DEPS:INTERNAL=;
+//Location of opencv_face module sources
+OPENCV_MODULE_opencv_face_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/face
+//Optional dependencies of opencv_face module
+OPENCV_MODULE_opencv_face_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_face module
+OPENCV_MODULE_opencv_face_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_face module
+OPENCV_MODULE_opencv_face_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_face module
+OPENCV_MODULE_opencv_face_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc
+//List of source files for opencv_face
+OPENCV_MODULE_opencv_face_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/face/src/facerec.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/face/src/precomp.hpp
 OPENCV_MODULE_opencv_features2d_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/features2d
 //The category of the module
 OPENCV_MODULE_opencv_features2d_CLASS:INTERNAL=PUBLIC
@@ -2658,6 +3131,56 @@ OPENCV_MODULE_opencv_imgproc_REQ_DEPS:INTERNAL=opencv_core
 OPENCV_MODULE_opencv_imgproc_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/color.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/blend.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/cornersubpix.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/morph.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/emd.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/colormap.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/templmatch.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/samplers.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/sumpixels.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/accum.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/shapedescr.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/generalized_hough.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/rotcalipers.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/linefit.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/canny.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/demosaicing.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/matchcontours.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/lsd.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/hershey_fonts.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/deriv.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/connectedcomponents.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/undistort.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/smooth.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/phasecorr.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/contours.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/drawing.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/filter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/geometry.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/moments.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/grabcut.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/pyramids.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/corner.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/gabor.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/tables.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/thresh.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/floodfill.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/min_enclosing_triangle.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/segmentation.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/featureselect.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/clahe.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/imgwarp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/hough.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/approx.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/utils.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/intersection.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/distransform.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/histogram.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/convhull.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/subdivision2d.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/pyr_up.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/medianFilter.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/integral_sum.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/accumulate.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/match_template.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/histogram.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/pyr_down.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/resize.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/filterSepCol.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/filter2DSmall.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/remap.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/moments.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/warp_perspective.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/clahe.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/boxFilter.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/cvtcolor.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/threshold.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/blend_linear.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/filter2D.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/hough_lines.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/filterSepRow.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/calc_back_project.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/laplacian5.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/canny.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/covardata.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/gftt.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/corner.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/filterSmall.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/morph.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/warp_affine.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/bilateral.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/opencl/precornerdetect.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/imgproc/opencl_kernels_imgproc.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/imgproc/opencl_kernels_imgproc.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/filterengine.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/gcgraph.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/imgproc/src/_geom.h
 //Location of opencv_java module sources
 OPENCV_MODULE_opencv_java_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/java
+OPENCV_MODULE_opencv_latentsvm_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/latentsvm
+//The category of the module
+OPENCV_MODULE_opencv_latentsvm_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_latentsvm module
+OPENCV_MODULE_opencv_latentsvm_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_objdetect
+//Extra dependencies of opencv_latentsvm module
+OPENCV_MODULE_opencv_latentsvm_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_latentsvm_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_videoio
+//Flattened dependencies of opencv_latentsvm module (for linker)
+OPENCV_MODULE_opencv_latentsvm_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_objdetect
+//Brief description of opencv_latentsvm module
+OPENCV_MODULE_opencv_latentsvm_DESCRIPTION:INTERNAL=Object Detection
+//List of header files for opencv_latentsvm
+OPENCV_MODULE_opencv_latentsvm_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/include/opencv2/latentsvm.hpp
+OPENCV_MODULE_opencv_latentsvm_IS_PART_OF_WORLD:INTERNAL=OFF
+//Location of opencv_latentsvm module sources
+OPENCV_MODULE_opencv_latentsvm_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm
+//List of source files for opencv_latentsvm
+OPENCV_MODULE_opencv_latentsvm_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_matching.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_latentsvmdetector.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_resizeimg.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/precomp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_routine.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_function.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_parser.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_latentsvm.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/lsvmc_featurepyramid.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_resizeimg.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_error.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_parser.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_function.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_types.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_latentsvm.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_matching.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/latentsvm/src/_lsvmc_routine.h
+OPENCV_MODULE_opencv_line_descriptor_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/line_descriptor
+//The category of the module
+OPENCV_MODULE_opencv_line_descriptor_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
+//Extra dependencies of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_line_descriptor_DEPS_ORDERED:INTERNAL=opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_line_descriptor module (for
+// linker)
+OPENCV_MODULE_opencv_line_descriptor_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
+//Brief description of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_DESCRIPTION:INTERNAL=Line descriptor
+//List of header files for opencv_line_descriptor
+OPENCV_MODULE_opencv_line_descriptor_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/include/opencv2/line_descriptor.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/include/opencv2/line_descriptor/descriptor.hpp
+OPENCV_MODULE_opencv_line_descriptor_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_line_descriptor_LINK_DEPS:INTERNAL=;
+//Location of opencv_line_descriptor module sources
+OPENCV_MODULE_opencv_line_descriptor_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor
+//Optional dependencies of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_line_descriptor module
+OPENCV_MODULE_opencv_line_descriptor_REQ_DEPS:INTERNAL=opencv_features2d;opencv_imgproc;opencv_highgui
+//List of source files for opencv_line_descriptor
+OPENCV_MODULE_opencv_line_descriptor_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/draw.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/binary_descriptor_matcher.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/binary_descriptor.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/LSDDetector.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/line_descriptor_init.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/types.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/bitarray.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/bitops.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/line_descriptor/src/precomp.hpp
+//Location of opencv_matlab module sources
+OPENCV_MODULE_opencv_matlab_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/matlab
 OPENCV_MODULE_opencv_ml_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ml
 //The category of the module
 OPENCV_MODULE_opencv_ml_CLASS:INTERNAL=PUBLIC
@@ -2714,6 +3237,34 @@ OPENCV_MODULE_opencv_objdetect_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_objdetect_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_ml
 //List of source files for opencv_objdetect
 OPENCV_MODULE_opencv_objdetect_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/haar.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/hog.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/cascadedetect.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/detection_based_tracker.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/cascadedetect_convert.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/opencl/cascadedetect.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/opencl/objdetect_hog.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/objdetect/opencl_kernels_objdetect.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/objdetect/opencl_kernels_objdetect.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/cascadedetect.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/objdetect/src/precomp.hpp
+OPENCV_MODULE_opencv_optflow_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/optflow
+//The category of the module
+OPENCV_MODULE_opencv_optflow_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video
+//Extra dependencies of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_optflow_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_optflow module (for linker)
+OPENCV_MODULE_opencv_optflow_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video
+//Brief description of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_DESCRIPTION:INTERNAL=Optical Flow Algorithms
+//List of header files for opencv_optflow
+OPENCV_MODULE_opencv_optflow_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/include/opencv2/optflow.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/include/opencv2/optflow/motempl.hpp
+OPENCV_MODULE_opencv_optflow_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_optflow_LINK_DEPS:INTERNAL=;
+//Location of opencv_optflow module sources
+OPENCV_MODULE_opencv_optflow_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow
+//Optional dependencies of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_optflow module
+OPENCV_MODULE_opencv_optflow_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_video;opencv_highgui
+//List of source files for opencv_optflow
+OPENCV_MODULE_opencv_optflow_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/interfaces.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/motempl.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/deepflow.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/optical_flow_io.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/simpleflow.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/opencl/updatemotionhistory.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/optflow/opencl_kernels_optflow.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/optflow/opencl_kernels_optflow.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/src/precomp.hpp
 OPENCV_MODULE_opencv_photo_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/photo
 //The category of the module
 OPENCV_MODULE_opencv_photo_CLASS:INTERNAL=PUBLIC
@@ -2746,12 +3297,12 @@ OPENCV_MODULE_opencv_python2_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/t
 //The category of the module
 OPENCV_MODULE_opencv_python2_CLASS:INTERNAL=BINDINGS
 //Flattened dependencies of opencv_python2 module
-OPENCV_MODULE_opencv_python2_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video;opencv_shape;opencv_stitching;opencv_superres
+OPENCV_MODULE_opencv_python2_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video;opencv_bgsegm;opencv_flann;opencv_ml;opencv_features2d;opencv_calib3d;opencv_ccalib;opencv_face;opencv_text;opencv_datasets;opencv_line_descriptor;opencv_objdetect;opencv_optflow;opencv_photo;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_xfeatures2d;opencv_stitching;opencv_superres;opencv_surface_matching;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Extra dependencies of opencv_python2 module
 OPENCV_MODULE_opencv_python2_DEPS_EXT:INTERNAL=
-OPENCV_MODULE_opencv_python2_DEPS_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python2_DEPS_ORDERED:INTERNAL=opencv_bgsegm;opencv_calib3d;opencv_ccalib;opencv_core;opencv_datasets;opencv_face;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_line_descriptor;opencv_ml;opencv_objdetect;opencv_optflow;opencv_photo;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_stitching;opencv_superres;opencv_surface_matching;opencv_text;opencv_video;opencv_videoio;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Flattened dependencies of opencv_python2 module (for linker)
-OPENCV_MODULE_opencv_python2_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video;opencv_shape;opencv_stitching;opencv_superres
+OPENCV_MODULE_opencv_python2_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video;opencv_bgsegm;opencv_flann;opencv_ml;opencv_features2d;opencv_calib3d;opencv_ccalib;opencv_face;opencv_text;opencv_datasets;opencv_line_descriptor;opencv_objdetect;opencv_optflow;opencv_photo;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_xfeatures2d;opencv_stitching;opencv_superres;opencv_surface_matching;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
 //Brief description of opencv_python2 module
 OPENCV_MODULE_opencv_python2_DESCRIPTION:INTERNAL=The python2 bindings
 OPENCV_MODULE_opencv_python2_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -2759,7 +3310,7 @@ OPENCV_MODULE_opencv_python2_LINK_DEPS:INTERNAL=
 //Location of opencv_python2 module sources
 OPENCV_MODULE_opencv_python2_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/python/python2
 //Optional dependencies of opencv_python2 module
-OPENCV_MODULE_opencv_python2_OPT_DEPS:INTERNAL=opencv_androidcamera;opencv_shape;opencv_superres;opencv_stitching;opencv_photo;opencv_videostab;opencv_python;opencv_objdetect;opencv_flann;opencv_highgui;opencv_viz;opencv_imgcodecs;opencv_features2d;opencv_calib3d;opencv_video;opencv_videoio;opencv_ml;opencv_imgproc;opencv_core;opencv_world
+OPENCV_MODULE_opencv_python2_OPT_DEPS:INTERNAL=opencv_androidcamera;opencv_shape;opencv_superres;opencv_stitching;opencv_photo;opencv_videostab;opencv_python;opencv_objdetect;opencv_flann;opencv_highgui;opencv_viz;opencv_imgcodecs;opencv_features2d;opencv_calib3d;opencv_video;opencv_videoio;opencv_ml;opencv_imgproc;opencv_core;opencv_world;opencv_optflow;opencv_cvv;opencv_reg;opencv_xfeatures2d;opencv_text;opencv_rgbd;opencv_line_descriptor;opencv_bgsegm;opencv_datasets;opencv_face;opencv_saliency;opencv_xobjdetect;opencv_xphoto;opencv_ximgproc;opencv_ccalib;opencv_datasetstools;opencv_surface_matching
 //Optional private dependencies of opencv_python2 module
 OPENCV_MODULE_opencv_python2_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_python2 module
@@ -2781,6 +3332,90 @@ OPENCV_MODULE_opencv_python3_DESCRIPTION:INTERNAL=The python3 bindings
 OPENCV_MODULE_opencv_python3_IS_PART_OF_WORLD:INTERNAL=OFF
 //Location of opencv_python3 module sources
 OPENCV_MODULE_opencv_python3_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/python/python3
+OPENCV_MODULE_opencv_reg_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/reg
+//The category of the module
+OPENCV_MODULE_opencv_reg_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_reg module
+OPENCV_MODULE_opencv_reg_DEPS:INTERNAL=opencv_core;opencv_imgproc
+//Extra dependencies of opencv_reg module
+OPENCV_MODULE_opencv_reg_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_reg_DEPS_ORDERED:INTERNAL=opencv_core;opencv_imgproc
+//Flattened dependencies of opencv_reg module (for linker)
+OPENCV_MODULE_opencv_reg_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
+//Brief description of opencv_reg module
+OPENCV_MODULE_opencv_reg_DESCRIPTION:INTERNAL=Image Registration
+//List of header files for opencv_reg
+OPENCV_MODULE_opencv_reg_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/map.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mappergradsimilar.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mapprojec.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mappergradshift.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mappergradaffine.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mappergradproj.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mapaffine.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mapper.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mapperpyramid.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mappergradeuclid.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/include/opencv2/reg/mapshift.hpp
+OPENCV_MODULE_opencv_reg_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_reg_LINK_DEPS:INTERNAL=;
+//Location of opencv_reg module sources
+OPENCV_MODULE_opencv_reg_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg
+//Optional dependencies of opencv_reg module
+OPENCV_MODULE_opencv_reg_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_reg module
+OPENCV_MODULE_opencv_reg_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_reg module
+OPENCV_MODULE_opencv_reg_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_reg module
+OPENCV_MODULE_opencv_reg_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_core
+//List of source files for opencv_reg
+OPENCV_MODULE_opencv_reg_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mappergradproj.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mapprojec.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mappergradshift.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mapaffine.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mapper.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/map.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/precomp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mappergradsimilar.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mapperpyramid.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mappergradaffine.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mapshift.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/mappergradeuclid.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/reg/src/precomp.hpp
+OPENCV_MODULE_opencv_rgbd_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/rgbd
+//The category of the module
+OPENCV_MODULE_opencv_rgbd_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d
+//Extra dependencies of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_rgbd_DEPS_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_rgbd module (for linker)
+OPENCV_MODULE_opencv_rgbd_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d
+//Brief description of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_DESCRIPTION:INTERNAL=RGBD algorithms
+//List of header files for opencv_rgbd
+OPENCV_MODULE_opencv_rgbd_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/include/opencv2/rgbd.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/include/opencv2/rgbd/linemod.hpp
+OPENCV_MODULE_opencv_rgbd_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_rgbd_LINK_DEPS:INTERNAL=;
+//Location of opencv_rgbd module sources
+OPENCV_MODULE_opencv_rgbd_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd
+//Optional dependencies of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_rgbd module
+OPENCV_MODULE_opencv_rgbd_REQ_DEPS:INTERNAL=opencv_core;opencv_calib3d;opencv_highgui;opencv_imgproc
+//List of source files for opencv_rgbd
+OPENCV_MODULE_opencv_rgbd_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/rgbd_init.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/linemod.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/normal.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/depth_cleaner.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/depth_to_3d.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/plane.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/odometry.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/utils.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/utils.h;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/rgbd/src/depth_to_3d.h
+OPENCV_MODULE_opencv_saliency_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/saliency
+//The category of the module
+OPENCV_MODULE_opencv_saliency_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
+//Extra dependencies of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_saliency_DEPS_ORDERED:INTERNAL=opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_saliency module (for linker)
+OPENCV_MODULE_opencv_saliency_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
+//Brief description of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_DESCRIPTION:INTERNAL=Saliency API
+//List of header files for opencv_saliency
+OPENCV_MODULE_opencv_saliency_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/include/opencv2/saliency.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/include/opencv2/saliency/saliencySpecializedClasses.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/include/opencv2/saliency/saliencyBaseClasses.hpp
+OPENCV_MODULE_opencv_saliency_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_saliency_LINK_DEPS:INTERNAL=;
+//Location of opencv_saliency module sources
+OPENCV_MODULE_opencv_saliency_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency
+//Optional dependencies of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_saliency module
+OPENCV_MODULE_opencv_saliency_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_highgui;opencv_features2d
+//List of source files for opencv_saliency
+OPENCV_MODULE_opencv_saliency_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/motionSaliencyBinWangApr2014.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/saliency_init.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/motionSaliency.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/objectness.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/saliency.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/staticSaliencySpectralResidual.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/staticSaliency.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/ValStructVec.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/FilterTIG.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/CmFile.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/CmShow.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/objectnessBING.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/kyheader.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/CmFile.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/CmTimer.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/saliency/src/BING/CmShow.hpp
 OPENCV_MODULE_opencv_shape_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/shape
 //The category of the module
 OPENCV_MODULE_opencv_shape_CLASS:INTERNAL=PUBLIC
@@ -2813,12 +3448,12 @@ OPENCV_MODULE_opencv_stitching_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo
 //The category of the module
 OPENCV_MODULE_opencv_stitching_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_stitching module
-OPENCV_MODULE_opencv_stitching_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect
+OPENCV_MODULE_opencv_stitching_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_video;opencv_shape;opencv_xfeatures2d
 //Extra dependencies of opencv_stitching module
 OPENCV_MODULE_opencv_stitching_DEPS_EXT:INTERNAL=
-OPENCV_MODULE_opencv_stitching_DEPS_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_videoio
+OPENCV_MODULE_opencv_stitching_DEPS_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_shape;opencv_video;opencv_videoio;opencv_xfeatures2d
 //Flattened dependencies of opencv_stitching module (for linker)
-OPENCV_MODULE_opencv_stitching_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect
+OPENCV_MODULE_opencv_stitching_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_video;opencv_shape;opencv_xfeatures2d
 //Brief description of opencv_stitching module
 OPENCV_MODULE_opencv_stitching_DESCRIPTION:INTERNAL=Images stitching
 //List of header files for opencv_stitching
@@ -2865,6 +3500,91 @@ OPENCV_MODULE_opencv_superres_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_superres_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_video
 //List of source files for opencv_superres
 OPENCV_MODULE_opencv_superres_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/optical_flow.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/btv_l1_cuda.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/super_resolution.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/btv_l1.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/input_array_utility.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/frame_source.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/opencl/superres_btvl1.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/superres/opencl_kernels_superres.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/superres/opencl_kernels_superres.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/ring_buffer.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv/modules/superres/src/input_array_utility.hpp
+OPENCV_MODULE_opencv_surface_matching_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/surface_matching
+//The category of the module
+OPENCV_MODULE_opencv_surface_matching_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_DEPS:INTERNAL=opencv_core;opencv_flann
+//Extra dependencies of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_surface_matching_DEPS_ORDERED:INTERNAL=opencv_core;opencv_flann
+//Flattened dependencies of opencv_surface_matching module (for
+// linker)
+OPENCV_MODULE_opencv_surface_matching_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann
+//Brief description of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_DESCRIPTION:INTERNAL=3D point features
+//List of header files for opencv_surface_matching
+OPENCV_MODULE_opencv_surface_matching_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/include/opencv2/surface_matching.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/include/opencv2/surface_matching/ppf_match_3d.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/include/opencv2/surface_matching/icp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/include/opencv2/surface_matching/ppf_helpers.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/include/opencv2/surface_matching/pose_3d.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/include/opencv2/surface_matching/t_hash_int.hpp
+OPENCV_MODULE_opencv_surface_matching_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_surface_matching_LINK_DEPS:INTERNAL=;
+//Location of opencv_surface_matching module sources
+OPENCV_MODULE_opencv_surface_matching_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching
+//Optional dependencies of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_surface_matching module
+OPENCV_MODULE_opencv_surface_matching_REQ_DEPS:INTERNAL=opencv_core;opencv_flann
+//List of source files for opencv_surface_matching
+OPENCV_MODULE_opencv_surface_matching_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/icp.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/t_hash_int.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/ppf_helpers.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/pose_3d.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/ppf_match_3d.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/c_utils.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/hash_murmur86.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/hash_murmur64.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/surface_matching/src/hash_murmur.hpp
+OPENCV_MODULE_opencv_text_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/text
+//The category of the module
+OPENCV_MODULE_opencv_text_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_text module
+OPENCV_MODULE_opencv_text_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
+//Extra dependencies of opencv_text module
+OPENCV_MODULE_opencv_text_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_text_DEPS_ORDERED:INTERNAL=opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_text module (for linker)
+OPENCV_MODULE_opencv_text_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
+//Brief description of opencv_text module
+OPENCV_MODULE_opencv_text_DESCRIPTION:INTERNAL=Text Detection and Recognition
+//List of header files for opencv_text
+OPENCV_MODULE_opencv_text_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/include/opencv2/text.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/include/opencv2/text/ocr.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/include/opencv2/text/erfilter.hpp
+OPENCV_MODULE_opencv_text_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_text_LINK_DEPS:INTERNAL=;
+//Location of opencv_text module sources
+OPENCV_MODULE_opencv_text_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text
+//Optional dependencies of opencv_text module
+OPENCV_MODULE_opencv_text_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_text module
+OPENCV_MODULE_opencv_text_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_text module
+OPENCV_MODULE_opencv_text_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_text module
+OPENCV_MODULE_opencv_text_REQ_DEPS:INTERNAL=opencv_ml;opencv_highgui;opencv_imgproc;opencv_core;opencv_features2d
+//List of source files for opencv_text
+OPENCV_MODULE_opencv_text_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/src/ocr_hmm_decoder.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/src/ocr_tesseract.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/src/erfilter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/text/src/precomp.hpp
+OPENCV_MODULE_opencv_tracking_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/tracking
+//The category of the module
+OPENCV_MODULE_opencv_tracking_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video
+//Extra dependencies of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_tracking_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_tracking module (for linker)
+OPENCV_MODULE_opencv_tracking_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_video
+//Brief description of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_DESCRIPTION:INTERNAL=Tracking API
+//List of header files for opencv_tracking
+OPENCV_MODULE_opencv_tracking_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/include/opencv2/tracking.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/include/opencv2/tracking/tracking.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/include/opencv2/tracking/onlineMIL.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/include/opencv2/tracking/feature.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/include/opencv2/tracking/tracker.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/include/opencv2/tracking/onlineBoosting.hpp
+OPENCV_MODULE_opencv_tracking_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_tracking_LINK_DEPS:INTERNAL=;
+//Location of opencv_tracking module sources
+OPENCV_MODULE_opencv_tracking_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking
+//Optional dependencies of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_tracking module
+OPENCV_MODULE_opencv_tracking_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_core;opencv_video;opencv_highgui
+//List of source files for opencv_tracking
+OPENCV_MODULE_opencv_tracking_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerModel.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerFeature.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/tracking_init.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerMILModel.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerBoosting.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerFeatureSet.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerSamplerAlgorithm.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/feature.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/tracker.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerMedianFlow.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerMIL.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/onlineBoosting.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerBoostingModel.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/tld_utils.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/tld_tracker.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerStateEstimator.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/onlineMIL.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerSampler.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerMILModel.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/TrackingFunctionPF.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/PFSolver.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/tld_tracker.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/tracking/src/trackerBoostingModel.hpp
 OPENCV_MODULE_opencv_ts_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ts
 //The category of the module
 OPENCV_MODULE_opencv_ts_CLASS:INTERNAL=PUBLIC
@@ -2995,6 +3715,118 @@ OPENCV_MODULE_opencv_world_PRIVATE_OPT_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_world_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_world module
 OPENCV_MODULE_opencv_world_REQ_DEPS:INTERNAL=opencv_core
+OPENCV_MODULE_opencv_xfeatures2d_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xfeatures2d
+//The category of the module
+OPENCV_MODULE_opencv_xfeatures2d_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_video;opencv_shape
+//Extra dependencies of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_xfeatures2d_DEPS_ORDERED:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_shape;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_xfeatures2d module (for linker)
+OPENCV_MODULE_opencv_xfeatures2d_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_video;opencv_shape
+//Brief description of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_DESCRIPTION:INTERNAL=Contributed/Experimental Algorithms for Salient 2D Features Detection
+//List of header files for opencv_xfeatures2d
+OPENCV_MODULE_opencv_xfeatures2d_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/include/opencv2/xfeatures2d.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/include/opencv2/xfeatures2d/cuda.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/include/opencv2/xfeatures2d/nonfree.hpp
+OPENCV_MODULE_opencv_xfeatures2d_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_xfeatures2d_LINK_DEPS:INTERNAL=;
+//Location of opencv_xfeatures2d module sources
+OPENCV_MODULE_opencv_xfeatures2d_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d
+//Optional dependencies of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_OPT_DEPS:INTERNAL=opencv_cudaarithm
+//Optional private dependencies of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_xfeatures2d module
+OPENCV_MODULE_opencv_xfeatures2d_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_shape;opencv_highgui;opencv_videoio;opencv_ml
+//List of source files for opencv_xfeatures2d
+OPENCV_MODULE_opencv_xfeatures2d_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/brief.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/stardetector.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/freak.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/surf.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/xfeatures2d_init.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/sift.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/surf.ocl.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/surf.cuda.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/opencl/surf.cl;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xfeatures2d/opencl_kernels_xfeatures2d.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xfeatures2d/opencl_kernels_xfeatures2d.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/surf.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xfeatures2d/src/precomp.hpp
+OPENCV_MODULE_opencv_ximgproc_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/ximgproc
+//The category of the module
+OPENCV_MODULE_opencv_ximgproc_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+//Extra dependencies of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_ximgproc_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+//Flattened dependencies of opencv_ximgproc module (for linker)
+OPENCV_MODULE_opencv_ximgproc_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+//Brief description of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_DESCRIPTION:INTERNAL=Extended image processing module. It includes edge-aware filters and etc.
+//List of header files for opencv_ximgproc
+OPENCV_MODULE_opencv_ximgproc_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/include/opencv2/ximgproc.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/include/opencv2/ximgproc/edge_filter.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/include/opencv2/ximgproc/seeds.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/include/opencv2/ximgproc/structured_edge_detection.hpp
+OPENCV_MODULE_opencv_ximgproc_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_ximgproc_LINK_DEPS:INTERNAL=;
+//Location of opencv_ximgproc module sources
+OPENCV_MODULE_opencv_ximgproc_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc
+//Optional dependencies of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_ximgproc module
+OPENCV_MODULE_opencv_ximgproc_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_core;opencv_highgui
+//List of source files for opencv_ximgproc
+OPENCV_MODULE_opencv_ximgproc_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/guided_filter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/structured_edge_detection.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/joint_bilateral_filter.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/dtfilter_cpu.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/edgeaware_filters_common.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/adaptive_manifold_filter_n.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/domain_transform.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/seeds.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/advanced_types.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/dtfilter_cpu.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/precomp.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/dtfilter_cpu.inl.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/ximgproc/src/edgeaware_filters_common.hpp
+OPENCV_MODULE_opencv_xobjdetect_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xobjdetect
+//The category of the module
+OPENCV_MODULE_opencv_xobjdetect_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+//Extra dependencies of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_xobjdetect_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+//Flattened dependencies of opencv_xobjdetect module (for linker)
+OPENCV_MODULE_opencv_xobjdetect_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+//Brief description of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_DESCRIPTION:INTERNAL=Object detection algorithms
+//List of header files for opencv_xobjdetect
+OPENCV_MODULE_opencv_xobjdetect_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/include/opencv2/xobjdetect.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/include/opencv2/xobjdetect/private.hpp
+OPENCV_MODULE_opencv_xobjdetect_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_xobjdetect_LINK_DEPS:INTERNAL=;
+//Location of opencv_xobjdetect module sources
+OPENCV_MODULE_opencv_xobjdetect_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect
+//Optional dependencies of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_OPT_DEPS:INTERNAL=
+//Optional private dependencies of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_xobjdetect module
+OPENCV_MODULE_opencv_xobjdetect_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_highgui
+//List of source files for opencv_xobjdetect
+OPENCV_MODULE_opencv_xobjdetect_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/src/acffeature.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/src/stump.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/src/waldboost.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/src/icfdetector.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xobjdetect/src/precomp.hpp
+OPENCV_MODULE_opencv_xphoto_BINARY_DIR:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv/build_static/modules/xphoto
+//The category of the module
+OPENCV_MODULE_opencv_xphoto_CLASS:INTERNAL=PUBLIC
+//Flattened dependencies of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_photo
+//Extra dependencies of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_DEPS_EXT:INTERNAL=
+OPENCV_MODULE_opencv_xphoto_DEPS_ORDERED:INTERNAL=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_photo;opencv_videoio
+//Flattened dependencies of opencv_xphoto module (for linker)
+OPENCV_MODULE_opencv_xphoto_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_photo
+//Brief description of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_DESCRIPTION:INTERNAL=Addon to basic photo module
+//List of header files for opencv_xphoto
+OPENCV_MODULE_opencv_xphoto_HEADERS:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/include/opencv2/xphoto.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/include/opencv2/xphoto/inpainting.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/include/opencv2/xphoto/simple_color_balance.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/include/opencv2/xphoto/dct_image_denoising.hpp
+OPENCV_MODULE_opencv_xphoto_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_xphoto_LINK_DEPS:INTERNAL=;
+//Location of opencv_xphoto module sources
+OPENCV_MODULE_opencv_xphoto_LOCATION:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto
+//Optional dependencies of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_OPT_DEPS:INTERNAL=opencv_photo;opencv_highgui
+//Optional private dependencies of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_PRIVATE_OPT_DEPS:INTERNAL=
+//Required private dependencies of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_PRIVATE_REQ_DEPS:INTERNAL=
+//Required dependencies of opencv_xphoto module
+OPENCV_MODULE_opencv_xphoto_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc
+//List of source files for opencv_xphoto
+OPENCV_MODULE_opencv_xphoto_SOURCES:INTERNAL=/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/inpainting.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/dct_image_denoising.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/simple_color_balance.cpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/advanced_types.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/blending.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/photomontage.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/norm2.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/annf.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/whs.hpp;/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/xphoto/src/gcgraph.hpp
 //List of OpenCV modules included into the world
 OPENCV_WORLD_MODULES:INTERNAL=
 //ADVANCED property for variable: OPENEXR_HALF_LIBRARY
@@ -3006,7 +3838,7 @@ OPENEXR_ILMTHREAD_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENEXR_IMATH_LIBRARY
 OPENEXR_IMATH_LIBRARY-ADVANCED:INTERNAL=1
 //List of OpenCVModules targets
-OpenCVModules_TARGETS:INTERNAL=zlib;libjpeg;libpng;opencv_core;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video;opencv_shape;opencv_stitching;opencv_superres;opencv_ts
+OpenCVModules_TARGETS:INTERNAL=zlib;libjpeg;libpng;opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_xobjdetect;opencv_adas;opencv_video;opencv_bgsegm;opencv_bioinspired;opencv_flann;opencv_ml;opencv_features2d;opencv_calib3d;opencv_ccalib;opencv_face;opencv_text;opencv_datasets;opencv_line_descriptor;opencv_objdetect;opencv_optflow;opencv_photo;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_xfeatures2d;opencv_stitching;opencv_superres;opencv_surface_matching;opencv_tracking;opencv_ts;opencv_ximgproc;opencv_xphoto
 //ADVANCED property for variable: OpenMP_CXX_FLAGS
 OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
 //MODIFIED property for variable: OpenMP_CXX_FLAGS
@@ -3027,6 +3859,10 @@ PNG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 PNG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PS2PDF_CONVERTER
 PS2PDF_CONVERTER-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: PYTHON2_LIBRARY
+PYTHON2_LIBRARY-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: PYTHON3_LIBRARY
+PYTHON3_LIBRARY-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: PYTHON_INCLUDE_DIR2
 PYTHON_INCLUDE_DIR2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_LIBRARY_DEBUG

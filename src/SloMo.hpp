@@ -16,6 +16,7 @@ using std::vector;
 using cv::Point2f;
 using cv::Point2i;
 using cv::Mat;
+using cv::UMat;
 using std::unordered_map;
 using cv::VideoCapture;
 
@@ -45,6 +46,7 @@ namespace slomo
     const int maxCorners = 1000;
     const double qualityLevel = 0.01;
     const double minDistance = 1;
+    const string tmpDir = "tmp";
 
     class SloMo
     {
@@ -66,6 +68,13 @@ namespace slomo
                             const Mat &prevFrame,
                             vector<Mat> &warpFrame
                            );
+        bool learDeepFlow(const int rows, const int cols,
+                          Mat &prevframe, Mat &frame, Mat &flow);
+        void interpAll(const int rows, const int cols,
+                const Mat &flow, const int factor,
+                const Mat &prevFrame,
+                vector<Mat> &warpFrame
+        );
         void dumpVideoProp(VideoCapture &cap);
     };
 }

@@ -101,6 +101,7 @@ void SloMo::triangulate(const int rows, const int cols, const int blockSize,
         }
     }
 
+
     // Add corners
 
     int numCorners = corners.size();
@@ -416,11 +417,10 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
 
 
 
-
         if (!prevgray.empty()) {
             
 
-#if 0
+#if 1
             calcOpticalFlowFarneback(prevgray, gray, uflow, 0.5, 3, 15, 3, 5, 1.2, 0);
 #else
             Ptr<DenseOpticalFlow> tvl1 = createOptFlow_DualTVL1();
@@ -445,15 +445,33 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
             //}
 
             const float alphaIncr = 1.0f / float(factor);
-            for (int i = 1 ; i <= factor ; i++) {
-                float alpha = i * alphaIncr;
-                Mat iframeN = (1 - alpha) * wframeN[i-1] + alpha * frameN;
-                Mat iframe;
-                iframeN.convertTo(iframe, frame.type(), 255.0, 0);
-                vw.write(iframe);
+#if 0
+            //for (int i = 1 ; i <= factor ; i++) {
+                // float alpha = i * alphaIncr;
+                // Mat iframeN = (1 - alpha) * wframeN[i-1] + alpha * frameN;
+                // Mat iframe;
+                // iframeN.convertTo(iframe, frame.type(), 255.0, 0);
+                // vw.write(iframe);
 
+            //}
+#endif
+
+            for (int i = 1 ; i < factor ; i++) {
+                Mat wframe;
+                wframeN[i-1].convertTo(wframe, frame.type(), 255.0, 0);
+                vw.write(wframe);
+                char outFrame[256];
+                sprintf(outFrame, "%s/frame_%04d.png", tmpDir.c_str(), outNumFrames);
+                imwrite(outFrame, wframe);
+                outNumFrames++;
             }
+            vw.write(frame);
 
+
+            char outFrame[256];
+            sprintf(outFrame, "%s/frame_%04d.png", tmpDir.c_str(), outNumFrames);
+            imwrite(outFrame, frame);
+            outNumFrames++;
 
             // cerr << frame.cols << " " << flow.rows << endl;
             // cerr << flow.cols << " " << flow.rows << endl;
@@ -475,7 +493,7 @@ void SloMo::slowdown(string const& inFilename, string const outFilename, const i
         std::swap(prevgray, gray);
         std::swap(prevframe,frame);
         inNumFrames++;
-        outNumFrames++;
+       // outNumFrames++;
         TIME_END(3, "Frame")
     }
 

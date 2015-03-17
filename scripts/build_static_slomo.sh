@@ -6,8 +6,17 @@ BUILD_DIR="${OPENCV_DIR}/build_static"
 BIN_DIR="${BASE_DIR}/bin"
 SRC_DIR="${BASE_DIR}/src"
 TARGET="slomo"
-SOURCES="delaunay2.cpp SloMo.cpp main.cpp"
-OBJECTS="delaunay2.o SloMo.o main.o"
+SOURCES="delaunay2.cpp SloMo2.cpp main.cpp"
+OBJECTS="delaunay2.o SloMo2.o main.o"
+#TARGET="slomo"
+#SOURCES="delaunay2.cpp SloMo.cpp main.cpp"
+#OBJECTS="delaunay2.o SloMo.o main.o"
+#TARGET="synthetic"
+#SOURCES="synthetic.cpp"
+#OBJECTS="synthetic.o"
+#TARGET="fback"
+#SOURCES="fback.cpp"
+#OBJECTS="fback.o"
 export PKG_CONFIG_PATH="${OPENCV_DIR}/unix-install:${PKG_CONFIG_PATH}"
 cd "${BASE_DIR}"
 cd "${SRC_DIR}"
@@ -36,12 +45,16 @@ cd "${SRC_DIR}"
 g++ -c -Wall -std=c++11 -fopenmp -static \
  -I/home/sourabhd/projects/slomo/build_static/include/opencv \
  -I/home/sourabhd/projects/slomo/build_static/include \
- $SOURCES
+ -I/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/include \
+ -I/home/sourabhd/projects/slomo/thirdparty/FastDeepFlow_release1.0.1 \
+ $SOURCES || exit 1
 
 #g++ -v -Wall -std=c++11 -fopenmp -static -static-libstdc++ \
 g++ -v -static \
  -I/home/sourabhd/projects/slomo/build_static/include/opencv \
  -I/home/sourabhd/projects/slomo/build_static/include \
+ -I/home/sourabhd/projects/slomo/thirdparty/opencv_contrib/modules/optflow/include \
+ -I/home/sourabhd/projects/slomo/thirdparty/FastDeepFlow_release1.0.1 \
  -o ${BIN_DIR}/${TARGET} \
  -Wl,--start-group \
  /usr/lib/x86_64-linux-gnu/libm.a \
@@ -112,22 +125,35 @@ g++ -v -static \
  /home/sourabhd/projects/slomo/thirdparty/libav-9.16_install/lib/libswscale.a \
  /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/3rdparty/lib/liblibpng.a \
  /usr/lib/x86_64-linux-gnu/libjpeg.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_core.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_features2d.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_flann.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_highgui.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_imgcodecs.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_imgproc.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_ml.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_objdetect.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_photo.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_shape.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_stitching.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_superres.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_ts.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_video.a \
- /home/sourabhd/projects/slomo/build_static/lib/libopencv_videoio.a \
- delaunay2.o SloMo.o main.o \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_core.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_features2d.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_flann.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_highgui.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_imgcodecs.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_imgproc.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_ml.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_objdetect.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_photo.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_shape.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_stitching.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_superres.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_ts.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_video.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_videoio.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_surface_matching.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_reg.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_face.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_bgsegm.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_xobjdetect.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_bioinspired.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_adas.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_optflow.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_objdetect.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_features2d.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_ximgproc.a \
+ /home/sourabhd/projects/slomo/thirdparty/opencv/build_static/lib/libopencv_tracking.a \
+ /home/sourabhd/projects/slomo/thirdparty/FastDeepFlow_release1.0.1/fastdeepflow.a \
+ $OBJECTS \
  -Wl,--end-group
 
  # /usr/lib/x86_64-linux-gnu/linux-vdso.so.1

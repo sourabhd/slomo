@@ -33,6 +33,10 @@ int main(int argc, char *argv[])
             return 1;
         }
 
+#if 0
+        cerr << cv::getBuildInformation() << endl;
+#endif
+
         string inVideoFilename(argv[1]);
         string outVideoFilename(argv[2]);
         const int factor = atoi(argv[3]);

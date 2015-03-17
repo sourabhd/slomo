@@ -10,1207 +10,1440 @@ CV_CAP_PROP_FORMAT        :                         0  : Format of the Mat objec
 CV_CAP_PROP_MODE          :                         0  : Backend-specific value indicating the current capture mode.
 CV_CAP_PROP_CONVERT_RGB   :                         0  : Boolean flags indicating whether images should be converted to RGB.
 Frame # 0
-37263 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.17972 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 0.28102 (processor) 0 (walltime)
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 0.046336 (processor) 0 (walltime)
 Frame # 1
-37263 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.176281 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 14.0518 (processor) 12 (walltime)
+Flow values not normal at 1
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 17.8924 (processor) 18 (walltime)
 Frame # 2
-62948 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.263183 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 26.6818 (processor) 17 (walltime)
+Sum : 2017.71 max_x: 0.244523 max_y : -1.2328 max_r: 4.24808
+Sum : 2017.71 max_x: 0.244523 max_y : -1.2328 max_r: 4.24808
+Sum : 2017.71 max_x: 0.244523 max_y : -1.2328 max_r: 4.24808
+Sum : 2017.71 max_x: 0.244523 max_y : -1.2328 max_r: 4.24808
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.5222 (processor) 18 (walltime)
 Frame # 3
-56657 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.248419 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 74.4541 (processor) 28 (walltime)
+Sum : 3606.72 max_x: 8.18463 max_y : 2.23844 max_r: 8.22862
+Sum : 3606.72 max_x: 8.18463 max_y : 2.23844 max_r: 8.22862
+Sum : 3606.72 max_x: 8.18463 max_y : 2.23844 max_r: 8.22862
+Sum : 3606.72 max_x: 8.18463 max_y : 2.23844 max_r: 8.22862
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.5977 (processor) 19 (walltime)
 Frame # 4
-60652 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.257845 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 157.885 (processor) 50 (walltime)
+Sum : 4234.19 max_x: 6.60347 max_y : 1.32213 max_r: 9.50041
+Sum : 4234.19 max_x: 6.60347 max_y : 1.32213 max_r: 9.50041
+Sum : 4234.19 max_x: 6.60347 max_y : 1.32213 max_r: 9.50041
+Sum : 4234.19 max_x: 6.60347 max_y : 1.32213 max_r: 9.50041
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.5576 (processor) 18 (walltime)
 Frame # 5
-57907 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.250009 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 184.677 (processor) 57 (walltime)
+Sum : 5821.01 max_x: 9.33558 max_y : 4.94418 max_r: 11.743
+Sum : 5821.01 max_x: 9.33558 max_y : 4.94418 max_r: 11.743
+Sum : 5821.01 max_x: 9.33558 max_y : 4.94418 max_r: 11.743
+Sum : 5821.01 max_x: 9.33558 max_y : 4.94418 max_r: 11.743
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1777 (processor) 21 (walltime)
 Frame # 6
-61782 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.261437 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 251.068 (processor) 76 (walltime)
+Sum : 6051.16 max_x: 9.57811 max_y : 4.70042 max_r: 12.9923
+Sum : 6051.16 max_x: 9.57811 max_y : 4.70042 max_r: 12.9923
+Sum : 6051.16 max_x: 9.57811 max_y : 4.70042 max_r: 12.9923
+Sum : 6051.16 max_x: 9.57811 max_y : 4.70042 max_r: 12.9923
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.5352 (processor) 18 (walltime)
 Frame # 7
-61451 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.260661 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 293.235 (processor) 91 (walltime)
+Sum : 6862.22 max_x: 10.7558 max_y : 4.96351 max_r: 14.5546
+Sum : 6862.22 max_x: 10.7558 max_y : 4.96351 max_r: 14.5546
+Sum : 6862.22 max_x: 10.7558 max_y : 4.96351 max_r: 14.5546
+Sum : 6862.22 max_x: 10.7558 max_y : 4.96351 max_r: 14.5546
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.5959 (processor) 19 (walltime)
 Frame # 8
-62324 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.260336 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 325.78 (processor) 96 (walltime)
+Sum : 7006.97 max_x: 11.6182 max_y : 5.51968 max_r: 14.6791
+Sum : 7006.97 max_x: 11.6182 max_y : 5.51968 max_r: 14.6791
+Sum : 7006.97 max_x: 11.6182 max_y : 5.51968 max_r: 14.6791
+Sum : 7006.97 max_x: 11.6182 max_y : 5.51968 max_r: 14.6791
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.5906 (processor) 18 (walltime)
 Frame # 9
-62584 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.262754 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 362.531 (processor) 111 (walltime)
+Sum : 7490.72 max_x: 12.2824 max_y : 5.41428 max_r: 15.8014
+Sum : 7490.72 max_x: 12.2824 max_y : 5.41428 max_r: 15.8014
+Sum : 7490.72 max_x: 12.2824 max_y : 5.41428 max_r: 15.8014
+Sum : 7490.72 max_x: 12.2824 max_y : 5.41428 max_r: 15.8014
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.6028 (processor) 19 (walltime)
 Frame # 10
-63285 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.262606 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 375.978 (processor) 120 (walltime)
+Sum : 7972.65 max_x: 13.3964 max_y : 5.53593 max_r: 16.912
+Sum : 7972.65 max_x: 13.3964 max_y : 5.53593 max_r: 16.912
+Sum : 7972.65 max_x: 13.3964 max_y : 5.53593 max_r: 16.912
+Sum : 7972.65 max_x: 13.3964 max_y : 5.53593 max_r: 16.912
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.6206 (processor) 18 (walltime)
 Frame # 11
-61597 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.256181 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 432.406 (processor) 130 (walltime)
+Sum : 8611.66 max_x: 14.0404 max_y : 6.0107 max_r: 17.4632
+Sum : 8611.66 max_x: 14.0404 max_y : 6.0107 max_r: 17.4632
+Sum : 8611.66 max_x: 14.0404 max_y : 6.0107 max_r: 17.4632
+Sum : 8611.66 max_x: 14.0404 max_y : 6.0107 max_r: 17.4632
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0301 (processor) 19 (walltime)
 Frame # 12
-61074 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.343961 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 353.349 (processor) 111 (walltime)
+Sum : 8703.05 max_x: 14.7118 max_y : 6.59794 max_r: 18.0797
+Sum : 8703.05 max_x: 14.7118 max_y : 6.59794 max_r: 18.0797
+Sum : 8703.05 max_x: 14.7118 max_y : 6.59794 max_r: 18.0797
+Sum : 8703.05 max_x: 14.7118 max_y : 6.59794 max_r: 18.0797
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6166 (processor) 19 (walltime)
 Frame # 13
-61061 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.260451 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 354.78 (processor) 113 (walltime)
+Sum : 8988.17 max_x: 15.3623 max_y : 6.88993 max_r: 18.0181
+Sum : 8988.17 max_x: 15.3623 max_y : 6.88993 max_r: 18.0181
+Sum : 8988.17 max_x: 15.3623 max_y : 6.88993 max_r: 18.0181
+Sum : 8988.17 max_x: 15.3623 max_y : 6.88993 max_r: 18.0181
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6552 (processor) 20 (walltime)
 Frame # 14
-61536 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.251687 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.4932 (processor) 24 (walltime)
+Sum : 8247.73 max_x: 15.3204 max_y : 7.13642 max_r: 18.5685
+Sum : 8247.73 max_x: 15.3204 max_y : 7.13642 max_r: 18.5685
+Sum : 8247.73 max_x: 15.3204 max_y : 7.13642 max_r: 18.5685
+Sum : 8247.73 max_x: 15.3204 max_y : 7.13642 max_r: 18.5685
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.795 (processor) 19 (walltime)
 Frame # 15
-60669 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.273458 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2139 (processor) 22 (walltime)
+Sum : 8221.07 max_x: 14.6239 max_y : 7.78053 max_r: 20.3054
+Sum : 8221.07 max_x: 14.6239 max_y : 7.78053 max_r: 20.3054
+Sum : 8221.07 max_x: 14.6239 max_y : 7.78053 max_r: 20.3054
+Sum : 8221.07 max_x: 14.6239 max_y : 7.78053 max_r: 20.3054
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.136 (processor) 20 (walltime)
 Frame # 16
-61108 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.277975 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.7993 (processor) 23 (walltime)
+Sum : 8726.98 max_x: 15.6399 max_y : 8.75399 max_r: 21.3637
+Sum : 8726.98 max_x: 15.6399 max_y : 8.75399 max_r: 21.3637
+Sum : 8726.98 max_x: 15.6399 max_y : 8.75399 max_r: 21.3637
+Sum : 8726.98 max_x: 15.6399 max_y : 8.75399 max_r: 21.3637
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8824 (processor) 20 (walltime)
 Frame # 17
-61542 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.280432 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.2889 (processor) 24 (walltime)
+Sum : 8907.6 max_x: 16.6899 max_y : 8.14227 max_r: 22.4876
+Sum : 8907.6 max_x: 16.6899 max_y : 8.14227 max_r: 22.4876
+Sum : 8907.6 max_x: 16.6899 max_y : 8.14227 max_r: 22.4876
+Sum : 8907.6 max_x: 16.6899 max_y : 8.14227 max_r: 22.4876
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4364 (processor) 20 (walltime)
 Frame # 18
-62666 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.312651 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.1753 (processor) 24 (walltime)
+Sum : 8836.78 max_x: 18.2084 max_y : 8.54219 max_r: 24.7513
+Sum : 8836.78 max_x: 18.2084 max_y : 8.54219 max_r: 24.7513
+Sum : 8836.78 max_x: 18.2084 max_y : 8.54219 max_r: 24.7513
+Sum : 8836.78 max_x: 18.2084 max_y : 8.54219 max_r: 24.7513
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1248 (processor) 20 (walltime)
 Frame # 19
-61858 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.291574 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.5125 (processor) 23 (walltime)
+Sum : 8815.26 max_x: 19.9391 max_y : 8.66535 max_r: 23.7643
+Sum : 8815.26 max_x: 19.9391 max_y : 8.66535 max_r: 23.7643
+Sum : 8815.26 max_x: 19.9391 max_y : 8.66535 max_r: 23.7643
+Sum : 8815.26 max_x: 19.9391 max_y : 8.66535 max_r: 23.7643
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.5009 (processor) 19 (walltime)
 Frame # 20
-63772 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.29633 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.92 (processor) 24 (walltime)
+Sum : 8800.26 max_x: 20.9939 max_y : 8.99567 max_r: 22.565
+Sum : 8800.26 max_x: 20.9939 max_y : 8.99567 max_r: 22.565
+Sum : 8800.26 max_x: 20.9939 max_y : 8.99567 max_r: 22.565
+Sum : 8800.26 max_x: 20.9939 max_y : 8.99567 max_r: 22.565
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.239 (processor) 20 (walltime)
 Frame # 21
-65403 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.305583 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.4246 (processor) 24 (walltime)
+Sum : 8513.08 max_x: 21.1212 max_y : 8.62949 max_r: 23.0095
+Sum : 8513.08 max_x: 21.1212 max_y : 8.62949 max_r: 23.0095
+Sum : 8513.08 max_x: 21.1212 max_y : 8.62949 max_r: 23.0095
+Sum : 8513.08 max_x: 21.1212 max_y : 8.62949 max_r: 23.0095
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6059 (processor) 19 (walltime)
 Frame # 22
-65807 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.303816 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.951 (processor) 23 (walltime)
+Sum : 7959.22 max_x: 20.7853 max_y : 8.68605 max_r: 23.1068
+Sum : 7959.22 max_x: 20.7853 max_y : 8.68605 max_r: 23.1068
+Sum : 7959.22 max_x: 20.7853 max_y : 8.68605 max_r: 23.1068
+Sum : 7959.22 max_x: 20.7853 max_y : 8.68605 max_r: 23.1068
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4043 (processor) 20 (walltime)
 Frame # 23
-65647 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.335263 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.216 (processor) 22 (walltime)
+Sum : 7485.92 max_x: 21.4912 max_y : 7.17017 max_r: 24.6873
+Sum : 7485.92 max_x: 21.4912 max_y : 7.17017 max_r: 24.6873
+Sum : 7485.92 max_x: 21.4912 max_y : 7.17017 max_r: 24.6873
+Sum : 7485.92 max_x: 21.4912 max_y : 7.17017 max_r: 24.6873
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4181 (processor) 20 (walltime)
 Frame # 24
-66791 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.37174 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9762 (processor) 22 (walltime)
+Sum : 6650.41 max_x: 21.7749 max_y : 6.52774 max_r: 25.3678
+Sum : 6650.41 max_x: 21.7749 max_y : 6.52774 max_r: 25.3678
+Sum : 6650.41 max_x: 21.7749 max_y : 6.52774 max_r: 25.3678
+Sum : 6650.41 max_x: 21.7749 max_y : 6.52774 max_r: 25.3678
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6509 (processor) 19 (walltime)
 Frame # 25
-67803 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.403696 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.7314 (processor) 25 (walltime)
+Sum : 5813.98 max_x: 21.3335 max_y : 6.91417 max_r: 23.1586
+Sum : 5813.98 max_x: 21.3335 max_y : 6.91417 max_r: 23.1586
+Sum : 5813.98 max_x: 21.3335 max_y : 6.91417 max_r: 23.1586
+Sum : 5813.98 max_x: 21.3335 max_y : 6.91417 max_r: 23.1586
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0369 (processor) 19 (walltime)
 Frame # 26
-68245 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.383541 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.3535 (processor) 24 (walltime)
+Sum : 5331.06 max_x: 22.4942 max_y : 6.97137 max_r: 24.1909
+Sum : 5331.06 max_x: 22.4942 max_y : 6.97137 max_r: 24.1909
+Sum : 5331.06 max_x: 22.4942 max_y : 6.97137 max_r: 24.1909
+Sum : 5331.06 max_x: 22.4942 max_y : 6.97137 max_r: 24.1909
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.9412 (processor) 19 (walltime)
 Frame # 27
-68309 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.370743 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.2627 (processor) 23 (walltime)
+Sum : 4158.64 max_x: 22.6904 max_y : 6.84431 max_r: 25.8151
+Sum : 4158.64 max_x: 22.6904 max_y : 6.84431 max_r: 25.8151
+Sum : 4158.64 max_x: 22.6904 max_y : 6.84431 max_r: 25.8151
+Sum : 4158.64 max_x: 22.6904 max_y : 6.84431 max_r: 25.8151
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.5378 (processor) 21 (walltime)
 Frame # 28
-68568 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.408212 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.6489 (processor) 22 (walltime)
+Sum : 3606.25 max_x: 8.54712 max_y : 6.92215 max_r: 13.7164
+Sum : 3606.25 max_x: 8.54712 max_y : 6.92215 max_r: 13.7164
+Sum : 3606.25 max_x: 8.54712 max_y : 6.92215 max_r: 13.7164
+Sum : 3606.25 max_x: 8.54712 max_y : 6.92215 max_r: 13.7164
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7062 (processor) 19 (walltime)
 Frame # 29
-68943 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.428322 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.5859 (processor) 21 (walltime)
+Sum : 3231.03 max_x: 9.21994 max_y : 6.55664 max_r: 13.9393
+Sum : 3231.03 max_x: 9.21994 max_y : 6.55664 max_r: 13.9393
+Sum : 3231.03 max_x: 9.21994 max_y : 6.55664 max_r: 13.9393
+Sum : 3231.03 max_x: 9.21994 max_y : 6.55664 max_r: 13.9393
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.3761 (processor) 20 (walltime)
 Frame # 30
-69725 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.38776 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2069 (processor) 21 (walltime)
+Sum : 3284.66 max_x: 9.71084 max_y : 6.63206 max_r: 12.3402
+Sum : 3284.66 max_x: 9.71084 max_y : 6.63206 max_r: 12.3402
+Sum : 3284.66 max_x: 9.71084 max_y : 6.63206 max_r: 12.3402
+Sum : 3284.66 max_x: 9.71084 max_y : 6.63206 max_r: 12.3402
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7184 (processor) 19 (walltime)
 Frame # 31
-69159 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.421478 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.7026 (processor) 21 (walltime)
+Sum : 3413.99 max_x: 9.35584 max_y : 6.77167 max_r: 12.3095
+Sum : 3413.99 max_x: 9.35584 max_y : 6.77167 max_r: 12.3095
+Sum : 3413.99 max_x: 9.35584 max_y : 6.77167 max_r: 12.3095
+Sum : 3413.99 max_x: 9.35584 max_y : 6.77167 max_r: 12.3095
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.3393 (processor) 20 (walltime)
 Frame # 32
-69016 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390939 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.4592 (processor) 21 (walltime)
+Sum : 3259.57 max_x: 9.79068 max_y : 6.81467 max_r: 11.7657
+Sum : 3259.57 max_x: 9.79068 max_y : 6.81467 max_r: 11.7657
+Sum : 3259.57 max_x: 9.79068 max_y : 6.81467 max_r: 11.7657
+Sum : 3259.57 max_x: 9.79068 max_y : 6.81467 max_r: 11.7657
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4549 (processor) 20 (walltime)
 Frame # 33
-69783 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.414904 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.4038 (processor) 22 (walltime)
+Sum : 3365.23 max_x: 9.80227 max_y : 7.01507 max_r: 12.1044
+Sum : 3365.23 max_x: 9.80227 max_y : 7.01507 max_r: 12.1044
+Sum : 3365.23 max_x: 9.80227 max_y : 7.01507 max_r: 12.1044
+Sum : 3365.23 max_x: 9.80227 max_y : 7.01507 max_r: 12.1044
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.1333 (processor) 19 (walltime)
 Frame # 34
-69635 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.395913 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6814 (processor) 22 (walltime)
+Sum : 3438.21 max_x: 9.56351 max_y : 6.81267 max_r: 11.8206
+Sum : 3438.21 max_x: 9.56351 max_y : 6.81267 max_r: 11.8206
+Sum : 3438.21 max_x: 9.56351 max_y : 6.81267 max_r: 11.8206
+Sum : 3438.21 max_x: 9.56351 max_y : 6.81267 max_r: 11.8206
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.5266 (processor) 20 (walltime)
 Frame # 35
-71094 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396495 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3924 (processor) 22 (walltime)
+Sum : 3372.19 max_x: 9.21469 max_y : 7.06539 max_r: 12.4811
+Sum : 3372.19 max_x: 9.21469 max_y : 7.06539 max_r: 12.4811
+Sum : 3372.19 max_x: 9.21469 max_y : 7.06539 max_r: 12.4811
+Sum : 3372.19 max_x: 9.21469 max_y : 7.06539 max_r: 12.4811
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.3436 (processor) 19 (walltime)
 Frame # 36
-71526 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396948 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1711 (processor) 22 (walltime)
+Sum : 3454.56 max_x: 8.95718 max_y : 7.36417 max_r: 13.547
+Sum : 3454.56 max_x: 8.95718 max_y : 7.36417 max_r: 13.547
+Sum : 3454.56 max_x: 8.95718 max_y : 7.36417 max_r: 13.547
+Sum : 3454.56 max_x: 8.95718 max_y : 7.36417 max_r: 13.547
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8679 (processor) 21 (walltime)
 Frame # 37
-72383 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.432336 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.582 (processor) 23 (walltime)
+Sum : 3563.65 max_x: 10.1039 max_y : 6.90089 max_r: 11.7604
+Sum : 3563.65 max_x: 10.1039 max_y : 6.90089 max_r: 11.7604
+Sum : 3563.65 max_x: 10.1039 max_y : 6.90089 max_r: 11.7604
+Sum : 3563.65 max_x: 10.1039 max_y : 6.90089 max_r: 11.7604
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.9125 (processor) 19 (walltime)
 Frame # 38
-71685 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405351 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.4094 (processor) 22 (walltime)
+Sum : 3346.35 max_x: 10.4532 max_y : 7.12966 max_r: 11.728
+Sum : 3346.35 max_x: 10.4532 max_y : 7.12966 max_r: 11.728
+Sum : 3346.35 max_x: 10.4532 max_y : 7.12966 max_r: 11.728
+Sum : 3346.35 max_x: 10.4532 max_y : 7.12966 max_r: 11.728
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4976 (processor) 20 (walltime)
 Frame # 39
-71359 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.366964 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.3614 (processor) 22 (walltime)
+Sum : 3358.59 max_x: 10.2105 max_y : 7.74485 max_r: 12.3436
+Sum : 3358.59 max_x: 10.2105 max_y : 7.74485 max_r: 12.3436
+Sum : 3358.59 max_x: 10.2105 max_y : 7.74485 max_r: 12.3436
+Sum : 3358.59 max_x: 10.2105 max_y : 7.74485 max_r: 12.3436
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.3951 (processor) 19 (walltime)
 Frame # 40
-71380 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390695 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.603 (processor) 22 (walltime)
+Sum : 3321.31 max_x: 9.42019 max_y : 7.48936 max_r: 11.0467
+Sum : 3321.31 max_x: 9.42019 max_y : 7.48936 max_r: 11.0467
+Sum : 3321.31 max_x: 9.42019 max_y : 7.48936 max_r: 11.0467
+Sum : 3321.31 max_x: 9.42019 max_y : 7.48936 max_r: 11.0467
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.5855 (processor) 19 (walltime)
 Frame # 41
-71888 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.368368 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.688 (processor) 22 (walltime)
+Sum : 3163.41 max_x: 10.081 max_y : 7.99544 max_r: 11.4818
+Sum : 3163.41 max_x: 10.081 max_y : 7.99544 max_r: 11.4818
+Sum : 3163.41 max_x: 10.081 max_y : 7.99544 max_r: 11.4818
+Sum : 3163.41 max_x: 10.081 max_y : 7.99544 max_r: 11.4818
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.2726 (processor) 19 (walltime)
 Frame # 42
-71582 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.335382 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7323 (processor) 22 (walltime)
+Sum : 3324.66 max_x: 10.5982 max_y : 7.05665 max_r: 12.0687
+Sum : 3324.66 max_x: 10.5982 max_y : 7.05665 max_r: 12.0687
+Sum : 3324.66 max_x: 10.5982 max_y : 7.05665 max_r: 12.0687
+Sum : 3324.66 max_x: 10.5982 max_y : 7.05665 max_r: 12.0687
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.2325 (processor) 19 (walltime)
 Frame # 43
-71749 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.353116 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4644 (processor) 22 (walltime)
+Sum : 3352.83 max_x: 10.2508 max_y : 7.42337 max_r: 11.8942
+Sum : 3352.83 max_x: 10.2508 max_y : 7.42337 max_r: 11.8942
+Sum : 3352.83 max_x: 10.2508 max_y : 7.42337 max_r: 11.8942
+Sum : 3352.83 max_x: 10.2508 max_y : 7.42337 max_r: 11.8942
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4453 (processor) 19 (walltime)
 Frame # 44
-72369 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.343144 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.2268 (processor) 22 (walltime)
+Sum : 3086.59 max_x: 10.4173 max_y : 7.26335 max_r: 12.023
+Sum : 3086.59 max_x: 10.4173 max_y : 7.26335 max_r: 12.023
+Sum : 3086.59 max_x: 10.4173 max_y : 7.26335 max_r: 12.023
+Sum : 3086.59 max_x: 10.4173 max_y : 7.26335 max_r: 12.023
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.2052 (processor) 21 (walltime)
 Frame # 45
-70226 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.344259 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4313 (processor) 22 (walltime)
+Sum : 3057.89 max_x: 9.25558 max_y : 7.36372 max_r: 11.2594
+Sum : 3057.89 max_x: 9.25558 max_y : 7.36372 max_r: 11.2594
+Sum : 3057.89 max_x: 9.25558 max_y : 7.36372 max_r: 11.2594
+Sum : 3057.89 max_x: 9.25558 max_y : 7.36372 max_r: 11.2594
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4316 (processor) 20 (walltime)
 Frame # 46
-69976 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.329635 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2442 (processor) 23 (walltime)
+Sum : 3010.52 max_x: 8.13842 max_y : 7.21031 max_r: 10.6291
+Sum : 3010.52 max_x: 8.13842 max_y : 7.21031 max_r: 10.6291
+Sum : 3010.52 max_x: 8.13842 max_y : 7.21031 max_r: 10.6291
+Sum : 3010.52 max_x: 8.13842 max_y : 7.21031 max_r: 10.6291
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0018 (processor) 21 (walltime)
 Frame # 47
-69715 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.371255 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.5826 (processor) 22 (walltime)
+Sum : 2963.99 max_x: 8.75732 max_y : 6.73173 max_r: 10.5735
+Sum : 2963.99 max_x: 8.75732 max_y : 6.73173 max_r: 10.5735
+Sum : 2963.99 max_x: 8.75732 max_y : 6.73173 max_r: 10.5735
+Sum : 2963.99 max_x: 8.75732 max_y : 6.73173 max_r: 10.5735
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.6109 (processor) 20 (walltime)
 Frame # 48
-69358 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363328 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2574 (processor) 21 (walltime)
+Sum : 3135.13 max_x: 8.68406 max_y : 6.99043 max_r: 10.5361
+Sum : 3135.13 max_x: 8.68406 max_y : 6.99043 max_r: 10.5361
+Sum : 3135.13 max_x: 8.68406 max_y : 6.99043 max_r: 10.5361
+Sum : 3135.13 max_x: 8.68406 max_y : 6.99043 max_r: 10.5361
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.1354 (processor) 19 (walltime)
 Frame # 49
-70510 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.313655 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8221 (processor) 22 (walltime)
+Sum : 3127.09 max_x: 8.84671 max_y : 7.34957 max_r: 10.897
+Sum : 3127.09 max_x: 8.84671 max_y : 7.34957 max_r: 10.897
+Sum : 3127.09 max_x: 8.84671 max_y : 7.34957 max_r: 10.897
+Sum : 3127.09 max_x: 8.84671 max_y : 7.34957 max_r: 10.897
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4703 (processor) 19 (walltime)
 Frame # 50
-70296 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.374017 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.0779 (processor) 22 (walltime)
+Sum : 3286.97 max_x: 8.492 max_y : 7.39745 max_r: 10.4569
+Sum : 3286.97 max_x: 8.492 max_y : 7.39745 max_r: 10.4569
+Sum : 3286.97 max_x: 8.492 max_y : 7.39745 max_r: 10.4569
+Sum : 3286.97 max_x: 8.492 max_y : 7.39745 max_r: 10.4569
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.5962 (processor) 19 (walltime)
 Frame # 51
-70156 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.368491 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2108 (processor) 22 (walltime)
+Sum : 2973.61 max_x: 8.6825 max_y : 6.77041 max_r: 10.1119
+Sum : 2973.61 max_x: 8.6825 max_y : 6.77041 max_r: 10.1119
+Sum : 2973.61 max_x: 8.6825 max_y : 6.77041 max_r: 10.1119
+Sum : 2973.61 max_x: 8.6825 max_y : 6.77041 max_r: 10.1119
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.153 (processor) 19 (walltime)
 Frame # 52
-70501 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.310646 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.7774 (processor) 21 (walltime)
+Sum : 2945.64 max_x: 7.20186 max_y : 7.22217 max_r: 9.8109
+Sum : 2945.64 max_x: 7.20186 max_y : 7.22217 max_r: 9.8109
+Sum : 2945.64 max_x: 7.20186 max_y : 7.22217 max_r: 9.8109
+Sum : 2945.64 max_x: 7.20186 max_y : 7.22217 max_r: 9.8109
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4544 (processor) 20 (walltime)
 Frame # 53
-70539 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.370264 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.9838 (processor) 22 (walltime)
+Sum : 2789.9 max_x: 7.91089 max_y : 6.80552 max_r: 9.70606
+Sum : 2789.9 max_x: 7.91089 max_y : 6.80552 max_r: 9.70606
+Sum : 2789.9 max_x: 7.91089 max_y : 6.80552 max_r: 9.70606
+Sum : 2789.9 max_x: 7.91089 max_y : 6.80552 max_r: 9.70606
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7779 (processor) 20 (walltime)
 Frame # 54
-70773 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.350503 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.7065 (processor) 21 (walltime)
+Sum : 2852.39 max_x: 7.0403 max_y : 7.4745 max_r: 9.4643
+Sum : 2852.39 max_x: 7.0403 max_y : 7.4745 max_r: 9.4643
+Sum : 2852.39 max_x: 7.0403 max_y : 7.4745 max_r: 9.4643
+Sum : 2852.39 max_x: 7.0403 max_y : 7.4745 max_r: 9.4643
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.788 (processor) 20 (walltime)
 Frame # 55
-70491 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.331431 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.154 (processor) 22 (walltime)
+Sum : 2601.46 max_x: 6.59983 max_y : 7.66631 max_r: 9.11755
+Sum : 2601.46 max_x: 6.59983 max_y : 7.66631 max_r: 9.11755
+Sum : 2601.46 max_x: 6.59983 max_y : 7.66631 max_r: 9.11755
+Sum : 2601.46 max_x: 6.59983 max_y : 7.66631 max_r: 9.11755
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.584 (processor) 19 (walltime)
 Frame # 56
-69981 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.313632 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.5337 (processor) 21 (walltime)
+Sum : 2770.59 max_x: 8.20586 max_y : 7.58737 max_r: 10.5123
+Sum : 2770.59 max_x: 8.20586 max_y : 7.58737 max_r: 10.5123
+Sum : 2770.59 max_x: 8.20586 max_y : 7.58737 max_r: 10.5123
+Sum : 2770.59 max_x: 8.20586 max_y : 7.58737 max_r: 10.5123
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.225 (processor) 19 (walltime)
 Frame # 57
-70920 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.312398 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.3065 (processor) 21 (walltime)
+Sum : 2587.66 max_x: 7.80393 max_y : 7.89896 max_r: 9.5871
+Sum : 2587.66 max_x: 7.80393 max_y : 7.89896 max_r: 9.5871
+Sum : 2587.66 max_x: 7.80393 max_y : 7.89896 max_r: 9.5871
+Sum : 2587.66 max_x: 7.80393 max_y : 7.89896 max_r: 9.5871
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1355 (processor) 20 (walltime)
 Frame # 58
-69864 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.331528 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2666 (processor) 21 (walltime)
+Sum : 2667.39 max_x: 6.98588 max_y : 8.34791 max_r: 10.057
+Sum : 2667.39 max_x: 6.98588 max_y : 8.34791 max_r: 10.057
+Sum : 2667.39 max_x: 6.98588 max_y : 8.34791 max_r: 10.057
+Sum : 2667.39 max_x: 6.98588 max_y : 8.34791 max_r: 10.057
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4299 (processor) 19 (walltime)
 Frame # 59
-70200 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.36053 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.0742 (processor) 21 (walltime)
+Sum : 2556.35 max_x: 6.5643 max_y : 7.12556 max_r: 8.66344
+Sum : 2556.35 max_x: 6.5643 max_y : 7.12556 max_r: 8.66344
+Sum : 2556.35 max_x: 6.5643 max_y : 7.12556 max_r: 8.66344
+Sum : 2556.35 max_x: 6.5643 max_y : 7.12556 max_r: 8.66344
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.9781 (processor) 20 (walltime)
 Frame # 60
-70301 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.349122 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.0038 (processor) 21 (walltime)
+Sum : 2572.41 max_x: 6.95016 max_y : 7.9833 max_r: 9.33559
+Sum : 2572.41 max_x: 6.95016 max_y : 7.9833 max_r: 9.33559
+Sum : 2572.41 max_x: 6.95016 max_y : 7.9833 max_r: 9.33559
+Sum : 2572.41 max_x: 6.95016 max_y : 7.9833 max_r: 9.33559
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.6686 (processor) 21 (walltime)
 Frame # 61
-70978 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.36197 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.1403 (processor) 24 (walltime)
+Sum : 3183.58 max_x: 7.34348 max_y : 7.65252 max_r: 9.63985
+Sum : 3183.58 max_x: 7.34348 max_y : 7.65252 max_r: 9.63985
+Sum : 3183.58 max_x: 7.34348 max_y : 7.65252 max_r: 9.63985
+Sum : 3183.58 max_x: 7.34348 max_y : 7.65252 max_r: 9.63985
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.6336 (processor) 20 (walltime)
 Frame # 62
-70885 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363879 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.3685 (processor) 21 (walltime)
+Sum : 2857.74 max_x: 7.74184 max_y : 7.76232 max_r: 9.94101
+Sum : 2857.74 max_x: 7.74184 max_y : 7.76232 max_r: 9.94101
+Sum : 2857.74 max_x: 7.74184 max_y : 7.76232 max_r: 9.94101
+Sum : 2857.74 max_x: 7.74184 max_y : 7.76232 max_r: 9.94101
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.6143 (processor) 22 (walltime)
 Frame # 63
-70773 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.356432 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.0609 (processor) 21 (walltime)
+Sum : 3112.61 max_x: 8.3299 max_y : 7.8988 max_r: 10.4957
+Sum : 3112.61 max_x: 8.3299 max_y : 7.8988 max_r: 10.4957
+Sum : 3112.61 max_x: 8.3299 max_y : 7.8988 max_r: 10.4957
+Sum : 3112.61 max_x: 8.3299 max_y : 7.8988 max_r: 10.4957
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7217 (processor) 19 (walltime)
 Frame # 64
-69879 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.362556 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.0699 (processor) 22 (walltime)
+Sum : 3418.88 max_x: 8.42565 max_y : 8.63492 max_r: 11.1407
+Sum : 3418.88 max_x: 8.42565 max_y : 8.63492 max_r: 11.1407
+Sum : 3418.88 max_x: 8.42565 max_y : 8.63492 max_r: 11.1407
+Sum : 3418.88 max_x: 8.42565 max_y : 8.63492 max_r: 11.1407
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.95 (processor) 20 (walltime)
 Frame # 65
-69903 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.332762 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.6348 (processor) 21 (walltime)
+Sum : 3070.47 max_x: 9.33711 max_y : 7.80493 max_r: 11.8449
+Sum : 3070.47 max_x: 9.33711 max_y : 7.80493 max_r: 11.8449
+Sum : 3070.47 max_x: 9.33711 max_y : 7.80493 max_r: 11.8449
+Sum : 3070.47 max_x: 9.33711 max_y : 7.80493 max_r: 11.8449
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.096 (processor) 18 (walltime)
 Frame # 66
-70115 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.366132 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.6232 (processor) 22 (walltime)
+Sum : 3028.96 max_x: 8.06027 max_y : 7.91758 max_r: 10.075
+Sum : 3028.96 max_x: 8.06027 max_y : 7.91758 max_r: 10.075
+Sum : 3028.96 max_x: 8.06027 max_y : 7.91758 max_r: 10.075
+Sum : 3028.96 max_x: 8.06027 max_y : 7.91758 max_r: 10.075
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.9767 (processor) 20 (walltime)
 Frame # 67
-69739 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390066 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7742 (processor) 22 (walltime)
+Sum : 3028.95 max_x: 8.64193 max_y : 8.01764 max_r: 11.5551
+Sum : 3028.95 max_x: 8.64193 max_y : 8.01764 max_r: 11.5551
+Sum : 3028.95 max_x: 8.64193 max_y : 8.01764 max_r: 11.5551
+Sum : 3028.95 max_x: 8.64193 max_y : 8.01764 max_r: 11.5551
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4618 (processor) 19 (walltime)
 Frame # 68
-70994 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.372485 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.116 (processor) 22 (walltime)
+Sum : 2981.08 max_x: 8.14375 max_y : 7.68819 max_r: 10.41
+Sum : 2981.08 max_x: 8.14375 max_y : 7.68819 max_r: 10.41
+Sum : 2981.08 max_x: 8.14375 max_y : 7.68819 max_r: 10.41
+Sum : 2981.08 max_x: 8.14375 max_y : 7.68819 max_r: 10.41
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6334 (processor) 19 (walltime)
 Frame # 69
-70632 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.34413 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.817 (processor) 21 (walltime)
+Sum : 3042.16 max_x: 8.93672 max_y : 7.60772 max_r: 11.0854
+Sum : 3042.16 max_x: 8.93672 max_y : 7.60772 max_r: 11.0854
+Sum : 3042.16 max_x: 8.93672 max_y : 7.60772 max_r: 11.0854
+Sum : 3042.16 max_x: 8.93672 max_y : 7.60772 max_r: 11.0854
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7811 (processor) 20 (walltime)
 Frame # 70
-70165 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.369105 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1849 (processor) 22 (walltime)
+Sum : 3016.34 max_x: 7.25976 max_y : 7.93336 max_r: 9.74644
+Sum : 3016.34 max_x: 7.25976 max_y : 7.93336 max_r: 9.74644
+Sum : 3016.34 max_x: 7.25976 max_y : 7.93336 max_r: 9.74644
+Sum : 3016.34 max_x: 7.25976 max_y : 7.93336 max_r: 9.74644
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.5515 (processor) 20 (walltime)
 Frame # 71
-69980 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.347965 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4702 (processor) 22 (walltime)
+Sum : 3189.56 max_x: 8.79715 max_y : 8.15877 max_r: 11.3567
+Sum : 3189.56 max_x: 8.79715 max_y : 8.15877 max_r: 11.3567
+Sum : 3189.56 max_x: 8.79715 max_y : 8.15877 max_r: 11.3567
+Sum : 3189.56 max_x: 8.79715 max_y : 8.15877 max_r: 11.3567
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8184 (processor) 19 (walltime)
 Frame # 72
-70175 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.332291 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.41 (processor) 22 (walltime)
+Sum : 3015.48 max_x: 7.48877 max_y : 8.60234 max_r: 10.1758
+Sum : 3015.48 max_x: 7.48877 max_y : 8.60234 max_r: 10.1758
+Sum : 3015.48 max_x: 7.48877 max_y : 8.60234 max_r: 10.1758
+Sum : 3015.48 max_x: 7.48877 max_y : 8.60234 max_r: 10.1758
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.5187 (processor) 21 (walltime)
 Frame # 73
-71041 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.375734 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5 (processor) 23 (walltime)
+Sum : 2919.6 max_x: 7.07743 max_y : 8.11763 max_r: 9.20422
+Sum : 2919.6 max_x: 7.07743 max_y : 8.11763 max_r: 9.20422
+Sum : 2919.6 max_x: 7.07743 max_y : 8.11763 max_r: 9.20422
+Sum : 2919.6 max_x: 7.07743 max_y : 8.11763 max_r: 9.20422
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0304 (processor) 18 (walltime)
 Frame # 74
-70632 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.367465 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.738 (processor) 23 (walltime)
+Sum : 3481.05 max_x: 7.25758 max_y : 7.73364 max_r: 9.35666
+Sum : 3481.05 max_x: 7.25758 max_y : 7.73364 max_r: 9.35666
+Sum : 3481.05 max_x: 7.25758 max_y : 7.73364 max_r: 9.35666
+Sum : 3481.05 max_x: 7.25758 max_y : 7.73364 max_r: 9.35666
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0093 (processor) 20 (walltime)
 Frame # 75
-70712 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.288023 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.3401 (processor) 21 (walltime)
+Sum : 3293.98 max_x: 8.13028 max_y : 7.7981 max_r: 10.2179
+Sum : 3293.98 max_x: 8.13028 max_y : 7.7981 max_r: 10.2179
+Sum : 3293.98 max_x: 8.13028 max_y : 7.7981 max_r: 10.2179
+Sum : 3293.98 max_x: 8.13028 max_y : 7.7981 max_r: 10.2179
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.846 (processor) 18 (walltime)
 Frame # 76
-71076 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.309677 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.7054 (processor) 22 (walltime)
+Sum : 3620.64 max_x: 8.13472 max_y : 8.34797 max_r: 10.3833
+Sum : 3620.64 max_x: 8.13472 max_y : 8.34797 max_r: 10.3833
+Sum : 3620.64 max_x: 8.13472 max_y : 8.34797 max_r: 10.3833
+Sum : 3620.64 max_x: 8.13472 max_y : 8.34797 max_r: 10.3833
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8873 (processor) 20 (walltime)
 Frame # 77
-70659 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.354877 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8153 (processor) 22 (walltime)
+Sum : 3340.76 max_x: 8.97479 max_y : 8.47254 max_r: 11.0148
+Sum : 3340.76 max_x: 8.97479 max_y : 8.47254 max_r: 11.0148
+Sum : 3340.76 max_x: 8.97479 max_y : 8.47254 max_r: 11.0148
+Sum : 3340.76 max_x: 8.97479 max_y : 8.47254 max_r: 11.0148
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8809 (processor) 20 (walltime)
 Frame # 78
-70593 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.337401 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.4296 (processor) 22 (walltime)
+Sum : 3355.81 max_x: 9.1533 max_y : 8.73071 max_r: 11.374
+Sum : 3355.81 max_x: 9.1533 max_y : 8.73071 max_r: 11.374
+Sum : 3355.81 max_x: 9.1533 max_y : 8.73071 max_r: 11.374
+Sum : 3355.81 max_x: 9.1533 max_y : 8.73071 max_r: 11.374
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.2295 (processor) 19 (walltime)
 Frame # 79
-70534 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.370373 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3133 (processor) 22 (walltime)
+Sum : 3518.26 max_x: 9.31967 max_y : 8.50555 max_r: 11.7011
+Sum : 3518.26 max_x: 9.31967 max_y : 8.50555 max_r: 11.7011
+Sum : 3518.26 max_x: 9.31967 max_y : 8.50555 max_r: 11.7011
+Sum : 3518.26 max_x: 9.31967 max_y : 8.50555 max_r: 11.7011
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.7363 (processor) 21 (walltime)
 Frame # 80
-70365 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.352735 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.3958 (processor) 22 (walltime)
+Sum : 3521.87 max_x: 8.91635 max_y : 7.77763 max_r: 10.5686
+Sum : 3521.87 max_x: 8.91635 max_y : 7.77763 max_r: 10.5686
+Sum : 3521.87 max_x: 8.91635 max_y : 7.77763 max_r: 10.5686
+Sum : 3521.87 max_x: 8.91635 max_y : 7.77763 max_r: 10.5686
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9646 (processor) 20 (walltime)
 Frame # 81
-70809 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.339346 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4599 (processor) 22 (walltime)
+Sum : 3551.37 max_x: 9.75089 max_y : 10.2327 max_r: 10.9573
+Sum : 3551.37 max_x: 9.75089 max_y : 10.2327 max_r: 10.9573
+Sum : 3551.37 max_x: 9.75089 max_y : 10.2327 max_r: 10.9573
+Sum : 3551.37 max_x: 9.75089 max_y : 10.2327 max_r: 10.9573
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.921 (processor) 20 (walltime)
 Frame # 82
-70045 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.369928 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0617 (processor) 23 (walltime)
+Sum : 3565 max_x: 8.90561 max_y : 7.81826 max_r: 11.0177
+Sum : 3565 max_x: 8.90561 max_y : 7.81826 max_r: 11.0177
+Sum : 3565 max_x: 8.90561 max_y : 7.81826 max_r: 11.0177
+Sum : 3565 max_x: 8.90561 max_y : 7.81826 max_r: 11.0177
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0775 (processor) 20 (walltime)
 Frame # 83
-70440 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.358771 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.2709 (processor) 22 (walltime)
+Sum : 3326.12 max_x: 9.35218 max_y : 8.03278 max_r: 11.5315
+Sum : 3326.12 max_x: 9.35218 max_y : 8.03278 max_r: 11.5315
+Sum : 3326.12 max_x: 9.35218 max_y : 8.03278 max_r: 11.5315
+Sum : 3326.12 max_x: 9.35218 max_y : 8.03278 max_r: 11.5315
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.3185 (processor) 19 (walltime)
 Frame # 84
-68935 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363459 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5866 (processor) 23 (walltime)
+Sum : 3541.02 max_x: 9.2014 max_y : 8.12907 max_r: 11.7462
+Sum : 3541.02 max_x: 9.2014 max_y : 8.12907 max_r: 11.7462
+Sum : 3541.02 max_x: 9.2014 max_y : 8.12907 max_r: 11.7462
+Sum : 3541.02 max_x: 9.2014 max_y : 8.12907 max_r: 11.7462
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.3951 (processor) 21 (walltime)
 Frame # 85
-68395 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.431194 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.3278 (processor) 23 (walltime)
+Sum : 3655.69 max_x: 8.58058 max_y : 8.32694 max_r: 11.0205
+Sum : 3655.69 max_x: 8.58058 max_y : 8.32694 max_r: 11.0205
+Sum : 3655.69 max_x: 8.58058 max_y : 8.32694 max_r: 11.0205
+Sum : 3655.69 max_x: 8.58058 max_y : 8.32694 max_r: 11.0205
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0613 (processor) 19 (walltime)
 Frame # 86
-69318 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.375734 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.454 (processor) 23 (walltime)
+Sum : 3620.34 max_x: 9.09 max_y : 8.12522 max_r: 10.9299
+Sum : 3620.34 max_x: 9.09 max_y : 8.12522 max_r: 10.9299
+Sum : 3620.34 max_x: 9.09 max_y : 8.12522 max_r: 10.9299
+Sum : 3620.34 max_x: 9.09 max_y : 8.12522 max_r: 10.9299
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.762 (processor) 22 (walltime)
 Frame # 87
-68512 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.363478 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.5458 (processor) 23 (walltime)
+Sum : 3628.87 max_x: 9.0397 max_y : 7.75626 max_r: 10.5129
+Sum : 3628.87 max_x: 9.0397 max_y : 7.75626 max_r: 10.5129
+Sum : 3628.87 max_x: 9.0397 max_y : 7.75626 max_r: 10.5129
+Sum : 3628.87 max_x: 9.0397 max_y : 7.75626 max_r: 10.5129
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0421 (processor) 20 (walltime)
 Frame # 88
-68810 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.35889 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.0588 (processor) 23 (walltime)
+Sum : 4048.04 max_x: 10.0007 max_y : 8.60032 max_r: 12.0085
+Sum : 4048.04 max_x: 10.0007 max_y : 8.60032 max_r: 12.0085
+Sum : 4048.04 max_x: 10.0007 max_y : 8.60032 max_r: 12.0085
+Sum : 4048.04 max_x: 10.0007 max_y : 8.60032 max_r: 12.0085
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0698 (processor) 18 (walltime)
 Frame # 89
-68153 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.374712 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.4562 (processor) 23 (walltime)
+Sum : 3872.9 max_x: 9.80417 max_y : 8.65176 max_r: 11.7
+Sum : 3872.9 max_x: 9.80417 max_y : 8.65176 max_r: 11.7
+Sum : 3872.9 max_x: 9.80417 max_y : 8.65176 max_r: 11.7
+Sum : 3872.9 max_x: 9.80417 max_y : 8.65176 max_r: 11.7
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.3151 (processor) 19 (walltime)
 Frame # 90
-68121 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.344029 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.752 (processor) 23 (walltime)
+Sum : 3967.1 max_x: 9.83163 max_y : 9.03754 max_r: 12.0131
+Sum : 3967.1 max_x: 9.83163 max_y : 9.03754 max_r: 12.0131
+Sum : 3967.1 max_x: 9.83163 max_y : 9.03754 max_r: 12.0131
+Sum : 3967.1 max_x: 9.83163 max_y : 9.03754 max_r: 12.0131
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1333 (processor) 20 (walltime)
 Frame # 91
-69019 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420507 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.394 (processor) 23 (walltime)
+Sum : 4063.75 max_x: 9.676 max_y : 8.72634 max_r: 11.9228
+Sum : 4063.75 max_x: 9.676 max_y : 8.72634 max_r: 11.9228
+Sum : 4063.75 max_x: 9.676 max_y : 8.72634 max_r: 11.9228
+Sum : 4063.75 max_x: 9.676 max_y : 8.72634 max_r: 11.9228
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.3991 (processor) 19 (walltime)
 Frame # 92
-68023 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.387174 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.7799 (processor) 22 (walltime)
+Sum : 3908.18 max_x: 9.5035 max_y : 9.15125 max_r: 11.8175
+Sum : 3908.18 max_x: 9.5035 max_y : 9.15125 max_r: 11.8175
+Sum : 3908.18 max_x: 9.5035 max_y : 9.15125 max_r: 11.8175
+Sum : 3908.18 max_x: 9.5035 max_y : 9.15125 max_r: 11.8175
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0943 (processor) 21 (walltime)
 Frame # 93
-67129 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.355067 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1437 (processor) 22 (walltime)
+Sum : 3986.96 max_x: 8.96896 max_y : 9.32936 max_r: 10.7528
+Sum : 3986.96 max_x: 8.96896 max_y : 9.32936 max_r: 10.7528
+Sum : 3986.96 max_x: 8.96896 max_y : 9.32936 max_r: 10.7528
+Sum : 3986.96 max_x: 8.96896 max_y : 9.32936 max_r: 10.7528
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6294 (processor) 19 (walltime)
 Frame # 94
-66713 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.376911 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.558 (processor) 21 (walltime)
+Sum : 3904.22 max_x: 9.03489 max_y : 9.00447 max_r: 11.7864
+Sum : 3904.22 max_x: 9.03489 max_y : 9.00447 max_r: 11.7864
+Sum : 3904.22 max_x: 9.03489 max_y : 9.00447 max_r: 11.7864
+Sum : 3904.22 max_x: 9.03489 max_y : 9.00447 max_r: 11.7864
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0331 (processor) 21 (walltime)
 Frame # 95
-65962 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.433531 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.2273 (processor) 21 (walltime)
+Sum : 3935.88 max_x: 9.37343 max_y : 9.2241 max_r: 11.4854
+Sum : 3935.88 max_x: 9.37343 max_y : 9.2241 max_r: 11.4854
+Sum : 3935.88 max_x: 9.37343 max_y : 9.2241 max_r: 11.4854
+Sum : 3935.88 max_x: 9.37343 max_y : 9.2241 max_r: 11.4854
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4805 (processor) 19 (walltime)
 Frame # 96
-65669 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.358039 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.7424 (processor) 20 (walltime)
+Sum : 3870.13 max_x: 9.43147 max_y : 9.27974 max_r: 11.8196
+Sum : 3870.13 max_x: 9.43147 max_y : 9.27974 max_r: 11.8196
+Sum : 3870.13 max_x: 9.43147 max_y : 9.27974 max_r: 11.8196
+Sum : 3870.13 max_x: 9.43147 max_y : 9.27974 max_r: 11.8196
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0009 (processor) 18 (walltime)
 Frame # 97
-65248 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.453285 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.0711 (processor) 21 (walltime)
+Sum : 3916.91 max_x: 9.06492 max_y : 9.10613 max_r: 11.607
+Sum : 3916.91 max_x: 9.06492 max_y : 9.10613 max_r: 11.607
+Sum : 3916.91 max_x: 9.06492 max_y : 9.10613 max_r: 11.607
+Sum : 3916.91 max_x: 9.06492 max_y : 9.10613 max_r: 11.607
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4816 (processor) 20 (walltime)
 Frame # 98
-65746 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.4321 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.2367 (processor) 21 (walltime)
+Sum : 4850.6 max_x: 7.7091 max_y : 9.0822 max_r: 10.8285
+Sum : 4850.6 max_x: 7.7091 max_y : 9.0822 max_r: 10.8285
+Sum : 4850.6 max_x: 7.7091 max_y : 9.0822 max_r: 10.8285
+Sum : 4850.6 max_x: 7.7091 max_y : 9.0822 max_r: 10.8285
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0576 (processor) 18 (walltime)
 Frame # 99
-65097 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.379397 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.9823 (processor) 20 (walltime)
+Sum : 3758.94 max_x: 8.35649 max_y : 8.87954 max_r: 10.5681
+Sum : 3758.94 max_x: 8.35649 max_y : 8.87954 max_r: 10.5681
+Sum : 3758.94 max_x: 8.35649 max_y : 8.87954 max_r: 10.5681
+Sum : 3758.94 max_x: 8.35649 max_y : 8.87954 max_r: 10.5681
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4672 (processor) 19 (walltime)
 Frame # 100
-65349 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.406425 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.502 (processor) 21 (walltime)
+Sum : 3969.07 max_x: 7.35201 max_y : 9.19138 max_r: 10.5552
+Sum : 3969.07 max_x: 7.35201 max_y : 9.19138 max_r: 10.5552
+Sum : 3969.07 max_x: 7.35201 max_y : 9.19138 max_r: 10.5552
+Sum : 3969.07 max_x: 7.35201 max_y : 9.19138 max_r: 10.5552
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.3347 (processor) 20 (walltime)
 Frame # 101
-65678 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405749 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.0559 (processor) 20 (walltime)
+Sum : 3682.94 max_x: 8.30061 max_y : 8.57416 max_r: 10.7699
+Sum : 3682.94 max_x: 8.30061 max_y : 8.57416 max_r: 10.7699
+Sum : 3682.94 max_x: 8.30061 max_y : 8.57416 max_r: 10.7699
+Sum : 3682.94 max_x: 8.30061 max_y : 8.57416 max_r: 10.7699
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8785 (processor) 20 (walltime)
 Frame # 102
-65626 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426396 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.8404 (processor) 21 (walltime)
+Sum : 3786.59 max_x: 8.83417 max_y : 8.94479 max_r: 11.8657
+Sum : 3786.59 max_x: 8.83417 max_y : 8.94479 max_r: 11.8657
+Sum : 3786.59 max_x: 8.83417 max_y : 8.94479 max_r: 11.8657
+Sum : 3786.59 max_x: 8.83417 max_y : 8.94479 max_r: 11.8657
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.4993 (processor) 21 (walltime)
 Frame # 103
-65423 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.419282 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.189 (processor) 21 (walltime)
+Sum : 3863.3 max_x: 8.55157 max_y : 8.82908 max_r: 11.0789
+Sum : 3863.3 max_x: 8.55157 max_y : 8.82908 max_r: 11.0789
+Sum : 3863.3 max_x: 8.55157 max_y : 8.82908 max_r: 11.0789
+Sum : 3863.3 max_x: 8.55157 max_y : 8.82908 max_r: 11.0789
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0217 (processor) 20 (walltime)
 Frame # 104
-64935 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.415053 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.8946 (processor) 20 (walltime)
+Sum : 3694.28 max_x: 8.82187 max_y : 8.29581 max_r: 10.8576
+Sum : 3694.28 max_x: 8.82187 max_y : 8.29581 max_r: 10.8576
+Sum : 3694.28 max_x: 8.82187 max_y : 8.29581 max_r: 10.8576
+Sum : 3694.28 max_x: 8.82187 max_y : 8.29581 max_r: 10.8576
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1596 (processor) 19 (walltime)
 Frame # 105
-65326 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405702 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.2058 (processor) 21 (walltime)
+Sum : 4121.17 max_x: 8.2761 max_y : 8.19036 max_r: 11.4043
+Sum : 4121.17 max_x: 8.2761 max_y : 8.19036 max_r: 11.4043
+Sum : 4121.17 max_x: 8.2761 max_y : 8.19036 max_r: 11.4043
+Sum : 4121.17 max_x: 8.2761 max_y : 8.19036 max_r: 11.4043
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 18.9622 (processor) 19 (walltime)
 Frame # 106
-65257 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420919 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.2188 (processor) 21 (walltime)
+Sum : 3755.68 max_x: 6.81669 max_y : 7.99608 max_r: 10.1825
+Sum : 3755.68 max_x: 6.81669 max_y : 7.99608 max_r: 10.1825
+Sum : 3755.68 max_x: 6.81669 max_y : 7.99608 max_r: 10.1825
+Sum : 3755.68 max_x: 6.81669 max_y : 7.99608 max_r: 10.1825
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.4797 (processor) 19 (walltime)
 Frame # 107
-65226 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.398166 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.0895 (processor) 20 (walltime)
+Sum : 3760.33 max_x: 7.73313 max_y : 8.30754 max_r: 10.5324
+Sum : 3760.33 max_x: 7.73313 max_y : 8.30754 max_r: 10.5324
+Sum : 3760.33 max_x: 7.73313 max_y : 8.30754 max_r: 10.5324
+Sum : 3760.33 max_x: 7.73313 max_y : 8.30754 max_r: 10.5324
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.3905 (processor) 19 (walltime)
 Frame # 108
-64808 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.402135 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 39.9663 (processor) 20 (walltime)
+Sum : 3843.37 max_x: 7.46716 max_y : 8.82816 max_r: 11.0974
+Sum : 3843.37 max_x: 7.46716 max_y : 8.82816 max_r: 11.0974
+Sum : 3843.37 max_x: 7.46716 max_y : 8.82816 max_r: 11.0974
+Sum : 3843.37 max_x: 7.46716 max_y : 8.82816 max_r: 11.0974
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7296 (processor) 19 (walltime)
 Frame # 109
-65267 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.407213 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.3859 (processor) 21 (walltime)
+Sum : 3903.76 max_x: 7.78584 max_y : 8.67286 max_r: 10.4996
+Sum : 3903.76 max_x: 7.78584 max_y : 8.67286 max_r: 10.4996
+Sum : 3903.76 max_x: 7.78584 max_y : 8.67286 max_r: 10.4996
+Sum : 3903.76 max_x: 7.78584 max_y : 8.67286 max_r: 10.4996
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.189 (processor) 20 (walltime)
 Frame # 110
-65466 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.422672 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 40.4063 (processor) 21 (walltime)
+Sum : 3714.19 max_x: 7.88287 max_y : 7.9511 max_r: 10.9103
+Sum : 3714.19 max_x: 7.88287 max_y : 7.9511 max_r: 10.9103
+Sum : 3714.19 max_x: 7.88287 max_y : 7.9511 max_r: 10.9103
+Sum : 3714.19 max_x: 7.88287 max_y : 7.9511 max_r: 10.9103
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.2377 (processor) 21 (walltime)
 Frame # 111
-65222 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.456282 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.9113 (processor) 21 (walltime)
+Sum : 4054.98 max_x: 8.91258 max_y : 12.4252 max_r: 12.8076
+Sum : 4054.98 max_x: 8.91258 max_y : 12.4252 max_r: 12.8076
+Sum : 4054.98 max_x: 8.91258 max_y : 12.4252 max_r: 12.8076
+Sum : 4054.98 max_x: 8.91258 max_y : 12.4252 max_r: 12.8076
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8504 (processor) 19 (walltime)
 Frame # 112
-65380 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.456161 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.6964 (processor) 21 (walltime)
+Sum : 3847.76 max_x: 8.12293 max_y : 8.22151 max_r: 11.4328
+Sum : 3847.76 max_x: 8.12293 max_y : 8.22151 max_r: 11.4328
+Sum : 3847.76 max_x: 8.12293 max_y : 8.22151 max_r: 11.4328
+Sum : 3847.76 max_x: 8.12293 max_y : 8.22151 max_r: 11.4328
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.9816 (processor) 20 (walltime)
 Frame # 113
-65552 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.432293 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.5909 (processor) 21 (walltime)
+Sum : 3754.02 max_x: 8.34709 max_y : 7.7586 max_r: 11.1768
+Sum : 3754.02 max_x: 8.34709 max_y : 7.7586 max_r: 11.1768
+Sum : 3754.02 max_x: 8.34709 max_y : 7.7586 max_r: 11.1768
+Sum : 3754.02 max_x: 8.34709 max_y : 7.7586 max_r: 11.1768
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0614 (processor) 19 (walltime)
 Frame # 114
-65133 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.417801 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.9639 (processor) 21 (walltime)
+Sum : 3951.44 max_x: 8.89054 max_y : 8.49035 max_r: 12.5352
+Sum : 3951.44 max_x: 8.89054 max_y : 8.49035 max_r: 12.5352
+Sum : 3951.44 max_x: 8.89054 max_y : 8.49035 max_r: 12.5352
+Sum : 3951.44 max_x: 8.89054 max_y : 8.49035 max_r: 12.5352
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1984 (processor) 20 (walltime)
 Frame # 115
-66045 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.425025 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.5203 (processor) 21 (walltime)
+Sum : 3771.48 max_x: 8.84813 max_y : 10.684 max_r: 11.2722
+Sum : 3771.48 max_x: 8.84813 max_y : 10.684 max_r: 11.2722
+Sum : 3771.48 max_x: 8.84813 max_y : 10.684 max_r: 11.2722
+Sum : 3771.48 max_x: 8.84813 max_y : 10.684 max_r: 11.2722
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.0057 (processor) 18 (walltime)
 Frame # 116
-66293 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.404869 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.5807 (processor) 22 (walltime)
+Sum : 3805.75 max_x: 9.24146 max_y : 15.178 max_r: 16.0302
+Sum : 3805.75 max_x: 9.24146 max_y : 15.178 max_r: 16.0302
+Sum : 3805.75 max_x: 9.24146 max_y : 15.178 max_r: 16.0302
+Sum : 3805.75 max_x: 9.24146 max_y : 15.178 max_r: 16.0302
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0194 (processor) 21 (walltime)
 Frame # 117
-65732 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.471849 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1226 (processor) 21 (walltime)
+Sum : 3917.53 max_x: 9.66542 max_y : 14.2636 max_r: 15.4812
+Sum : 3917.53 max_x: 9.66542 max_y : 14.2636 max_r: 15.4812
+Sum : 3917.53 max_x: 9.66542 max_y : 14.2636 max_r: 15.4812
+Sum : 3917.53 max_x: 9.66542 max_y : 14.2636 max_r: 15.4812
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4256 (processor) 20 (walltime)
 Frame # 118
-65915 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.444064 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.8312 (processor) 23 (walltime)
+Sum : 4017.33 max_x: 10.5091 max_y : 11.8962 max_r: 14.3774
+Sum : 4017.33 max_x: 10.5091 max_y : 11.8962 max_r: 14.3774
+Sum : 4017.33 max_x: 10.5091 max_y : 11.8962 max_r: 14.3774
+Sum : 4017.33 max_x: 10.5091 max_y : 11.8962 max_r: 14.3774
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.6918 (processor) 20 (walltime)
 Frame # 119
-65857 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.428338 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7454 (processor) 21 (walltime)
+Sum : 3882.21 max_x: 10.3716 max_y : 12.7415 max_r: 13.9385
+Sum : 3882.21 max_x: 10.3716 max_y : 12.7415 max_r: 13.9385
+Sum : 3882.21 max_x: 10.3716 max_y : 12.7415 max_r: 13.9385
+Sum : 3882.21 max_x: 10.3716 max_y : 12.7415 max_r: 13.9385
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.9015 (processor) 20 (walltime)
 Frame # 120
-65328 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.424485 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.846 (processor) 22 (walltime)
+Sum : 4279.62 max_x: 11.2271 max_y : 13.7051 max_r: 13.7884
+Sum : 4279.62 max_x: 11.2271 max_y : 13.7051 max_r: 13.7884
+Sum : 4279.62 max_x: 11.2271 max_y : 13.7051 max_r: 13.7884
+Sum : 4279.62 max_x: 11.2271 max_y : 13.7051 max_r: 13.7884
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7978 (processor) 19 (walltime)
 Frame # 121
-66524 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.414842 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.7332 (processor) 24 (walltime)
+Sum : 4238.18 max_x: 10.9688 max_y : 14.7217 max_r: 14.7505
+Sum : 4238.18 max_x: 10.9688 max_y : 14.7217 max_r: 14.7505
+Sum : 4238.18 max_x: 10.9688 max_y : 14.7217 max_r: 14.7505
+Sum : 4238.18 max_x: 10.9688 max_y : 14.7217 max_r: 14.7505
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.7433 (processor) 19 (walltime)
 Frame # 122
-66020 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.446828 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4364 (processor) 23 (walltime)
+Sum : 3943.98 max_x: 11.2659 max_y : 7.57215 max_r: 11.7027
+Sum : 3943.98 max_x: 11.2659 max_y : 7.57215 max_r: 11.7027
+Sum : 3943.98 max_x: 11.2659 max_y : 7.57215 max_r: 11.7027
+Sum : 3943.98 max_x: 11.2659 max_y : 7.57215 max_r: 11.7027
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.5756 (processor) 21 (walltime)
 Frame # 123
-65869 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.437209 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6968 (processor) 21 (walltime)
+Sum : 4085.61 max_x: 11.9082 max_y : 9.25481 max_r: 12.4875
+Sum : 4085.61 max_x: 11.9082 max_y : 9.25481 max_r: 12.4875
+Sum : 4085.61 max_x: 11.9082 max_y : 9.25481 max_r: 12.4875
+Sum : 4085.61 max_x: 11.9082 max_y : 9.25481 max_r: 12.4875
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6972 (processor) 19 (walltime)
 Frame # 124
-65369 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426562 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.0164 (processor) 23 (walltime)
+Sum : 4149.23 max_x: 12.1634 max_y : 8.2438 max_r: 12.7139
+Sum : 4149.23 max_x: 12.1634 max_y : 8.2438 max_r: 12.7139
+Sum : 4149.23 max_x: 12.1634 max_y : 8.2438 max_r: 12.7139
+Sum : 4149.23 max_x: 12.1634 max_y : 8.2438 max_r: 12.7139
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8274 (processor) 20 (walltime)
 Frame # 125
-65744 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.415358 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.0339 (processor) 22 (walltime)
+Sum : 3939.31 max_x: 13.0742 max_y : 7.47063 max_r: 13.7043
+Sum : 3939.31 max_x: 13.0742 max_y : 7.47063 max_r: 13.7043
+Sum : 3939.31 max_x: 13.0742 max_y : 7.47063 max_r: 13.7043
+Sum : 3939.31 max_x: 13.0742 max_y : 7.47063 max_r: 13.7043
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1758 (processor) 20 (walltime)
 Frame # 126
-66014 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.525157 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.4104 (processor) 21 (walltime)
+Sum : 3987.02 max_x: 13.4168 max_y : 7.57725 max_r: 14.177
+Sum : 3987.02 max_x: 13.4168 max_y : 7.57725 max_r: 14.177
+Sum : 3987.02 max_x: 13.4168 max_y : 7.57725 max_r: 14.177
+Sum : 3987.02 max_x: 13.4168 max_y : 7.57725 max_r: 14.177
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8912 (processor) 21 (walltime)
 Frame # 127
-65181 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.401658 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0106 (processor) 23 (walltime)
+Sum : 4131.87 max_x: 13.1079 max_y : 7.90802 max_r: 13.9801
+Sum : 4131.87 max_x: 13.1079 max_y : 7.90802 max_r: 13.9801
+Sum : 4131.87 max_x: 13.1079 max_y : 7.90802 max_r: 13.9801
+Sum : 4131.87 max_x: 13.1079 max_y : 7.90802 max_r: 13.9801
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1112 (processor) 20 (walltime)
 Frame # 128
-65110 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.32691 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.4101 (processor) 21 (walltime)
+Sum : 3889.17 max_x: 13.1198 max_y : 7.23038 max_r: 13.7898
+Sum : 3889.17 max_x: 13.1198 max_y : 7.23038 max_r: 13.7898
+Sum : 3889.17 max_x: 13.1198 max_y : 7.23038 max_r: 13.7898
+Sum : 3889.17 max_x: 13.1198 max_y : 7.23038 max_r: 13.7898
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8894 (processor) 20 (walltime)
 Frame # 129
-65370 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.433975 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.8834 (processor) 22 (walltime)
+Sum : 4134.5 max_x: 13.8648 max_y : 7.09143 max_r: 14.4821
+Sum : 4134.5 max_x: 13.8648 max_y : 7.09143 max_r: 14.4821
+Sum : 4134.5 max_x: 13.8648 max_y : 7.09143 max_r: 14.4821
+Sum : 4134.5 max_x: 13.8648 max_y : 7.09143 max_r: 14.4821
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.6921 (processor) 19 (walltime)
 Frame # 130
-65389 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.403072 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0168 (processor) 22 (walltime)
+Sum : 4040.97 max_x: 13.2469 max_y : 7.01321 max_r: 16.4011
+Sum : 4040.97 max_x: 13.2469 max_y : 7.01321 max_r: 16.4011
+Sum : 4040.97 max_x: 13.2469 max_y : 7.01321 max_r: 16.4011
+Sum : 4040.97 max_x: 13.2469 max_y : 7.01321 max_r: 16.4011
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9748 (processor) 21 (walltime)
 Frame # 131
-65688 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.399937 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.3905 (processor) 22 (walltime)
+Sum : 3775.48 max_x: 14.0775 max_y : 6.65627 max_r: 14.6714
+Sum : 3775.48 max_x: 14.0775 max_y : 6.65627 max_r: 14.6714
+Sum : 3775.48 max_x: 14.0775 max_y : 6.65627 max_r: 14.6714
+Sum : 3775.48 max_x: 14.0775 max_y : 6.65627 max_r: 14.6714
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.3769 (processor) 20 (walltime)
 Frame # 132
-65566 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.43285 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9479 (processor) 22 (walltime)
+Sum : 4025.02 max_x: 14.464 max_y : 7.07656 max_r: 14.7448
+Sum : 4025.02 max_x: 14.464 max_y : 7.07656 max_r: 14.7448
+Sum : 4025.02 max_x: 14.464 max_y : 7.07656 max_r: 14.7448
+Sum : 4025.02 max_x: 14.464 max_y : 7.07656 max_r: 14.7448
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9868 (processor) 20 (walltime)
 Frame # 133
-64964 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.377578 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.8465 (processor) 22 (walltime)
+Sum : 4010.93 max_x: 14.4637 max_y : 6.67452 max_r: 14.9775
+Sum : 4010.93 max_x: 14.4637 max_y : 6.67452 max_r: 14.9775
+Sum : 4010.93 max_x: 14.4637 max_y : 6.67452 max_r: 14.9775
+Sum : 4010.93 max_x: 14.4637 max_y : 6.67452 max_r: 14.9775
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1924 (processor) 20 (walltime)
 Frame # 134
-65328 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.470321 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.3728 (processor) 21 (walltime)
+Sum : 3766.32 max_x: 15.5152 max_y : 6.24372 max_r: 15.7815
+Sum : 3766.32 max_x: 15.5152 max_y : 6.24372 max_r: 15.7815
+Sum : 3766.32 max_x: 15.5152 max_y : 6.24372 max_r: 15.7815
+Sum : 3766.32 max_x: 15.5152 max_y : 6.24372 max_r: 15.7815
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1225 (processor) 20 (walltime)
 Frame # 135
-64669 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.463777 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3934 (processor) 22 (walltime)
+Sum : 4079.38 max_x: 16.0794 max_y : 6.67336 max_r: 16.3865
+Sum : 4079.38 max_x: 16.0794 max_y : 6.67336 max_r: 16.3865
+Sum : 4079.38 max_x: 16.0794 max_y : 6.67336 max_r: 16.3865
+Sum : 4079.38 max_x: 16.0794 max_y : 6.67336 max_r: 16.3865
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 19.8927 (processor) 19 (walltime)
 Frame # 136
-64872 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.429661 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9197 (processor) 22 (walltime)
+Sum : 3929.33 max_x: 16.237 max_y : 6.2391 max_r: 16.4966
+Sum : 3929.33 max_x: 16.237 max_y : 6.2391 max_r: 16.4966
+Sum : 3929.33 max_x: 16.237 max_y : 6.2391 max_r: 16.4966
+Sum : 3929.33 max_x: 16.237 max_y : 6.2391 max_r: 16.4966
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8777 (processor) 21 (walltime)
 Frame # 137
-64622 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.376325 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8133 (processor) 22 (walltime)
+Sum : 4081.98 max_x: 17.6559 max_y : 6.54824 max_r: 17.953
+Sum : 4081.98 max_x: 17.6559 max_y : 6.54824 max_r: 17.953
+Sum : 4081.98 max_x: 17.6559 max_y : 6.54824 max_r: 17.953
+Sum : 4081.98 max_x: 17.6559 max_y : 6.54824 max_r: 17.953
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.961 (processor) 21 (walltime)
 Frame # 138
-64683 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.342897 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.9021 (processor) 22 (walltime)
+Sum : 4037.6 max_x: 17.7947 max_y : 6.64497 max_r: 18.2224
+Sum : 4037.6 max_x: 17.7947 max_y : 6.64497 max_r: 18.2224
+Sum : 4037.6 max_x: 17.7947 max_y : 6.64497 max_r: 18.2224
+Sum : 4037.6 max_x: 17.7947 max_y : 6.64497 max_r: 18.2224
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8431 (processor) 20 (walltime)
 Frame # 139
-63948 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.42649 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.1754 (processor) 21 (walltime)
+Sum : 3970.72 max_x: 17.7414 max_y : 6.29697 max_r: 18.0497
+Sum : 3970.72 max_x: 17.7414 max_y : 6.29697 max_r: 18.0497
+Sum : 3970.72 max_x: 17.7414 max_y : 6.29697 max_r: 18.0497
+Sum : 3970.72 max_x: 17.7414 max_y : 6.29697 max_r: 18.0497
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0258 (processor) 21 (walltime)
 Frame # 140
-64456 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.406452 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.1477 (processor) 21 (walltime)
+Sum : 3992.28 max_x: 19.4255 max_y : 6.21199 max_r: 19.7389
+Sum : 3992.28 max_x: 19.4255 max_y : 6.21199 max_r: 19.7389
+Sum : 3992.28 max_x: 19.4255 max_y : 6.21199 max_r: 19.7389
+Sum : 3992.28 max_x: 19.4255 max_y : 6.21199 max_r: 19.7389
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0435 (processor) 20 (walltime)
 Frame # 141
-63926 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.378793 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.0478 (processor) 21 (walltime)
+Sum : 4117.18 max_x: 18.6993 max_y : 6.92686 max_r: 19.0057
+Sum : 4117.18 max_x: 18.6993 max_y : 6.92686 max_r: 19.0057
+Sum : 4117.18 max_x: 18.6993 max_y : 6.92686 max_r: 19.0057
+Sum : 4117.18 max_x: 18.6993 max_y : 6.92686 max_r: 19.0057
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9395 (processor) 21 (walltime)
 Frame # 142
-63720 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.37149 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.489 (processor) 23 (walltime)
+Sum : 3990.95 max_x: 18.6642 max_y : 7.02297 max_r: 18.9365
+Sum : 3990.95 max_x: 18.6642 max_y : 7.02297 max_r: 18.9365
+Sum : 3990.95 max_x: 18.6642 max_y : 7.02297 max_r: 18.9365
+Sum : 3990.95 max_x: 18.6642 max_y : 7.02297 max_r: 18.9365
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8849 (processor) 20 (walltime)
 Frame # 143
-64668 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.40063 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.041 (processor) 21 (walltime)
+Sum : 3854.76 max_x: 19.6938 max_y : 6.72812 max_r: 20.081
+Sum : 3854.76 max_x: 19.6938 max_y : 6.72812 max_r: 20.081
+Sum : 3854.76 max_x: 19.6938 max_y : 6.72812 max_r: 20.081
+Sum : 3854.76 max_x: 19.6938 max_y : 6.72812 max_r: 20.081
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0456 (processor) 21 (walltime)
 Frame # 144
-64398 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.39914 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8579 (processor) 21 (walltime)
+Sum : 3840.62 max_x: 18.3585 max_y : 6.89252 max_r: 18.7664
+Sum : 3840.62 max_x: 18.3585 max_y : 6.89252 max_r: 18.7664
+Sum : 3840.62 max_x: 18.3585 max_y : 6.89252 max_r: 18.7664
+Sum : 3840.62 max_x: 18.3585 max_y : 6.89252 max_r: 18.7664
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1478 (processor) 20 (walltime)
 Frame # 145
-64619 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.393961 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.0342 (processor) 21 (walltime)
+Sum : 3650.52 max_x: 17.8205 max_y : 6.2653 max_r: 18.1389
+Sum : 3650.52 max_x: 17.8205 max_y : 6.2653 max_r: 18.1389
+Sum : 3650.52 max_x: 17.8205 max_y : 6.2653 max_r: 18.1389
+Sum : 3650.52 max_x: 17.8205 max_y : 6.2653 max_r: 18.1389
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9614 (processor) 20 (walltime)
 Frame # 146
-64369 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.397643 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5238 (processor) 22 (walltime)
+Sum : 4244.76 max_x: 17.706 max_y : 6.3109 max_r: 17.9481
+Sum : 4244.76 max_x: 17.706 max_y : 6.3109 max_r: 17.9481
+Sum : 4244.76 max_x: 17.706 max_y : 6.3109 max_r: 17.9481
+Sum : 4244.76 max_x: 17.706 max_y : 6.3109 max_r: 17.9481
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.7977 (processor) 21 (walltime)
 Frame # 147
-64905 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.401791 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.1447 (processor) 21 (walltime)
+Sum : 3725.56 max_x: 16.6987 max_y : 6.83545 max_r: 16.7804
+Sum : 3725.56 max_x: 16.6987 max_y : 6.83545 max_r: 16.7804
+Sum : 3725.56 max_x: 16.6987 max_y : 6.83545 max_r: 16.7804
+Sum : 3725.56 max_x: 16.6987 max_y : 6.83545 max_r: 16.7804
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8316 (processor) 20 (walltime)
 Frame # 148
-64432 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426543 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.1063 (processor) 22 (walltime)
+Sum : 3643.41 max_x: 14.505 max_y : 6.56975 max_r: 14.5622
+Sum : 3643.41 max_x: 14.505 max_y : 6.56975 max_r: 14.5622
+Sum : 3643.41 max_x: 14.505 max_y : 6.56975 max_r: 14.5622
+Sum : 3643.41 max_x: 14.505 max_y : 6.56975 max_r: 14.5622
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.036 (processor) 21 (walltime)
 Frame # 149
-64359 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.402969 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.7064 (processor) 21 (walltime)
+Sum : 3654.8 max_x: 12.8311 max_y : 5.97301 max_r: 12.9516
+Sum : 3654.8 max_x: 12.8311 max_y : 5.97301 max_r: 12.9516
+Sum : 3654.8 max_x: 12.8311 max_y : 5.97301 max_r: 12.9516
+Sum : 3654.8 max_x: 12.8311 max_y : 5.97301 max_r: 12.9516
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0546 (processor) 21 (walltime)
 Frame # 150
-64394 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.401428 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.469 (processor) 21 (walltime)
+Sum : 3626.07 max_x: 11.5752 max_y : 6.41244 max_r: 11.8812
+Sum : 3626.07 max_x: 11.5752 max_y : 6.41244 max_r: 11.8812
+Sum : 3626.07 max_x: 11.5752 max_y : 6.41244 max_r: 11.8812
+Sum : 3626.07 max_x: 11.5752 max_y : 6.41244 max_r: 11.8812
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0737 (processor) 20 (walltime)
 Frame # 151
-64504 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396982 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.0284 (processor) 22 (walltime)
+Sum : 3620.41 max_x: 11.3264 max_y : 5.91084 max_r: 11.7226
+Sum : 3620.41 max_x: 11.3264 max_y : 5.91084 max_r: 11.7226
+Sum : 3620.41 max_x: 11.3264 max_y : 5.91084 max_r: 11.7226
+Sum : 3620.41 max_x: 11.3264 max_y : 5.91084 max_r: 11.7226
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4338 (processor) 20 (walltime)
 Frame # 152
-64764 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.379469 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 41.773 (processor) 21 (walltime)
+Sum : 3638.83 max_x: 11.9046 max_y : 7.05112 max_r: 12.2443
+Sum : 3638.83 max_x: 11.9046 max_y : 7.05112 max_r: 12.2443
+Sum : 3638.83 max_x: 11.9046 max_y : 7.05112 max_r: 12.2443
+Sum : 3638.83 max_x: 11.9046 max_y : 7.05112 max_r: 12.2443
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1308 (processor) 21 (walltime)
 Frame # 153
-64577 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.436986 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6436 (processor) 22 (walltime)
+Sum : 4080.72 max_x: 11.5761 max_y : 12.5407 max_r: 13.6445
+Sum : 4080.72 max_x: 11.5761 max_y : 12.5407 max_r: 13.6445
+Sum : 4080.72 max_x: 11.5761 max_y : 12.5407 max_r: 13.6445
+Sum : 4080.72 max_x: 11.5761 max_y : 12.5407 max_r: 13.6445
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0553 (processor) 21 (walltime)
 Frame # 154
-64547 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.390081 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.1249 (processor) 22 (walltime)
+Sum : 3702.59 max_x: 11.3288 max_y : 12.5698 max_r: 13.7788
+Sum : 3702.59 max_x: 11.3288 max_y : 12.5698 max_r: 13.7788
+Sum : 3702.59 max_x: 11.3288 max_y : 12.5698 max_r: 13.7788
+Sum : 3702.59 max_x: 11.3288 max_y : 12.5698 max_r: 13.7788
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1024 (processor) 20 (walltime)
 Frame # 155
-64308 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.407128 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.6151 (processor) 21 (walltime)
+Sum : 3904.53 max_x: 11.8221 max_y : 11.9781 max_r: 13.6901
+Sum : 3904.53 max_x: 11.8221 max_y : 11.9781 max_r: 13.6901
+Sum : 3904.53 max_x: 11.8221 max_y : 11.9781 max_r: 13.6901
+Sum : 3904.53 max_x: 11.8221 max_y : 11.9781 max_r: 13.6901
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.6901 (processor) 21 (walltime)
 Frame # 156
-64493 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.419626 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.409 (processor) 22 (walltime)
+Sum : 4036.44 max_x: 11.4489 max_y : 11.0792 max_r: 13.0692
+Sum : 4036.44 max_x: 11.4489 max_y : 11.0792 max_r: 13.0692
+Sum : 4036.44 max_x: 11.4489 max_y : 11.0792 max_r: 13.0692
+Sum : 4036.44 max_x: 11.4489 max_y : 11.0792 max_r: 13.0692
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.097 (processor) 21 (walltime)
 Frame # 157
-64611 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.391861 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4494 (processor) 22 (walltime)
+Sum : 3853.36 max_x: 11.2342 max_y : 10.9151 max_r: 12.5194
+Sum : 3853.36 max_x: 11.2342 max_y : 10.9151 max_r: 12.5194
+Sum : 3853.36 max_x: 11.2342 max_y : 10.9151 max_r: 12.5194
+Sum : 3853.36 max_x: 11.2342 max_y : 10.9151 max_r: 12.5194
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9809 (processor) 20 (walltime)
 Frame # 158
-64960 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.394475 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5791 (processor) 23 (walltime)
+Sum : 4192.79 max_x: 11.3788 max_y : 12.7914 max_r: 12.8346
+Sum : 4192.79 max_x: 11.3788 max_y : 12.7914 max_r: 12.8346
+Sum : 4192.79 max_x: 11.3788 max_y : 12.7914 max_r: 12.8346
+Sum : 4192.79 max_x: 11.3788 max_y : 12.7914 max_r: 12.8346
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.1173 (processor) 20 (walltime)
 Frame # 159
-64599 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.499566 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0405 (processor) 22 (walltime)
+Sum : 4316.82 max_x: 11.3446 max_y : 13.0296 max_r: 13.1005
+Sum : 4316.82 max_x: 11.3446 max_y : 13.0296 max_r: 13.1005
+Sum : 4316.82 max_x: 11.3446 max_y : 13.0296 max_r: 13.1005
+Sum : 4316.82 max_x: 11.3446 max_y : 13.0296 max_r: 13.1005
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8108 (processor) 20 (walltime)
 Frame # 160
-64723 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.348737 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.5239 (processor) 23 (walltime)
+Sum : 3963.22 max_x: 11.0047 max_y : 14.451 max_r: 14.5268
+Sum : 3963.22 max_x: 11.0047 max_y : 14.451 max_r: 14.5268
+Sum : 3963.22 max_x: 11.0047 max_y : 14.451 max_r: 14.5268
+Sum : 3963.22 max_x: 11.0047 max_y : 14.451 max_r: 14.5268
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1001 (processor) 21 (walltime)
 Frame # 161
-64984 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.419317 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4628 (processor) 22 (walltime)
+Sum : 4056.31 max_x: 11.1733 max_y : 16.0929 max_r: 16.1257
+Sum : 4056.31 max_x: 11.1733 max_y : 16.0929 max_r: 16.1257
+Sum : 4056.31 max_x: 11.1733 max_y : 16.0929 max_r: 16.1257
+Sum : 4056.31 max_x: 11.1733 max_y : 16.0929 max_r: 16.1257
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.3757 (processor) 20 (walltime)
 Frame # 162
-64743 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.386816 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2125 (processor) 23 (walltime)
+Sum : 4326.93 max_x: 11.5114 max_y : 9.16141 max_r: 11.7139
+Sum : 4326.93 max_x: 11.5114 max_y : 9.16141 max_r: 11.7139
+Sum : 4326.93 max_x: 11.5114 max_y : 9.16141 max_r: 11.7139
+Sum : 4326.93 max_x: 11.5114 max_y : 9.16141 max_r: 11.7139
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1168 (processor) 21 (walltime)
 Frame # 163
-63131 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.361178 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.6445 (processor) 24 (walltime)
+Sum : 3957.07 max_x: 10.5334 max_y : 6.32935 max_r: 11.849
+Sum : 3957.07 max_x: 10.5334 max_y : 6.32935 max_r: 11.849
+Sum : 3957.07 max_x: 10.5334 max_y : 6.32935 max_r: 11.849
+Sum : 3957.07 max_x: 10.5334 max_y : 6.32935 max_r: 11.849
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0626 (processor) 20 (walltime)
 Frame # 164
-64203 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.448015 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.8571 (processor) 23 (walltime)
+Sum : 4361.43 max_x: 11.3804 max_y : 5.69593 max_r: 11.5538
+Sum : 4361.43 max_x: 11.3804 max_y : 5.69593 max_r: 11.5538
+Sum : 4361.43 max_x: 11.3804 max_y : 5.69593 max_r: 11.5538
+Sum : 4361.43 max_x: 11.3804 max_y : 5.69593 max_r: 11.5538
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1821 (processor) 21 (walltime)
 Frame # 165
-64165 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.438144 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.3551 (processor) 22 (walltime)
+Sum : 4251.92 max_x: 11.2713 max_y : 6.26587 max_r: 11.5297
+Sum : 4251.92 max_x: 11.2713 max_y : 6.26587 max_r: 11.5297
+Sum : 4251.92 max_x: 11.2713 max_y : 6.26587 max_r: 11.5297
+Sum : 4251.92 max_x: 11.2713 max_y : 6.26587 max_r: 11.5297
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.997 (processor) 21 (walltime)
 Frame # 166
-64492 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.405432 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.929 (processor) 24 (walltime)
+Sum : 3946.47 max_x: 11.0786 max_y : 5.86193 max_r: 11.2694
+Sum : 3946.47 max_x: 11.0786 max_y : 5.86193 max_r: 11.2694
+Sum : 3946.47 max_x: 11.0786 max_y : 5.86193 max_r: 11.2694
+Sum : 3946.47 max_x: 11.0786 max_y : 5.86193 max_r: 11.2694
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9993 (processor) 21 (walltime)
 Frame # 167
-64960 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420289 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.3854 (processor) 22 (walltime)
+Sum : 4098.22 max_x: 11.2622 max_y : 5.93168 max_r: 11.4589
+Sum : 4098.22 max_x: 11.2622 max_y : 5.93168 max_r: 11.4589
+Sum : 4098.22 max_x: 11.2622 max_y : 5.93168 max_r: 11.4589
+Sum : 4098.22 max_x: 11.2622 max_y : 5.93168 max_r: 11.4589
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1338 (processor) 20 (walltime)
 Frame # 168
-64556 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.400269 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.328 (processor) 23 (walltime)
+Sum : 4183.27 max_x: 10.8194 max_y : 6.10028 max_r: 11.1103
+Sum : 4183.27 max_x: 10.8194 max_y : 6.10028 max_r: 11.1103
+Sum : 4183.27 max_x: 10.8194 max_y : 6.10028 max_r: 11.1103
+Sum : 4183.27 max_x: 10.8194 max_y : 6.10028 max_r: 11.1103
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0474 (processor) 20 (walltime)
 Frame # 169
-64195 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.460197 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.3842 (processor) 23 (walltime)
+Sum : 4202.35 max_x: 11.7417 max_y : 6.18134 max_r: 12.0409
+Sum : 4202.35 max_x: 11.7417 max_y : 6.18134 max_r: 12.0409
+Sum : 4202.35 max_x: 11.7417 max_y : 6.18134 max_r: 12.0409
+Sum : 4202.35 max_x: 11.7417 max_y : 6.18134 max_r: 12.0409
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.989 (processor) 21 (walltime)
 Frame # 170
-64589 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.466328 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.1108 (processor) 23 (walltime)
+Sum : 4601.98 max_x: 11.2655 max_y : 6.14483 max_r: 20.4323
+Sum : 4601.98 max_x: 11.2655 max_y : 6.14483 max_r: 20.4323
+Sum : 4601.98 max_x: 11.2655 max_y : 6.14483 max_r: 20.4323
+Sum : 4601.98 max_x: 11.2655 max_y : 6.14483 max_r: 20.4323
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.2438 (processor) 19 (walltime)
 Frame # 171
-63429 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.44721 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.6317 (processor) 22 (walltime)
+Sum : 4293.03 max_x: 11.426 max_y : 6.3067 max_r: 16.5881
+Sum : 4293.03 max_x: 11.426 max_y : 6.3067 max_r: 16.5881
+Sum : 4293.03 max_x: 11.426 max_y : 6.3067 max_r: 16.5881
+Sum : 4293.03 max_x: 11.426 max_y : 6.3067 max_r: 16.5881
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8932 (processor) 21 (walltime)
 Frame # 172
-63702 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.497234 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.5943 (processor) 22 (walltime)
+Sum : 3970.62 max_x: 11.3572 max_y : 6.27993 max_r: 15.9043
+Sum : 3970.62 max_x: 11.3572 max_y : 6.27993 max_r: 15.9043
+Sum : 3970.62 max_x: 11.3572 max_y : 6.27993 max_r: 15.9043
+Sum : 3970.62 max_x: 11.3572 max_y : 6.27993 max_r: 15.9043
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9862 (processor) 21 (walltime)
 Frame # 173
-63881 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.450762 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.15 (processor) 22 (walltime)
+Sum : 4077.4 max_x: 12.0108 max_y : 6.48199 max_r: 22.1443
+Sum : 4077.4 max_x: 12.0108 max_y : 6.48199 max_r: 22.1443
+Sum : 4077.4 max_x: 12.0108 max_y : 6.48199 max_r: 22.1443
+Sum : 4077.4 max_x: 12.0108 max_y : 6.48199 max_r: 22.1443
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1141 (processor) 20 (walltime)
 Frame # 174
-62906 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.433142 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.5617 (processor) 21 (walltime)
+Sum : 4072.06 max_x: 11.2565 max_y : 6.27284 max_r: 21.7849
+Sum : 4072.06 max_x: 11.2565 max_y : 6.27284 max_r: 21.7849
+Sum : 4072.06 max_x: 11.2565 max_y : 6.27284 max_r: 21.7849
+Sum : 4072.06 max_x: 11.2565 max_y : 6.27284 max_r: 21.7849
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.022 (processor) 21 (walltime)
 Frame # 175
-62807 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.439656 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.4526 (processor) 22 (walltime)
+Sum : 3966.61 max_x: 11.3432 max_y : 6.28565 max_r: 22.1424
+Sum : 3966.61 max_x: 11.3432 max_y : 6.28565 max_r: 22.1424
+Sum : 3966.61 max_x: 11.3432 max_y : 6.28565 max_r: 22.1424
+Sum : 3966.61 max_x: 11.3432 max_y : 6.28565 max_r: 22.1424
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1897 (processor) 21 (walltime)
 Frame # 176
-61642 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.447754 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.2458 (processor) 21 (walltime)
+Sum : 3916.82 max_x: 11.3041 max_y : 6.20192 max_r: 22.225
+Sum : 3916.82 max_x: 11.3041 max_y : 6.20192 max_r: 22.225
+Sum : 3916.82 max_x: 11.3041 max_y : 6.20192 max_r: 22.225
+Sum : 3916.82 max_x: 11.3041 max_y : 6.20192 max_r: 22.225
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0894 (processor) 20 (walltime)
 Frame # 177
-62115 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.394264 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.738 (processor) 22 (walltime)
+Sum : 4450.58 max_x: 11.8041 max_y : 6.44136 max_r: 20.6191
+Sum : 4450.58 max_x: 11.8041 max_y : 6.44136 max_r: 20.6191
+Sum : 4450.58 max_x: 11.8041 max_y : 6.44136 max_r: 20.6191
+Sum : 4450.58 max_x: 11.8041 max_y : 6.44136 max_r: 20.6191
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9023 (processor) 21 (walltime)
 Frame # 178
-63329 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.389572 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8004 (processor) 21 (walltime)
+Sum : 3770.67 max_x: 11.2739 max_y : 6.11498 max_r: 11.6854
+Sum : 3770.67 max_x: 11.2739 max_y : 6.11498 max_r: 11.6854
+Sum : 3770.67 max_x: 11.2739 max_y : 6.11498 max_r: 11.6854
+Sum : 3770.67 max_x: 11.2739 max_y : 6.11498 max_r: 11.6854
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9908 (processor) 21 (walltime)
 Frame # 179
-63066 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.417623 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.9045 (processor) 21 (walltime)
+Sum : 4041.66 max_x: 11.6482 max_y : 5.60137 max_r: 11.984
+Sum : 4041.66 max_x: 11.6482 max_y : 5.60137 max_r: 11.984
+Sum : 4041.66 max_x: 11.6482 max_y : 5.60137 max_r: 11.984
+Sum : 4041.66 max_x: 11.6482 max_y : 5.60137 max_r: 11.984
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1502 (processor) 20 (walltime)
 Frame # 180
-62685 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.417641 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.6582 (processor) 22 (walltime)
+Sum : 3945.51 max_x: 11.7285 max_y : 5.47327 max_r: 17.459
+Sum : 3945.51 max_x: 11.7285 max_y : 5.47327 max_r: 17.459
+Sum : 3945.51 max_x: 11.7285 max_y : 5.47327 max_r: 17.459
+Sum : 3945.51 max_x: 11.7285 max_y : 5.47327 max_r: 17.459
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.288 (processor) 20 (walltime)
 Frame # 181
-63025 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.43716 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.0328 (processor) 23 (walltime)
+Sum : 3609.01 max_x: 11.0205 max_y : 5.51603 max_r: 11.332
+Sum : 3609.01 max_x: 11.0205 max_y : 5.51603 max_r: 11.332
+Sum : 3609.01 max_x: 11.0205 max_y : 5.51603 max_r: 11.332
+Sum : 3609.01 max_x: 11.0205 max_y : 5.51603 max_r: 11.332
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1456 (processor) 21 (walltime)
 Frame # 182
-61923 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.412979 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 42.8565 (processor) 21 (walltime)
+Sum : 3795.72 max_x: 11.3354 max_y : 5.76335 max_r: 11.6435
+Sum : 3795.72 max_x: 11.3354 max_y : 5.76335 max_r: 11.6435
+Sum : 3795.72 max_x: 11.3354 max_y : 5.76335 max_r: 11.6435
+Sum : 3795.72 max_x: 11.3354 max_y : 5.76335 max_r: 11.6435
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9944 (processor) 21 (walltime)
 Frame # 183
-61649 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.4868 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.545 (processor) 21 (walltime)
+Sum : 4047.17 max_x: 11.0481 max_y : 5.50833 max_r: 11.2921
+Sum : 4047.17 max_x: 11.0481 max_y : 5.50833 max_r: 11.2921
+Sum : 4047.17 max_x: 11.0481 max_y : 5.50833 max_r: 11.2921
+Sum : 4047.17 max_x: 11.0481 max_y : 5.50833 max_r: 11.2921
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8853 (processor) 20 (walltime)
 Frame # 184
-62086 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.397526 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.729 (processor) 22 (walltime)
+Sum : 3728.49 max_x: 10.5744 max_y : 5.8895 max_r: 10.8715
+Sum : 3728.49 max_x: 10.5744 max_y : 5.8895 max_r: 10.8715
+Sum : 3728.49 max_x: 10.5744 max_y : 5.8895 max_r: 10.8715
+Sum : 3728.49 max_x: 10.5744 max_y : 5.8895 max_r: 10.8715
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0724 (processor) 21 (walltime)
 Frame # 185
-61875 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.400107 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.3673 (processor) 21 (walltime)
+Sum : 3907.58 max_x: 10.7057 max_y : 5.45138 max_r: 10.9893
+Sum : 3907.58 max_x: 10.7057 max_y : 5.45138 max_r: 10.9893
+Sum : 3907.58 max_x: 10.7057 max_y : 5.45138 max_r: 10.9893
+Sum : 3907.58 max_x: 10.7057 max_y : 5.45138 max_r: 10.9893
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1481 (processor) 21 (walltime)
 Frame # 186
-62141 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.411255 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8654 (processor) 22 (walltime)
+Sum : 4174.79 max_x: 11.311 max_y : 5.69833 max_r: 11.6953
+Sum : 4174.79 max_x: 11.311 max_y : 5.69833 max_r: 11.6953
+Sum : 4174.79 max_x: 11.311 max_y : 5.69833 max_r: 11.6953
+Sum : 4174.79 max_x: 11.311 max_y : 5.69833 max_r: 11.6953
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.2142 (processor) 20 (walltime)
 Frame # 187
-62352 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.431979 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5856 (processor) 22 (walltime)
+Sum : 3562.48 max_x: 11.0025 max_y : 5.48891 max_r: 11.2895
+Sum : 3562.48 max_x: 11.0025 max_y : 5.48891 max_r: 11.2895
+Sum : 3562.48 max_x: 11.0025 max_y : 5.48891 max_r: 11.2895
+Sum : 3562.48 max_x: 11.0025 max_y : 5.48891 max_r: 11.2895
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.5011 (processor) 20 (walltime)
 Frame # 188
-62208 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.384168 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.7736 (processor) 22 (walltime)
+Sum : 3982.23 max_x: 11.151 max_y : 5.50518 max_r: 11.6012
+Sum : 3982.23 max_x: 11.151 max_y : 5.50518 max_r: 11.6012
+Sum : 3982.23 max_x: 11.151 max_y : 5.50518 max_r: 11.6012
+Sum : 3982.23 max_x: 11.151 max_y : 5.50518 max_r: 11.6012
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.2607 (processor) 21 (walltime)
 Frame # 189
-62254 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.410874 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.4397 (processor) 21 (walltime)
+Sum : 3835.22 max_x: 10.6665 max_y : 6.87426 max_r: 13.3608
+Sum : 3835.22 max_x: 10.6665 max_y : 6.87426 max_r: 13.3608
+Sum : 3835.22 max_x: 10.6665 max_y : 6.87426 max_r: 13.3608
+Sum : 3835.22 max_x: 10.6665 max_y : 6.87426 max_r: 13.3608
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1978 (processor) 21 (walltime)
 Frame # 190
-61485 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.398714 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.9169 (processor) 22 (walltime)
+Sum : 3700.48 max_x: 10.9782 max_y : 7.83006 max_r: 11.2564
+Sum : 3700.48 max_x: 10.9782 max_y : 7.83006 max_r: 11.2564
+Sum : 3700.48 max_x: 10.9782 max_y : 7.83006 max_r: 11.2564
+Sum : 3700.48 max_x: 10.9782 max_y : 7.83006 max_r: 11.2564
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1095 (processor) 21 (walltime)
 Frame # 191
-61935 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420294 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.5114 (processor) 22 (walltime)
+Sum : 3879.1 max_x: 10.93 max_y : 14.6161 max_r: 16.869
+Sum : 3879.1 max_x: 10.93 max_y : 14.6161 max_r: 16.869
+Sum : 3879.1 max_x: 10.93 max_y : 14.6161 max_r: 16.869
+Sum : 3879.1 max_x: 10.93 max_y : 14.6161 max_r: 16.869
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8131 (processor) 20 (walltime)
 Frame # 192
-61705 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.416565 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5675 (processor) 22 (walltime)
+Sum : 4188.42 max_x: 10.5508 max_y : 19.3294 max_r: 20.3386
+Sum : 4188.42 max_x: 10.5508 max_y : 19.3294 max_r: 20.3386
+Sum : 4188.42 max_x: 10.5508 max_y : 19.3294 max_r: 20.3386
+Sum : 4188.42 max_x: 10.5508 max_y : 19.3294 max_r: 20.3386
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1321 (processor) 21 (walltime)
 Frame # 193
-61710 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.414058 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0695 (processor) 22 (walltime)
+Sum : 4285.86 max_x: 10.4452 max_y : 23.4842 max_r: 24.329
+Sum : 4285.86 max_x: 10.4452 max_y : 23.4842 max_r: 24.329
+Sum : 4285.86 max_x: 10.4452 max_y : 23.4842 max_r: 24.329
+Sum : 4285.86 max_x: 10.4452 max_y : 23.4842 max_r: 24.329
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1032 (processor) 21 (walltime)
 Frame # 194
-61165 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.426714 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.3335 (processor) 23 (walltime)
+Sum : 4871.44 max_x: 30.1461 max_y : 31.2171 max_r: 36.3836
+Sum : 4871.44 max_x: 30.1461 max_y : 31.2171 max_r: 36.3836
+Sum : 4871.44 max_x: 30.1461 max_y : 31.2171 max_r: 36.3836
+Sum : 4871.44 max_x: 30.1461 max_y : 31.2171 max_r: 36.3836
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0698 (processor) 19 (walltime)
 Frame # 195
-61007 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396616 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.2629 (processor) 21 (walltime)
+Sum : 4395.05 max_x: 17.157 max_y : 23.7708 max_r: 24.6029
+Sum : 4395.05 max_x: 17.157 max_y : 23.7708 max_r: 24.6029
+Sum : 4395.05 max_x: 17.157 max_y : 23.7708 max_r: 24.6029
+Sum : 4395.05 max_x: 17.157 max_y : 23.7708 max_r: 24.6029
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9214 (processor) 21 (walltime)
 Frame # 196
-61455 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.409986 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.0016 (processor) 23 (walltime)
+Sum : 4010.84 max_x: 14.6994 max_y : 21.8254 max_r: 23.5334
+Sum : 4010.84 max_x: 14.6994 max_y : 21.8254 max_r: 23.5334
+Sum : 4010.84 max_x: 14.6994 max_y : 21.8254 max_r: 23.5334
+Sum : 4010.84 max_x: 14.6994 max_y : 21.8254 max_r: 23.5334
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1136 (processor) 21 (walltime)
 Frame # 197
-61549 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.395092 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.4356 (processor) 21 (walltime)
+Sum : 4163.55 max_x: 10.9887 max_y : 18.283 max_r: 23.6557
+Sum : 4163.55 max_x: 10.9887 max_y : 18.283 max_r: 23.6557
+Sum : 4163.55 max_x: 10.9887 max_y : 18.283 max_r: 23.6557
+Sum : 4163.55 max_x: 10.9887 max_y : 18.283 max_r: 23.6557
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4128 (processor) 20 (walltime)
 Frame # 198
-60910 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.396932 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8682 (processor) 22 (walltime)
+Sum : 4409.52 max_x: 11.3499 max_y : 18.9085 max_r: 20.9616
+Sum : 4409.52 max_x: 11.3499 max_y : 18.9085 max_r: 20.9616
+Sum : 4409.52 max_x: 11.3499 max_y : 18.9085 max_r: 20.9616
+Sum : 4409.52 max_x: 11.3499 max_y : 18.9085 max_r: 20.9616
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.192 (processor) 20 (walltime)
 Frame # 199
-60590 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.378494 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.9666 (processor) 22 (walltime)
+Sum : 4234.51 max_x: 19.3632 max_y : 23.2274 max_r: 28.3974
+Sum : 4234.51 max_x: 19.3632 max_y : 23.2274 max_r: 28.3974
+Sum : 4234.51 max_x: 19.3632 max_y : 23.2274 max_r: 28.3974
+Sum : 4234.51 max_x: 19.3632 max_y : 23.2274 max_r: 28.3974
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0803 (processor) 21 (walltime)
 Frame # 200
-60615 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.278024 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 43.8593 (processor) 21 (walltime)
+Sum : 4486.17 max_x: 19.2553 max_y : 24.0294 max_r: 24.9681
+Sum : 4486.17 max_x: 19.2553 max_y : 24.0294 max_r: 24.9681
+Sum : 4486.17 max_x: 19.2553 max_y : 24.0294 max_r: 24.9681
+Sum : 4486.17 max_x: 19.2553 max_y : 24.0294 max_r: 24.9681
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0202 (processor) 21 (walltime)
 Frame # 201
-60304 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.386481 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0775 (processor) 22 (walltime)
+Sum : 4552.25 max_x: 11.1919 max_y : 24.0869 max_r: 24.1331
+Sum : 4552.25 max_x: 11.1919 max_y : 24.0869 max_r: 24.1331
+Sum : 4552.25 max_x: 11.1919 max_y : 24.0869 max_r: 24.1331
+Sum : 4552.25 max_x: 11.1919 max_y : 24.0869 max_r: 24.1331
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.6061 (processor) 20 (walltime)
 Frame # 202
-59967 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.36924 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.974 (processor) 23 (walltime)
+Sum : 3871.17 max_x: 10.9715 max_y : 11.5029 max_r: 12.0839
+Sum : 3871.17 max_x: 10.9715 max_y : 11.5029 max_r: 12.0839
+Sum : 3871.17 max_x: 10.9715 max_y : 11.5029 max_r: 12.0839
+Sum : 3871.17 max_x: 10.9715 max_y : 11.5029 max_r: 12.0839
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0005 (processor) 21 (walltime)
 Frame # 203
-60692 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.403088 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.4889 (processor) 22 (walltime)
+Sum : 4083.96 max_x: 11.0933 max_y : 14.5338 max_r: 14.6227
+Sum : 4083.96 max_x: 11.0933 max_y : 14.5338 max_r: 14.6227
+Sum : 4083.96 max_x: 11.0933 max_y : 14.5338 max_r: 14.6227
+Sum : 4083.96 max_x: 11.0933 max_y : 14.5338 max_r: 14.6227
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1048 (processor) 21 (walltime)
 Frame # 204
-60058 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.384796 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.8139 (processor) 23 (walltime)
+Sum : 4709.64 max_x: 11.1469 max_y : 9.29856 max_r: 11.49
+Sum : 4709.64 max_x: 11.1469 max_y : 9.29856 max_r: 11.49
+Sum : 4709.64 max_x: 11.1469 max_y : 9.29856 max_r: 11.49
+Sum : 4709.64 max_x: 11.1469 max_y : 9.29856 max_r: 11.49
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.0636 (processor) 19 (walltime)
 Frame # 205
-59667 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.404165 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.967 (processor) 22 (walltime)
+Sum : 4078.69 max_x: 10.7211 max_y : 8.5242 max_r: 10.9908
+Sum : 4078.69 max_x: 10.7211 max_y : 8.5242 max_r: 10.9908
+Sum : 4078.69 max_x: 10.7211 max_y : 8.5242 max_r: 10.9908
+Sum : 4078.69 max_x: 10.7211 max_y : 8.5242 max_r: 10.9908
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9726 (processor) 21 (walltime)
 Frame # 206
-59757 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420265 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.586 (processor) 23 (walltime)
+Sum : 4249.7 max_x: 10.5187 max_y : 5.34159 max_r: 10.8912
+Sum : 4249.7 max_x: 10.5187 max_y : 5.34159 max_r: 10.8912
+Sum : 4249.7 max_x: 10.5187 max_y : 5.34159 max_r: 10.8912
+Sum : 4249.7 max_x: 10.5187 max_y : 5.34159 max_r: 10.8912
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.2617 (processor) 20 (walltime)
 Frame # 207
-59679 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.45329 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.425 (processor) 22 (walltime)
+Sum : 5156.55 max_x: 10.4542 max_y : 6.11256 max_r: 10.8467
+Sum : 5156.55 max_x: 10.4542 max_y : 6.11256 max_r: 10.8467
+Sum : 5156.55 max_x: 10.4542 max_y : 6.11256 max_r: 10.8467
+Sum : 5156.55 max_x: 10.4542 max_y : 6.11256 max_r: 10.8467
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.8698 (processor) 20 (walltime)
 Frame # 208
-59710 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.382125 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4174 (processor) 23 (walltime)
+Sum : 4243.85 max_x: 10.2162 max_y : 6.45666 max_r: 10.5958
+Sum : 4243.85 max_x: 10.2162 max_y : 6.45666 max_r: 10.5958
+Sum : 4243.85 max_x: 10.2162 max_y : 6.45666 max_r: 10.5958
+Sum : 4243.85 max_x: 10.2162 max_y : 6.45666 max_r: 10.5958
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0012 (processor) 21 (walltime)
 Frame # 209
-59727 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.420262 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4965 (processor) 22 (walltime)
+Sum : 4565.3 max_x: 10.3346 max_y : 6.76141 max_r: 10.6174
+Sum : 4565.3 max_x: 10.3346 max_y : 6.76141 max_r: 10.6174
+Sum : 4565.3 max_x: 10.3346 max_y : 6.76141 max_r: 10.6174
+Sum : 4565.3 max_x: 10.3346 max_y : 6.76141 max_r: 10.6174
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1319 (processor) 20 (walltime)
 Frame # 210
-59802 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.515654 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.9587 (processor) 23 (walltime)
+Sum : 5068.82 max_x: 10.47 max_y : 7.92174 max_r: 10.7652
+Sum : 5068.82 max_x: 10.47 max_y : 7.92174 max_r: 10.7652
+Sum : 5068.82 max_x: 10.47 max_y : 7.92174 max_r: 10.7652
+Sum : 5068.82 max_x: 10.47 max_y : 7.92174 max_r: 10.7652
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9583 (processor) 21 (walltime)
 Frame # 211
-59711 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.39539 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.4892 (processor) 23 (walltime)
+Sum : 4330.5 max_x: 10.0958 max_y : 7.53724 max_r: 10.5668
+Sum : 4330.5 max_x: 10.0958 max_y : 7.53724 max_r: 10.5668
+Sum : 4330.5 max_x: 10.0958 max_y : 7.53724 max_r: 10.5668
+Sum : 4330.5 max_x: 10.0958 max_y : 7.53724 max_r: 10.5668
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1418 (processor) 21 (walltime)
 Frame # 212
-59633 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.410518 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.5682 (processor) 22 (walltime)
+Sum : 4734.97 max_x: 10.0149 max_y : 7.6458 max_r: 14.823
+Sum : 4734.97 max_x: 10.0149 max_y : 7.6458 max_r: 14.823
+Sum : 4734.97 max_x: 10.0149 max_y : 7.6458 max_r: 14.823
+Sum : 4734.97 max_x: 10.0149 max_y : 7.6458 max_r: 14.823
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0485 (processor) 20 (walltime)
 Frame # 213
-59082 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.441009 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.4531 (processor) 22 (walltime)
+Sum : 5451.03 max_x: 10.1712 max_y : 7.47866 max_r: 11.2427
+Sum : 5451.03 max_x: 10.1712 max_y : 7.47866 max_r: 11.2427
+Sum : 5451.03 max_x: 10.1712 max_y : 7.47866 max_r: 11.2427
+Sum : 5451.03 max_x: 10.1712 max_y : 7.47866 max_r: 11.2427
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9706 (processor) 21 (walltime)
 Frame # 214
-58625 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.451761 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.3085 (processor) 23 (walltime)
+Sum : 4317.09 max_x: 9.84475 max_y : 7.22194 max_r: 12.1881
+Sum : 4317.09 max_x: 9.84475 max_y : 7.22194 max_r: 12.1881
+Sum : 4317.09 max_x: 9.84475 max_y : 7.22194 max_r: 12.1881
+Sum : 4317.09 max_x: 9.84475 max_y : 7.22194 max_r: 12.1881
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0308 (processor) 20 (walltime)
 Frame # 215
-58776 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.440466 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.529 (processor) 22 (walltime)
+Sum : 4892.3 max_x: 9.31434 max_y : 7.33534 max_r: 14.1382
+Sum : 4892.3 max_x: 9.31434 max_y : 7.33534 max_r: 14.1382
+Sum : 4892.3 max_x: 9.31434 max_y : 7.33534 max_r: 14.1382
+Sum : 4892.3 max_x: 9.31434 max_y : 7.33534 max_r: 14.1382
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1126 (processor) 21 (walltime)
 Frame # 216
-58479 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.468614 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.5739 (processor) 22 (walltime)
+Sum : 4573.65 max_x: 9.52516 max_y : 7.37984 max_r: 12.6773
+Sum : 4573.65 max_x: 9.52516 max_y : 7.37984 max_r: 12.6773
+Sum : 4573.65 max_x: 9.52516 max_y : 7.37984 max_r: 12.6773
+Sum : 4573.65 max_x: 9.52516 max_y : 7.37984 max_r: 12.6773
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.2989 (processor) 20 (walltime)
 Frame # 217
-58012 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.432884 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.1259 (processor) 22 (walltime)
+Sum : 4548.94 max_x: 9.57879 max_y : 7.72361 max_r: 17.861
+Sum : 4548.94 max_x: 9.57879 max_y : 7.72361 max_r: 17.861
+Sum : 4548.94 max_x: 9.57879 max_y : 7.72361 max_r: 17.861
+Sum : 4548.94 max_x: 9.57879 max_y : 7.72361 max_r: 17.861
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1049 (processor) 21 (walltime)
 Frame # 218
-58317 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.424953 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.6808 (processor) 23 (walltime)
+Sum : 6432 max_x: 9.41632 max_y : 6.92029 max_r: 19.3861
+Sum : 6432 max_x: 9.41632 max_y : 6.92029 max_r: 19.3861
+Sum : 6432 max_x: 9.41632 max_y : 6.92029 max_r: 19.3861
+Sum : 6432 max_x: 9.41632 max_y : 6.92029 max_r: 19.3861
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9587 (processor) 20 (walltime)
 Frame # 219
-57993 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.428552 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 44.9146 (processor) 22 (walltime)
+Sum : 4607.08 max_x: 10.0633 max_y : 6.71284 max_r: 14.8973
+Sum : 4607.08 max_x: 10.0633 max_y : 6.71284 max_r: 14.8973
+Sum : 4607.08 max_x: 10.0633 max_y : 6.71284 max_r: 14.8973
+Sum : 4607.08 max_x: 10.0633 max_y : 6.71284 max_r: 14.8973
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9417 (processor) 21 (walltime)
 Frame # 220
-58484 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.475856 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 47.2753 (processor) 22 (walltime)
+Sum : 4310.93 max_x: 9.44246 max_y : 7.05152 max_r: 12.8722
+Sum : 4310.93 max_x: 9.44246 max_y : 7.05152 max_r: 12.8722
+Sum : 4310.93 max_x: 9.44246 max_y : 7.05152 max_r: 12.8722
+Sum : 4310.93 max_x: 9.44246 max_y : 7.05152 max_r: 12.8722
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9678 (processor) 21 (walltime)
 Frame # 221
-58446 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462236 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 45.3163 (processor) 22 (walltime)
+Sum : 4611.33 max_x: 9.49852 max_y : 6.69882 max_r: 12.5307
+Sum : 4611.33 max_x: 9.49852 max_y : 6.69882 max_r: 12.5307
+Sum : 4611.33 max_x: 9.49852 max_y : 6.69882 max_r: 12.5307
+Sum : 4611.33 max_x: 9.49852 max_y : 6.69882 max_r: 12.5307
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1284 (processor) 20 (walltime)
 Frame # 222
-57947 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.436403 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.169 (processor) 23 (walltime)
+Sum : 5653.87 max_x: 9.51161 max_y : 6.41485 max_r: 11.2421
+Sum : 5653.87 max_x: 9.51161 max_y : 6.41485 max_r: 11.2421
+Sum : 5653.87 max_x: 9.51161 max_y : 6.41485 max_r: 11.2421
+Sum : 5653.87 max_x: 9.51161 max_y : 6.41485 max_r: 11.2421
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1369 (processor) 21 (walltime)
 Frame # 223
-58346 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.468065 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.37 (processor) 23 (walltime)
+Sum : 4451.68 max_x: 9.35311 max_y : 7.31024 max_r: 10.4704
+Sum : 4451.68 max_x: 9.35311 max_y : 7.31024 max_r: 10.4704
+Sum : 4451.68 max_x: 9.35311 max_y : 7.31024 max_r: 10.4704
+Sum : 4451.68 max_x: 9.35311 max_y : 7.31024 max_r: 10.4704
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.478 (processor) 20 (walltime)
 Frame # 224
-58115 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.470406 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 46.0088 (processor) 22 (walltime)
+Sum : 4879.36 max_x: 8.92934 max_y : 7.66886 max_r: 11.2157
+Sum : 4879.36 max_x: 8.92934 max_y : 7.66886 max_r: 11.2157
+Sum : 4879.36 max_x: 8.92934 max_y : 7.66886 max_r: 11.2157
+Sum : 4879.36 max_x: 8.92934 max_y : 7.66886 max_r: 11.2157
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1427 (processor) 21 (walltime)
 Frame # 225
-57981 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462889 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.9257 (processor) 22 (walltime)
+Sum : 6366.81 max_x: 9.75314 max_y : 7.79842 max_r: 11.9981
+Sum : 6366.81 max_x: 9.75314 max_y : 7.79842 max_r: 11.9981
+Sum : 6366.81 max_x: 9.75314 max_y : 7.79842 max_r: 11.9981
+Sum : 6366.81 max_x: 9.75314 max_y : 7.79842 max_r: 11.9981
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1014 (processor) 21 (walltime)
 Frame # 226
-58345 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462858 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.1315 (processor) 23 (walltime)
+Sum : 4742.41 max_x: 8.7594 max_y : 8.68447 max_r: 11.3157
+Sum : 4742.41 max_x: 8.7594 max_y : 8.68447 max_r: 11.3157
+Sum : 4742.41 max_x: 8.7594 max_y : 8.68447 max_r: 11.3157
+Sum : 4742.41 max_x: 8.7594 max_y : 8.68447 max_r: 11.3157
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.2172 (processor) 20 (walltime)
 Frame # 227
-59136 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.460068 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.1418 (processor) 23 (walltime)
+Sum : 5269.33 max_x: 9.21784 max_y : 7.94879 max_r: 11.9187
+Sum : 5269.33 max_x: 9.21784 max_y : 7.94879 max_r: 11.9187
+Sum : 5269.33 max_x: 9.21784 max_y : 7.94879 max_r: 11.9187
+Sum : 5269.33 max_x: 9.21784 max_y : 7.94879 max_r: 11.9187
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.7114 (processor) 21 (walltime)
 Frame # 228
-58653 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.450178 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.5971 (processor) 23 (walltime)
+Sum : 5435.78 max_x: 9.7649 max_y : 8.10316 max_r: 12.0211
+Sum : 5435.78 max_x: 9.7649 max_y : 8.10316 max_r: 12.0211
+Sum : 5435.78 max_x: 9.7649 max_y : 8.10316 max_r: 12.0211
+Sum : 5435.78 max_x: 9.7649 max_y : 8.10316 max_r: 12.0211
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1552 (processor) 20 (walltime)
 Frame # 229
-58732 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.443442 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 48.7363 (processor) 23 (walltime)
+Sum : 5060.85 max_x: 10.2564 max_y : 8.10787 max_r: 11.8679
+Sum : 5060.85 max_x: 10.2564 max_y : 8.10787 max_r: 11.8679
+Sum : 5060.85 max_x: 10.2564 max_y : 8.10787 max_r: 11.8679
+Sum : 5060.85 max_x: 10.2564 max_y : 8.10787 max_r: 11.8679
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0188 (processor) 21 (walltime)
 Frame # 230
-58740 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.464508 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 49.3941 (processor) 23 (walltime)
+Sum : 5555.34 max_x: 12.2849 max_y : 8.11697 max_r: 13.9178
+Sum : 5555.34 max_x: 12.2849 max_y : 8.11697 max_r: 13.9178
+Sum : 5555.34 max_x: 12.2849 max_y : 8.11697 max_r: 13.9178
+Sum : 5555.34 max_x: 12.2849 max_y : 8.11697 max_r: 13.9178
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.2131 (processor) 20 (walltime)
 Frame # 231
-58583 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.462678 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 50.3808 (processor) 23 (walltime)
+Sum : 6398.25 max_x: 11.9244 max_y : 8.33058 max_r: 14.0477
+Sum : 6398.25 max_x: 11.9244 max_y : 8.33058 max_r: 14.0477
+Sum : 6398.25 max_x: 11.9244 max_y : 8.33058 max_r: 14.0477
+Sum : 6398.25 max_x: 11.9244 max_y : 8.33058 max_r: 14.0477
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.9483 (processor) 20 (walltime)
 Frame # 232
-58628 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.455986 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.9486 (processor) 24 (walltime)
+Sum : 5225.12 max_x: 11.6843 max_y : 8.68883 max_r: 13.6318
+Sum : 5225.12 max_x: 11.6843 max_y : 8.68883 max_r: 13.6318
+Sum : 5225.12 max_x: 11.6843 max_y : 8.68883 max_r: 13.6318
+Sum : 5225.12 max_x: 11.6843 max_y : 8.68883 max_r: 13.6318
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1677 (processor) 21 (walltime)
 Frame # 233
-59248 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.463067 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 51.1845 (processor) 23 (walltime)
+Sum : 6138.01 max_x: 13.6497 max_y : 10.5214 max_r: 15.8268
+Sum : 6138.01 max_x: 13.6497 max_y : 10.5214 max_r: 15.8268
+Sum : 6138.01 max_x: 13.6497 max_y : 10.5214 max_r: 15.8268
+Sum : 6138.01 max_x: 13.6497 max_y : 10.5214 max_r: 15.8268
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.4372 (processor) 20 (walltime)
 Frame # 234
-59195 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.450779 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.4907 (processor) 24 (walltime)
+Sum : 6065.1 max_x: 15.2808 max_y : 8.9268 max_r: 16.9181
+Sum : 6065.1 max_x: 15.2808 max_y : 8.9268 max_r: 16.9181
+Sum : 6065.1 max_x: 15.2808 max_y : 8.9268 max_r: 16.9181
+Sum : 6065.1 max_x: 15.2808 max_y : 8.9268 max_r: 16.9181
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1636 (processor) 21 (walltime)
 Frame # 235
-59026 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.441256 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.4609 (processor) 24 (walltime)
+Sum : 5615.15 max_x: 14.6189 max_y : 13.4597 max_r: 16.54
+Sum : 5615.15 max_x: 14.6189 max_y : 13.4597 max_r: 16.54
+Sum : 5615.15 max_x: 14.6189 max_y : 13.4597 max_r: 16.54
+Sum : 5615.15 max_x: 14.6189 max_y : 13.4597 max_r: 16.54
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0846 (processor) 21 (walltime)
 Frame # 236
-59644 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.456413 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 52.108 (processor) 24 (walltime)
+Sum : 6025.82 max_x: 18.1541 max_y : 21.5517 max_r: 22.1462
+Sum : 6025.82 max_x: 18.1541 max_y : 21.5517 max_r: 22.1462
+Sum : 6025.82 max_x: 18.1541 max_y : 21.5517 max_r: 22.1462
+Sum : 6025.82 max_x: 18.1541 max_y : 21.5517 max_r: 22.1462
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1569 (processor) 21 (walltime)
 Frame # 237
-58936 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.452008 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 54.2809 (processor) 24 (walltime)
+Sum : 7250.13 max_x: 17.0327 max_y : 19.1866 max_r: 20.1983
+Sum : 7250.13 max_x: 17.0327 max_y : 19.1866 max_r: 20.1983
+Sum : 7250.13 max_x: 17.0327 max_y : 19.1866 max_r: 20.1983
+Sum : 7250.13 max_x: 17.0327 max_y : 19.1866 max_r: 20.1983
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 20.7516 (processor) 20 (walltime)
 Frame # 238
-58599 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.439614 (processor) 0 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 55.948 (processor) 25 (walltime)
+Sum : 5577.87 max_x: 16.0581 max_y : 18.7366 max_r: 18.8841
+Sum : 5577.87 max_x: 16.0581 max_y : 18.7366 max_r: 18.8841
+Sum : 5577.87 max_x: 16.0581 max_y : 18.7366 max_r: 18.8841
+Sum : 5577.87 max_x: 16.0581 max_y : 18.7366 max_r: 18.8841
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.0719 (processor) 21 (walltime)
 Frame # 239
-58354 points
-size: 720 1280
-SloMo.cpp:415:slowdown:: Time taken for Triangulation in seconds : 0.459645 (processor) 1 (walltime)
-SloMo.cpp:479:slowdown:: Time taken for Frame in seconds : 54.773 (processor) 25 (walltime)
+Sum : 6403.1 max_x: 17.7628 max_y : 7.93066 max_r: 18.9991
+Sum : 6403.1 max_x: 17.7628 max_y : 7.93066 max_r: 18.9991
+Sum : 6403.1 max_x: 17.7628 max_y : 7.93066 max_r: 18.9991
+Sum : 6403.1 max_x: 17.7628 max_y : 7.93066 max_r: 18.9991
+SloMo2.cpp:628:slowdown:: Time taken for Frame in seconds : 21.1972 (processor) 20 (walltime)
 Input Video : number of frames : 240
-Output Video: number of frames : 240
+Output Video: number of frames : 953
 Output video stats: 
 CV_CAP_PROP_POS_MSEC      :                         0  : Current position of the video file in milliseconds or video capture timestamp.
 CV_CAP_PROP_POS_FRAMES    :                         0  : 0-based index of the frame to be decoded/captured next.
@@ -1219,8 +1452,8 @@ CV_CAP_PROP_FRAME_WIDTH   :                      1280  : Width of the frames in 
 CV_CAP_PROP_FRAME_HEIGHT  :                       720  : Height of the frames in the video stream.
 CV_CAP_PROP_FPS           :                    23.976  : Frame rate.
 CV_CAP_PROP_FOURCC        :                      avc1  : 4-character code of codec.
-CV_CAP_PROP_FRAME_COUNT   :                       960  : Number of frames in the video file.
+CV_CAP_PROP_FRAME_COUNT   :                       957  : Number of frames in the video file.
 CV_CAP_PROP_FORMAT        :                         0  : Format of the Mat objects returned by retrieve() .
 CV_CAP_PROP_MODE          :                         0  : Backend-specific value indicating the current capture mode.
 CV_CAP_PROP_CONVERT_RGB   :                         0  : Boolean flags indicating whether images should be converted to RGB.
-main.cpp:49:main:: Time taken for SloMo in seconds : 13518.8 (processor) 6010 (walltime)
+main.cpp:53:main:: Time taken for SloMo in seconds : 4874.07 (processor) 4786 (walltime)
